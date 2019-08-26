@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/registerinmates"
+            android:title="Register New Inmates" />
+        <item
+            android:id="@+id/applyreliefmaterial"
+            android:title="Apply For Relief Material" />
+        <item
+            android:id="@+id/reqstatus"
+            android:title="Requirement Status" />
+        <item
+            android:id="@+id/viewreliefcampstatus"
+            android:title="View Relief Camp Details" />
+
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/contactpeeradmins"
+                android:title="Contact Peer Admin" />
+            <item
+                android:id="@+id/Emergencycontacts"
+                android:title="Emergency Contacts" />
+
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="Logout" />
+        </menu>
+
+    </item>
+</menu>

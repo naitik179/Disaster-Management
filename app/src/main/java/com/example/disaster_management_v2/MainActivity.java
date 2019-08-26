@@ -83,17 +83,17 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment=null;
 
         if (id == R.id.registerinmates) {
-            fragment=new Register_new_inmates();
+            fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
-
+            fragment=new ApplyForReliefMaterialfragment();
         } else if (id == R.id.reqstatus) {
-
+            fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
-
+            fragment=new ReliefCampStatus();
         } else if (id == R.id.contactpeeradmins) {
-
+            fragment=new Contact_Peer_Admins();
         } else if (id == R.id.Emergencycontacts) {
-
+            fragment=new Emergency_Contacts();
         }
         else if (id==R.id.logout){
 

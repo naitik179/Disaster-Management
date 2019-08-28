@@ -81,8 +81,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment=null;
-
-        if (id == R.id.registerinmates) {
+         if (id == R.id.loginApp) {
+            fragment=new Login();
+        }
+         else if (id == R.id.registeroption) {
+             fragment=new Registration();
+         }
+       else if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
             fragment=new ApplyForReliefMaterialfragment();

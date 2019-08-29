@@ -81,13 +81,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment=null;
-         if (id == R.id.loginApp) {
+         if (id==R.id.loginapp) {
             fragment=new Login();
         }
          else if (id == R.id.registeroption) {
              fragment=new Registration();
          }
-       else if (id == R.id.registerinmates) {
+         else if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
             fragment=new ApplyForReliefMaterialfragment();
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.contactpeeradmins) {
             fragment=new Contact_Peer_Admins();
         } else if (id == R.id.Emergencycontacts) {
-            fragment=new Emergency_Contacts();
+            fragment=new Armed_forces();
         }
         else if (id==R.id.logout){
 

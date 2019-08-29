@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/loginApp"
+            android:id="@+id/loginapp"
             android:title="Login" />
         <item
             android:id="@+id/registeroption"

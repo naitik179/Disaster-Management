@@ -13,7 +13,6 @@
         android:id="@+id/screen_area"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="17"
-        android:background="@drawable/background" />
+        android:alpha="17" />
 </RelativeLayout>
 

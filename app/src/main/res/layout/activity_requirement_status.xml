@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequirementStatusActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Status of demanded items"
+        android:textSize="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#f1f1f1"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="2dp"
+        />
+    <Button
+        android:id="@+id/clothes"
+        android:layout_width="50mm"
+        android:layout_height="wrap_content"
+        android:text="Clothes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#f1f1f1"/>
+
+
+    <Button
+        android:id="@+id/drinkingWater"
+        android:layout_width="50mm"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/drinking_water"
+        android:textColor="#f1f1f1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/clothes"
+        app:layout_constraintRight_toRightOf="@id/clothes"
+        app:layout_constraintTop_toBottomOf="@id/clothes"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <Button
+        android:id="@+id/Medicine"
+        android:layout_width="50mm"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/medicines"
+        android:textColor="#f1f1f1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/drinkingWater"
+        app:layout_constraintRight_toRightOf="@id/drinkingWater"
+        app:layout_constraintTop_toBottomOf="@id/drinkingWater"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/food"
+        android:layout_width="50mm"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/food"
+        android:textColor="#f1f1f1"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/Medicine"
+        app:layout_constraintRight_toRightOf="@id/Medicine"
+        app:layout_constraintTop_toBottomOf="@id/Medicine"
+        app:layout_constraintVertical_bias="0.26" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

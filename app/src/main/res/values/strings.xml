@@ -9,6 +9,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="status_of_demanded_items">Status of Demanded Items</string>
+    <string name="drinking_water">Drinking Water</string>
+    <string name="food">Food</string>
+    <string name="medicines">Medicines</string>
 
     <string-array name="ArmedforcesSpinnervalues">
         <item>Choose From Below</item>

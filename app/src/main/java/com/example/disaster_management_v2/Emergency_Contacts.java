@@ -22,13 +22,5 @@ public class Emergency_Contacts extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View v) {
-                                                                   Toast.makeText(getActivity(), "You are inside Emergency Contacts", Toast.LENGTH_LONG).show();
-
-                                                               }
-                                                           }
-        );
     }
 }

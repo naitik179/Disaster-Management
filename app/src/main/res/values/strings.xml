@@ -20,4 +20,14 @@
         <item>Trapped On Unsafe Land</item>
         <item>Medical Aid</item>
     </string-array>
+
+
+
+    <string-array name="Requirementsspinnervalues">
+        <item>Choose From Below</item>
+        <item>Clothes</item>
+        <item>Medicines</item>
+        <item>Drinking Water</item>
+        <item>Food</item>
+    </string-array>
 </resources>

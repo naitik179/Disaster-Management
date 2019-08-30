@@ -10,30 +10,29 @@
 
     <Button
         android:id="@+id/helperRegistration"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="292dp"
+        android:layout_marginTop="43dp"
         android:layout_marginEnd="12dp"
         android:background="@color/design_default_color_primary_dark"
         android:text="Register A New Relief Center"
         android:textColor="#E1FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/reliefCentreRegistration" />
 
     <Button
         android:id="@+id/reliefCentreRegistration"
-        android:layout_width="0dp"
+        android:layout_width="377dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="266dp"
         android:layout_marginEnd="12dp"
         android:background="@color/design_default_color_primary_dark"
         android:text="New User Registration"
         android:textColor="#E6FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

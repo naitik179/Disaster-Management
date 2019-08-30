@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RequirementStatusActivity"></activity>
+        <activity android:name=".HelperRegistrationActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+        <activity
+            android:name=".HelperDashboardActivity"
+            android:label="@string/title_activity_helper_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RequirementStatusActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/app_name"
@@ -30,7 +38,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

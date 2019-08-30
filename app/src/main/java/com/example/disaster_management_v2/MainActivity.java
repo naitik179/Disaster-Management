@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity
          else if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
-            fragment=new ApplyForReliefMaterialfragment();
+            fragment=new requirements();
         } else if (id == R.id.reqstatus) {
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {

@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent transfertoDashboard = new Intent(LoginActivity.this, MainActivity.class);
+                Intent transfertoDashboard = new Intent(LoginActivity.this, HelperRegistrationActivity.class);
                 startActivity(transfertoDashboard);
             }
         });

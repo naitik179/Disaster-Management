@@ -86,13 +86,8 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment=null;
-         if (id==R.id.loginapp) {
-            fragment=new Login();
-        }
-         else if (id == R.id.registeroption) {
-             fragment=new Registration();
-         }
-         else if (id == R.id.registerinmates) {
+
+            if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
             fragment=new requirements();
@@ -101,7 +96,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.viewreliefcampstatus) {
             fragment=new ReliefCampStatus();
         } else if (id == R.id.contactpeeradmins) {
-            fragment=new Contact_Peer_Admins();
+            fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
             fragment=new Armed_forces();
         }

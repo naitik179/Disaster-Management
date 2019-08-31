@@ -21,7 +21,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HelperDashboardActivity"
-            android:label="@string/title_activity_helper_dashboard"
+            android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".RequirementStatusActivity" />
         <activity

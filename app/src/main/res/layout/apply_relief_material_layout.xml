@@ -102,16 +102,19 @@
             android:layout_height="match_parent">
 
             <TextView
+                android:id="@+id/familypersonname"
                 android:layout_width="146dp"
                 android:padding="3dip"
-                android:text="NAme" />
+                android:text="Name" />
 
             <TextView
+                android:id="@+id/familypersonage"
                 android:layout_width="132dp"
                 android:padding="3dip"
                 android:text="Age" />
 
             <TextView
+                android:id="@+id/familypersongender"
                 android:layout_width="103dp"
                 android:padding="3dip"
                 android:text="Gender" />

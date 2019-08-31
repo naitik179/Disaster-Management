@@ -10,11 +10,12 @@
         android:layout_width="0dp"
         android:layout_height="41dp"
         android:layout_marginStart="31dp"
-        android:layout_marginTop="236dp"
+        android:layout_marginTop="39dp"
         android:layout_marginEnd="31dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/requirementsheading" />
 
     <TextView
         android:id="@+id/therrequirements"
@@ -33,7 +34,7 @@
 
     <EditText
         android:id="@+id/editText16"
-        android:layout_width="311dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="34dp"
@@ -47,7 +48,7 @@
 
     <EditText
         android:id="@+id/editText17"
-        android:layout_width="310dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginTop="25dp"
@@ -61,16 +62,30 @@
 
     <Button
         android:id="@+id/requirementssend"
-        android:layout_width="269dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="71dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="87dp"
         android:text="Apply "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText17" />
+
+    <TextView
+        android:id="@+id/requirementsheading"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="3dp"
+        android:text="Apply For Relief Material"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

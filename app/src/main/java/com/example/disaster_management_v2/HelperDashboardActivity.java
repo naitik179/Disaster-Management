@@ -85,17 +85,13 @@ public class HelperDashboardActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
+        if (id == R.id.helperreliefcentre) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.helpergallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.helperreliefcentrereqdisplay) {
 
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.helperlogut) {
 
         }
 

@@ -12,9 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReliefCentreRegisterActivity"
+        <activity android:name=".Hospital_activity"></activity>
+        <activity android:name=".Fire_brigade_activity" />
+        <activity
+            android:name=".ReliefCentreRegisterActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".HelperRegistrationActivity"
             android:label="@string/app_name"

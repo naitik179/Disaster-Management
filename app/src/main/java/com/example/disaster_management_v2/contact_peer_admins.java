@@ -43,26 +43,8 @@ public class contact_peer_admins extends Fragment {
 
         mylistview=view.findViewById(R.id.contact_peer_admin_listview);
 
-//        int[] image={R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,
-//                     R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact};
-
-//        String[] peer_admin_names={"Naitik","Ankita","Pranav","Riya","Priya","Akshita","Vallabhi","Dishant","Khusang","Mohit"};
-
         countimage=image.length;
 
-
-
-//        ArrayAdapter<String> arrayAdapter =new ArrayAdapter<String>(getContext(),android.R.layout.simple_list_item_1,peeradmins);
-//
-//        mylistview.setAdapter(arrayAdapter);
-//        mylistview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View adapterView, int position, long id) {
-//
-//                Toast.makeText(getContext(),"Hello "+ peeradmins.get(position),Toast.LENGTH_LONG).show();
-//            }
-//        });
-//
         CustomAdapter customAdapter=new CustomAdapter();
         mylistview.setAdapter(customAdapter);
 

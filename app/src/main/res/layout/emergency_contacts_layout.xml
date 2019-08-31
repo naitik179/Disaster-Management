@@ -6,13 +6,17 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/firebrigadeservicesbtn"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="40dp"
         android:text="FIRE BRIGADE SERVICES"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -20,42 +24,54 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/hospitalbtn"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="40dp"
         android:text="HOSPITAL"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/firebrigadeservicesbtn" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/policestnbtn"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="40dp"
         android:text="POLICE STATION"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button10" />
+        app:layout_constraintTop_toBottomOf="@+id/hospitalbtn" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/armycontactbtn"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="40dp"
-        android:text="REQUEST ADMIN TO CONTACT ARMED FORCES"
+        android:text="REQUEST HELP FROM ARMY"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/policestnbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

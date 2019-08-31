@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Police_stn_activity"></activity>
+        <activity android:name=".Armed_forces_activity"></activity>
+        <activity android:name=".Police_stn_activity" />
         <activity android:name=".Hospital_activity" />
         <activity android:name=".Fire_brigade_activity" />
         <activity

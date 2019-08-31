@@ -7,10 +7,10 @@
 
     <TextView
         android:id="@+id/custom_name_list_view"
-        android:layout_width="282dp"
+        android:layout_width="300dp"
         android:layout_height="34dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
         android:paddingLeft="10dp"
         android:text="Name"
         android:textSize="25dp"
@@ -19,9 +19,9 @@
 
     <TextView
         android:id="@+id/custom_list_view_phoneno"
-        android:layout_width="280dp"
+        android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:paddingLeft="10dp"
         android:text="PhoneNo."
@@ -32,12 +32,12 @@
     <ImageView
         android:id="@+id/contactlogo"
         android:layout_width="0dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/custom_name_list_view"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/contact" />

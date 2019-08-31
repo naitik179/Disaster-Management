@@ -5,31 +5,47 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/armedforcesheading"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimary"
+        android:text="Request To Contact Army"
+        android:textAlignment="center"
+        android:textColor="#f1f1f1"
+        android:textSize="28dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Spinner
         android:id="@+id/armedforcesspinner"
         android:layout_width="fill_parent"
         android:layout_height="41dp"
         android:layout_marginStart="29dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Spinnertext" />
 
     <TextView
         android:id="@+id/Spinnertext"
         android:layout_width="234dp"
         android:layout_height="37dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="125dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="124dp"
         android:text="Type Of Help"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/armedforcesheading" />
 
     <Button
         android:id="@+id/subarmedbutton"
@@ -38,9 +54,11 @@
         android:layout_marginStart="97dp"
         android:layout_marginEnd="97dp"
         android:layout_marginBottom="94dp"
-        android:background="@android:color/white"
         android:text="Request For Help"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

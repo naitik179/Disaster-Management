@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.contactpeeradmins) {
             fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
-            fragment=new Armed_forces();
+            fragment=new Emergency_Contacts();
         }
         else if (id==R.id.logout){
 

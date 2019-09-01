@@ -87,10 +87,12 @@ public class MainActivity extends AppCompatActivity
 
         Fragment fragment=null;
          if (id==R.id.loginapp) {
-            fragment=new Login();
+             Intent toLogin = new Intent(MainActivity.this,LoginActivity.class);
+             startActivity(toLogin);
         }
          else if (id == R.id.registeroption) {
-             fragment=new Registration();
+             Intent toRegisterOpts = new Intent(MainActivity.this, Registration_activity.class);
+             startActivity(toRegisterOpts);
          }
          else if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();

@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,11 +24,27 @@ public class Registration_activity extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration_activity);
+        setContentView(R.layout.registration_option);
 
 
-        button1=findViewById(R.id.helperRegistration);
-        button2=findViewById(R.id.reliefCentreRegistration);
+        button1=findViewById(R.id.registerHelper);
+        button2=findViewById(R.id.registerReliefCentre);
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent transferToHelperRegister = new Intent(Registration_activity.this, HelperRegistrationActivity.class);
+                startActivity(transferToHelperRegister);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent transferToReliefCentreRegister = new Intent(Registration_activity.this, ReliefCentreRegisterActivity.class);
+                startActivity(transferToReliefCentreRegister);
+            }
+        });
 
 
 

@@ -8,7 +8,7 @@
     >
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/registerHelper"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -17,13 +17,13 @@
         android:background="@color/design_default_color_primary_dark"
         android:text="Register A New Relief Center"
         android:textColor="#E1FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/registerReliefCentre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/registerReliefCentre"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -33,6 +33,7 @@
         android:text="New User Registration"
         android:textColor="#E6FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/registerHelper" />
 </androidx.constraintlayout.widget.ConstraintLayout>

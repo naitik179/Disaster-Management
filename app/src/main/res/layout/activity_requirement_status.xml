@@ -8,20 +8,18 @@
 
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="402dp"
         android:layout_height="70dp"
-        android:text="Status of demanded items"
-        android:textSize="33dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="50dp"
         android:background="@color/colorPrimary"
-        android:textColor="#f1f1f1"
         android:paddingTop="10dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="2dp"
-        />
+        android:text="Status of Demanded Items"
+        android:textColor="#f1f1f1"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/clothes"
         android:layout_width="50mm"

@@ -96,7 +96,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.contactpeeradmins) {
             fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
+<<<<<<< HEAD
             fragment=new Emergency_Contacts();
+=======
+            //fragment=new Armed_forces();
+             Intent toArmedForces = new Intent(MainActivity.this, Armed_forces_activity.class);
+             startActivity(toArmedForces);
+>>>>>>> 5f2dc6d0e40a7d1e0ebc1dbf1df3a74a88f88062
         }
         else if (id==R.id.logout){
 

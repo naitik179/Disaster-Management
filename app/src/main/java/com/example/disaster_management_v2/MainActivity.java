@@ -103,9 +103,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.viewreliefcampstatus) {
             fragment=new ReliefCampStatus();
         } else if (id == R.id.contactpeeradmins) {
-            fragment=new Contact_Peer_Admins();
+            fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
-            fragment=new Armed_forces();
+            //fragment=new Armed_forces();
+             Intent toArmedForces = new Intent(MainActivity.this, Armed_forces_activity.class);
+             startActivity(toArmedForces);
         }
         else if (id==R.id.logout){
 

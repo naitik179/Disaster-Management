@@ -1,8 +1,12 @@
 package com.example.disaster_management_v2;
 
+import Adapter.ContactAdapter;
+import Model.Contacts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -10,65 +14,74 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class Police_stn_activity extends AppCompatActivity {
+
+import java.util.ArrayList;
+
+public class Police_stn_activity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     ListView policelist;
+    private SearchView searchView;
+    private ContactAdapter contactAdapter;
+    private ArrayList<Contacts> contactsArrayList;
+    /*int countimage;
 
-    int countimage;
-
-    int[] image={R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,
-            R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact};
+    int[] image={R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,
+            R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp};
 
     String[] pol_names={"Goregaon","Vashi","Thane","Andheri","Dadar","Vidyavihar","Ghatkoper","Kandivali","CSMT","Borivali"};
     String[] pol_mob={"+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094"};
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_stn_activity);
 
-
+        searchView=(SearchView)findViewById(R.id.policestnsearch);
         policelist=findViewById(R.id.police_list_view);
 
-        countimage=image.length;
+        //countimage=image.length;
 
-        CustomAdapter customAdapter=new CustomAdapter();
-        policelist.setAdapter(customAdapter);
+        contactsArrayList=new ArrayList<Contacts>();
+        contactsArrayList.add(new Contacts("Goregaon","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Vashi","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Thane","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Andheri","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Dadar","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Vidyavihar","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Ghatkopar","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Kandivali","+91-7045750094"));
+        contactsArrayList.add(new Contacts("CSMT","+91-7045750094"));
+        contactsArrayList.add(new Contacts("Borivali","+91-7045750094"));
+
+        contactAdapter=new ContactAdapter(Police_stn_activity.this, contactsArrayList);
+        policelist.setAdapter(contactAdapter);
+
+        policelist.setTextFilterEnabled(true);
+        setupSearchView();
 
     }
 
-    class CustomAdapter extends BaseAdapter {
-
-        @Override
-        public int getCount() {
-            return countimage;
-        }
-
-        @Override
-        public Object getItem(int position) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int position) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-            View view=getLayoutInflater().inflate(R.layout.custom_list_view_police_stn,null);
-
-            TextView nametextview=(TextView) view.findViewById(R.id.custom_list_view_phoneno_pol);
-            TextView namephoneno=(TextView) view.findViewById(R.id.custom_list_view_phoneno_pol);
-
-            ImageView contactadmins=(ImageView) view.findViewById(R.id.contactlogo);
-
-            nametextview.setText(pol_names[position]);
-
-            namephoneno.setText(pol_mob[position]);
-
-            contactadmins.setImageResource(image[position]);
-            return view;
-        }
+    private void setupSearchView() {
+        searchView.setIconifiedByDefault(false);
+        searchView.setOnQueryTextListener(this);
+        searchView.setSubmitButtonEnabled(true);
+        searchView.setQueryHint("Search Here");
     }
+
+    @Override
+    public boolean onQueryTextSubmit(String query) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String newText) {
+        if (TextUtils.isEmpty(newText)) {
+            policelist.clearTextFilter();
+        } else {
+            policelist.setFilterText(newText);
+        }
+        return true;
+    }
+
+
 }

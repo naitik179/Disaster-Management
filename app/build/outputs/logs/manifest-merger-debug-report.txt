@@ -1,0 +1,262 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e326e66c5aa5af95d81a81f5949fc3f0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c2b48eee816fba7f5fab1aafb8df49d3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\416471252bdae83bf4403caee1519305\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a97b859726850600d14ec9b5a85464d5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e47d6f338fe172c33d58b167d31c50f3\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\9c55b0e453160dd63d8ee442135c9abc\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1fad52a605c64d311f7373938887cb2f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\acf40bb703a567929f30b35eeaf0fee6\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\31382b38e33bf0fbe9a1a791cd1cc793\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1e6e356b2479f2084d0a923f68a0f759\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0-rc04] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c5705626e45d76206c3fb26296a2e2d0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\5119ba033ef943945c8063cb24a6a6e2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\4f5273a46391c13d0e0e74eb28f47598\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\daeefc07e6c0bcc9995502b1172ad965\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53e9e402d1f096a798970b903daa6595\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\17a8e6ae4496eceaec79c21aa531c170\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\cbf89132c12e4ddf7665a5a127327f54\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d5464d1215e3a1733b608ee43eff5f8a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\35ef709e1f752ba03bbd8838ee1e724b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\32703ca6a4779ee8064439f0f6955cb0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca33a49dc7a788453b2a1d5273cbf119\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\236b5a716b5ba9c0f2cf93d548908298\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ff7ff7838f1e2ac16ab0c65af4ab9912\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c7006311bddd743fbce4eb3bc498109c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\74d55b26bcf99782643fd86559eff08c\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\520b5688fd91c7710d77b03df3b8dbf0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d4ae70a77c1531913f3ab1f5e20b77c9\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7f3923b49561605f38e086f95ce0fa11\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\25c143b52c6aa3e08ab1d5857507a917\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53a63c9cfa6d9edc3370f7ab2f2ac0a0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\926bb6bfc9e1cdf7eaf2b266a29c1243\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a62563f979ee7ddd29eb81a7299d72ff\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\21d5341a9ed7db5e45370be68e6312ad\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca42e807f7c18eccb09c5f5d0c3dc1f5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1d82e8dcb21d25ac874508cfd45ba6c0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\223d3304bffad091c7275ca602fdcd15\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\decc7fa99b1f6cf1ddfb507f28db16ca\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\535eb1d129b1167916577ef9427f8bfc\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+	package
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:4:5-49
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+	xmlns:dist
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:3:5-61
+	android:versionCode
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-52:12
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:11-69
+dist:module
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:6:5-40
+	dist:instant
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:6:18-37
+application
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:8:5-50:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c2b48eee816fba7f5fab1aafb8df49d3\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c2b48eee816fba7f5fab1aafb8df49d3\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e47d6f338fe172c33d58b167d31c50f3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e47d6f338fe172c33d58b167d31c50f3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7f3923b49561605f38e086f95ce0fa11\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7f3923b49561605f38e086f95ce0fa11\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.example.disaster_management_v2.Armed_forces_activity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:15:9-68
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:15:19-56
+activity#com.example.disaster_management_v2.Police_stn_activity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:16:9-57
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:16:19-54
+activity#com.example.disaster_management_v2.Hospital_activity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:17:9-55
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:17:19-52
+activity#com.example.disaster_management_v2.Fire_brigade_activity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:18:9-59
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:18:19-56
+activity#com.example.disaster_management_v2.ReliefCentreRegisterActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:19:9-22:59
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:21:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:22:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:20:13-57
+activity#com.example.disaster_management_v2.HelperRegistrationActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:23:9-26:59
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:25:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:24:13-55
+activity#com.example.disaster_management_v2.HelperDashboardActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:9-30:59
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:13-52
+activity#com.example.disaster_management_v2.RequirementStatusActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:9-63
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:19-60
+activity#com.example.disaster_management_v2.LoginActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:9-41:20
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:35:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:17-69
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:17-77
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:27-74
+activity#com.example.disaster_management_v2.Registration_activity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:9-45:59
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:45:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:13-50
+activity#com.example.disaster_management_v2.MainActivity
+ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:46:9-49:59
+	android:label
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:48:13-45
+	android:theme
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:49:13-56
+	android:name
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:13-41
+uses-sdk
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e326e66c5aa5af95d81a81f5949fc3f0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e326e66c5aa5af95d81a81f5949fc3f0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c2b48eee816fba7f5fab1aafb8df49d3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c2b48eee816fba7f5fab1aafb8df49d3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\416471252bdae83bf4403caee1519305\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\416471252bdae83bf4403caee1519305\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a97b859726850600d14ec9b5a85464d5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a97b859726850600d14ec9b5a85464d5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e47d6f338fe172c33d58b167d31c50f3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\e47d6f338fe172c33d58b167d31c50f3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\9c55b0e453160dd63d8ee442135c9abc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\9c55b0e453160dd63d8ee442135c9abc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1fad52a605c64d311f7373938887cb2f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1fad52a605c64d311f7373938887cb2f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\acf40bb703a567929f30b35eeaf0fee6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0-beta01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\acf40bb703a567929f30b35eeaf0fee6\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\31382b38e33bf0fbe9a1a791cd1cc793\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\31382b38e33bf0fbe9a1a791cd1cc793\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1e6e356b2479f2084d0a923f68a0f759\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1e6e356b2479f2084d0a923f68a0f759\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0-rc04] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c5705626e45d76206c3fb26296a2e2d0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0-rc04] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c5705626e45d76206c3fb26296a2e2d0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\5119ba033ef943945c8063cb24a6a6e2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.1] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\5119ba033ef943945c8063cb24a6a6e2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\4f5273a46391c13d0e0e74eb28f47598\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\4f5273a46391c13d0e0e74eb28f47598\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\daeefc07e6c0bcc9995502b1172ad965\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\daeefc07e6c0bcc9995502b1172ad965\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53e9e402d1f096a798970b903daa6595\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53e9e402d1f096a798970b903daa6595\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\17a8e6ae4496eceaec79c21aa531c170\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\17a8e6ae4496eceaec79c21aa531c170\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\cbf89132c12e4ddf7665a5a127327f54\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\cbf89132c12e4ddf7665a5a127327f54\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d5464d1215e3a1733b608ee43eff5f8a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d5464d1215e3a1733b608ee43eff5f8a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\35ef709e1f752ba03bbd8838ee1e724b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\35ef709e1f752ba03bbd8838ee1e724b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\32703ca6a4779ee8064439f0f6955cb0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\32703ca6a4779ee8064439f0f6955cb0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca33a49dc7a788453b2a1d5273cbf119\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca33a49dc7a788453b2a1d5273cbf119\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\236b5a716b5ba9c0f2cf93d548908298\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\236b5a716b5ba9c0f2cf93d548908298\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ff7ff7838f1e2ac16ab0c65af4ab9912\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ff7ff7838f1e2ac16ab0c65af4ab9912\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c7006311bddd743fbce4eb3bc498109c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\c7006311bddd743fbce4eb3bc498109c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\74d55b26bcf99782643fd86559eff08c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\74d55b26bcf99782643fd86559eff08c\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\520b5688fd91c7710d77b03df3b8dbf0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\520b5688fd91c7710d77b03df3b8dbf0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d4ae70a77c1531913f3ab1f5e20b77c9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\d4ae70a77c1531913f3ab1f5e20b77c9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\2b66563574d08fa30a4fd156b3846182\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7f3923b49561605f38e086f95ce0fa11\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7f3923b49561605f38e086f95ce0fa11\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\25c143b52c6aa3e08ab1d5857507a917\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\25c143b52c6aa3e08ab1d5857507a917\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53a63c9cfa6d9edc3370f7ab2f2ac0a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\53a63c9cfa6d9edc3370f7ab2f2ac0a0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\926bb6bfc9e1cdf7eaf2b266a29c1243\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\926bb6bfc9e1cdf7eaf2b266a29c1243\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a62563f979ee7ddd29eb81a7299d72ff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\a62563f979ee7ddd29eb81a7299d72ff\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\21d5341a9ed7db5e45370be68e6312ad\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\21d5341a9ed7db5e45370be68e6312ad\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca42e807f7c18eccb09c5f5d0c3dc1f5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\ca42e807f7c18eccb09c5f5d0c3dc1f5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1d82e8dcb21d25ac874508cfd45ba6c0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1d82e8dcb21d25ac874508cfd45ba6c0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\223d3304bffad091c7275ca602fdcd15\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\223d3304bffad091c7275ca602fdcd15\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\decc7fa99b1f6cf1ddfb507f28db16ca\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\decc7fa99b1f6cf1ddfb507f28db16ca\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\535eb1d129b1167916577ef9427f8bfc\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\535eb1d129b1167916577ef9427f8bfc\AndroidManifest.xml:20:5-44
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		ADDED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Naitik\Disaster_Management_v5\Disaster_Management_v2\Disaster_Management_v2\app\src\main\AndroidManifest.xml

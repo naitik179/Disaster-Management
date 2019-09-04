@@ -52,7 +52,7 @@ public class Emergency_Contacts extends Fragment {
         policestnbtnclicked.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent transfertopolicestncontacts = new Intent(getContext(), Police_stn_activity.class);
+                Intent transfertopolicestncontacts = new Intent(getContext(),Police_stn_activity.class);
                 startActivity(transfertopolicestncontacts);
             }
         });

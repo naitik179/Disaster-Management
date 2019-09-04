@@ -1,6 +1,4 @@
 package com.example.disaster_management_v2;
-
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -86,26 +84,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment=null;
-         if (id==R.id.loginapp) {
-             Intent toLogin = new Intent(MainActivity.this,LoginActivity.class);
-             startActivity(toLogin);
-        }
-         else if (id == R.id.registeroption) {
-             Intent toRegisterOpts = new Intent(MainActivity.this, Registration_activity.class);
-             startActivity(toRegisterOpts);
-         }
-         else if (id == R.id.registerinmates) {
+
+         if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
-            fragment=new ApplyForReliefMaterialfragment();
+            fragment=new requirements();
         } else if (id == R.id.reqstatus) {
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
             fragment=new ReliefCampStatus();
         } else if (id == R.id.contactpeeradmins) {
-            fragment=new Contact_Peer_Admins();
+            fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
-            fragment=new Armed_forces();
+            fragment=new Emergency_Contacts();
         }
         else if (id==R.id.logout){
 

@@ -4,6 +4,8 @@
     package="com.example.disaster_management_v2">
 
     <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
         android:allowBackup="true"

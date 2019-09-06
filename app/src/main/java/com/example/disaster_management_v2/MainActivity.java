@@ -1,4 +1,5 @@
 package com.example.disaster_management_v2;
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -7,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -82,10 +84,9 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
         Fragment fragment=null;
 
-         if (id == R.id.registerinmates) {
+        if (id == R.id.registerinmates) {
             fragment=new RegisterNewInmates();
         } else if (id == R.id.applyreliefmaterial) {
             fragment=new requirements();
@@ -96,16 +97,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.contactpeeradmins) {
             fragment=new contact_peer_admins();
         } else if (id == R.id.Emergencycontacts) {
-<<<<<<< HEAD
             fragment=new Emergency_Contacts();
-=======
-            //fragment=new Armed_forces();
-             Intent toArmedForces = new Intent(MainActivity.this, Armed_forces_activity.class);
-             startActivity(toArmedForces);
->>>>>>> 5f2dc6d0e40a7d1e0ebc1dbf1df3a74a88f88062
         }
         else if (id==R.id.logout){
-
+               FirebaseAuth.getInstance().signOut();
+               Intent itomain=new Intent(MainActivity.this, LoginActivity.class);
+               startActivity(itomain);
         }
 
         if(fragment!=null)
@@ -122,5 +119,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 
 }

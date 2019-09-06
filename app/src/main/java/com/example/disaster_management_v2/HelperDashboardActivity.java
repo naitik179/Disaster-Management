@@ -1,5 +1,6 @@
 package com.example.disaster_management_v2;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -92,6 +94,9 @@ public class HelperDashboardActivity extends AppCompatActivity
         } else if (id == R.id.helperreliefcentrereqdisplay) {
 
         } else if (id == R.id.helperlogut) {
+            FirebaseAuth.getInstance().signOut();
+            Intent itomain=new Intent(HelperDashboardActivity.this, LoginActivity.class);
+            startActivity(itomain);
 
         }
 

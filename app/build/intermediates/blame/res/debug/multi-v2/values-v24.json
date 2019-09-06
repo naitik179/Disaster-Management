@@ -4,7 +4,7 @@
             "outputFile": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\acf40bb703a567929f30b35eeaf0fee6\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\2dd61747247dcb31e7c1a6b5cf647fd5\\media-1.0.0-beta01\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\416471252bdae83bf4403caee1519305\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

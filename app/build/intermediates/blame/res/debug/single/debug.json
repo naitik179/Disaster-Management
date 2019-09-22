@@ -576,6 +576,10 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_retrieve_mapsactivity.xml.flat",
+        "source": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_retrieve_mapsactivity.xml"
+    },
+    {
         "merged": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\2dd61747247dcb31e7c1a6b5cf647fd5\\media-1.0.0-beta01\\res\\layout\\notification_template_lines_media.xml"
     },

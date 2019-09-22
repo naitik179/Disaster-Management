@@ -203,7 +203,7 @@
           android:layout_marginLeft="12dp"
           android:layout_marginTop="10dp"
           android:layout_marginRight="12dp"
-          android:layout_marginBottom="60dp"
+          android:layout_marginBottom="40dp"
           android:background="@color/colorPrimary"
           android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
           android:paddingRight="5dp"
@@ -216,18 +216,5 @@
           app:layout_constraintTop_toBottomOf="@id/passwordRepeatInput"
           app:layout_goneMarginBottom="2dp" />
 
-      <TextView
-          android:id="@+id/reliefcentrelatilon"
-          android:layout_width="0dp"
-          android:layout_height="44dp"
-          android:layout_marginStart="112dp"
-          android:layout_marginTop="8dp"
-          android:layout_marginEnd="113dp"
-          android:layout_marginBottom="40dp"
-          android:text="TextView"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
   </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

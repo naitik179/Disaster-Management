@@ -14,6 +14,7 @@
         android:paddingLeft="10dp"
         android:text="Name"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

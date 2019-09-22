@@ -14,14 +14,15 @@
     <string name="food">Food</string>
     <string name="medicines">Medicines</string>
 
+    <string name="title_activity_retrieve_mapsactivity">Map</string>
+
+
     <string-array name="ArmedforcesSpinnervalues">
         <item>Choose From Below</item>
         <item>Helicopter Rescue</item>
         <item>Trapped On Unsafe Land</item>
         <item>Medical Aid</item>
     </string-array>
-
-
     <string-array name="Requirementsspinnervalues">
         <item>Choose From Below</item>
         <item>Clothes</item>

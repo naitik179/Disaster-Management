@@ -101,7 +101,7 @@ public class ContactAdapter extends BaseAdapter implements Filterable {
         }
 
         holder.name.setText(firebrigadelist.get(position).getName());
-        holder.mob.setText(String.valueOf(firebrigadelist.get(position).getMob()));
+        holder.mob.setText(String.valueOf(firebrigadelist.get(position).getContact()));
 
         return convertView;
     }

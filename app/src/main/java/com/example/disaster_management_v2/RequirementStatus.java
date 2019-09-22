@@ -1,5 +1,6 @@
 package com.example.disaster_management_v2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +26,8 @@ public class RequirementStatus extends Fragment {
         view.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
                                                                @Override
                                                                public void onClick(View v) {
-                                                                   Toast.makeText(getActivity(), "You are inside Requirememt Status", Toast.LENGTH_LONG).show();
+                                                                   Intent transfertomaps = new Intent(getContext(), RetrieveMapsactivity.class);
+                                                                   startActivity(transfertomaps);
 
                                                                }
                                                            }

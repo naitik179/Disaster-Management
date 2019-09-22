@@ -42,6 +42,8 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
     private DatabaseReference mReg,mRef;
     Button registerButton;
     int type=1;
+    Double latitude;
+    Double longitude;
 
 
     //Button registerBtn;
@@ -74,6 +76,9 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                fetchLocation();
 
 
                 String e=email.getText().toString();
@@ -151,12 +156,8 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
                                 mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Landmark").setValue(landmark.getText().toString());
                                 mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Aadhar UID").setValue(aadhar.getText().toString());
                                 mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Nearest Police Thana").setValue(policeThana.getText().toString());
-
-
-
-
-
-
+                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Latitude").setValue(latitude.toString(latitude));
+                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Longitude").setValue(longitude.toString(longitude));
 
                             }
 
@@ -170,7 +171,7 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
                 //Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
                 //startActivity(toReliefCentreDashboard);
 
-                fetchLocation();
+
             }
 
         });
@@ -183,7 +184,7 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
 
 
         registerButton = findViewById(R.id.RegisterButton);
-        relief_centre_loc = findViewById(R.id.reliefcentrelatilon);
+
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
 //        registerButton.setOnClickListener(new View.OnClickListener() {
@@ -263,10 +264,9 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
                             // Got last known location. In some rare situations this can be null.
                             if (location != null) {
                                 // Logic to handle location object
-                                Double latitude = location.getLatitude();
-                                Double longitude = location.getLongitude();
+                                latitude = location.getLatitude();
+                                longitude = location.getLongitude();
 
-                                relief_centre_loc.setText("Latitude = "+latitude + "\nLongitude = " + longitude);
 
                             }
                         }
@@ -282,14 +282,14 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 //abc
 
-                registerButton = findViewById(R.id.RegisterButton);
-                registerButton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
-                        startActivity(toReliefCentreDashboard);
-            }
-        });
+//                registerButton = findViewById(R.id.RegisterButton);
+//                registerButton.setOnClickListener(new View.OnClickListener() {
+//                    @Override
+//                    public void onClick(View v) {
+//                        Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
+//                        startActivity(toReliefCentreDashboard);
+//            }
+//        });
             }else{
 
             }

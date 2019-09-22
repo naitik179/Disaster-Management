@@ -2,19 +2,31 @@ package Model;
 
 public class Contacts {
 
-    private String name;
-    private String mob;
+    private String Name;
+    private String Contact;
 
-    public  Contacts(String name,String mob){
-        this.name = name;
-        this.mob = mob;
+    public  Contacts(String Name,String Contact){
+        this.Name = Name;
+        this.Contact = Contact;
     }
 
-    public String getName(){
-        return name;
+
+    public Contacts() {
     }
 
-    public String getMob(){
-        return mob;
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
+    }
+
+    public String getContact() {
+        return Contact;
+    }
+
+    public void setContact(String contact) {
+        Contact = contact;
     }
 }

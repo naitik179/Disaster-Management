@@ -42,6 +42,12 @@ public class HelperRegistrationActivity extends AppCompatActivity {
     TextView user_location;
     private FusedLocationProviderClient mFusedLocationClient;
 
+
+    String e;
+    String pwd;
+    Double latitude;
+    Double longitude;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,13 +57,13 @@ public class HelperRegistrationActivity extends AppCompatActivity {
         phone=findViewById(R.id.registerPhoneno);
         password=findViewById(R.id.registerPassword);
         confirmPassword=findViewById(R.id.repeatPassword);
-         name=findViewById(R.id.registerName);
+        name=findViewById(R.id.registerName);
         registerButton= findViewById(R.id.RegisterButton);
         mReg= FirebaseDatabase.getInstance().getReference().child("Helper Registration");
 
 
         //registerBtn = findViewById(R.id.RegisterButton);
-        user_location = findViewById(R.id.helper_location);
+        //user_location = findViewById(R.id.helper_location);
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
 
 
@@ -65,9 +71,10 @@ public class HelperRegistrationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                fetchLocation();
 
-                String e=email.getText().toString();
-                String pwd=password.getText().toString();
+                e=email.getText().toString();
+                pwd=password.getText().toString();
                 String cpwd=confirmPassword.getText().toString();
                 String pne=phone.getText().toString();
                 String n=name.getText().toString();
@@ -102,12 +109,15 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                     confirmPassword.setError("Password does not Match");
                     confirmPassword.requestFocus();
                 }
-                else if(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty()&&cpwd.isEmpty()&&n.isEmpty())
+                else if(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && cpwd.isEmpty() && n.isEmpty())
                 {
                     Toast.makeText(HelperRegistrationActivity.this, "Fields are Empty!!", Toast.LENGTH_SHORT).show();
                 }
-                else if(!(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty()&&cpwd.isEmpty()&&n.isEmpty()))
+                else if(!(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && cpwd.isEmpty() && n.isEmpty()))
                 {
+
+
+
                     mFirebaseAuth.createUserWithEmailAndPassword(e,pwd).addOnCompleteListener(HelperRegistrationActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
@@ -119,7 +129,8 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                                 mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Name").setValue(name.getText().toString());
                                 mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Email id").setValue(email.getText().toString());
                                 mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Phone No").setValue(phone.getText().toString());
-
+                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Latitude").setValue(latitude.toString(latitude));
+                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Longitude").setValue(longitude.toString(longitude));
 
                             }
 
@@ -135,7 +146,7 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                 //Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
                 //startActivity(toReliefCentreDashboard);
 
-                fetchLocation();
+//                fetchLocation();
             }
 
         });
@@ -209,6 +220,7 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                 // result of the request.
             }
         } else {
+
             // Permission has already been granted
             mFusedLocationClient.getLastLocation()
                     .addOnSuccessListener(this, new OnSuccessListener<Location>() {
@@ -217,14 +229,17 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                             // Got last known location. In some rare situations this can be null.
                             if (location != null) {
                                 // Logic to handle location object
-                                Double latitude = location.getLatitude();
-                                Double longitude = location.getLongitude();
+                                 latitude = location.getLatitude();
+                                 longitude = location.getLongitude();
 
-                                user_location.setText("Latitude = "+latitude + "\nLongitude = " + longitude);
+                                 //user_location.setText("Latitude = "+latitude + "\nLongitude = " + longitude);
 
                             }
                         }
                     });
+
+
+
 
         }
 
@@ -236,14 +251,14 @@ public class HelperRegistrationActivity extends AppCompatActivity {
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
                 //abc
 
-                registerButton = findViewById(R.id.RegisterButton);
-                registerButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                Intent toHelperDashboard = new Intent(HelperRegistrationActivity.this, HelperDashboardActivity.class);
-                startActivity(toHelperDashboard);
-                }
-        });
+//                registerButton = findViewById(R.id.RegisterButton);
+//                registerButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                Intent toHelperDashboard = new Intent(HelperRegistrationActivity.this, HelperDashboardActivity.class);
+//                startActivity(toHelperDashboard);
+//                }
+//        });
             }else{
 
             }

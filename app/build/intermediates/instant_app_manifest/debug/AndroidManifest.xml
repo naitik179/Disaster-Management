@@ -50,9 +50,19 @@
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
         <activity
-            android:name="com.example.disaster_management_v2.RetrieveMapsactivity"
-            android:label="@string/title_activity_retrieve_mapsactivity" />
+            android:name="com.example.disaster_management_v2.MapActivity"
+            android:label="@string/title_activity_map" />
+        <activity android:name="com.example.disaster_management_v2.DataRetrieve" />
+        <activity android:name="com.example.disaster_management_v2.tpactivity" />
         <activity android:name="com.example.disaster_management_v2.Armed_forces_activity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
         <activity android:name="com.example.disaster_management_v2.Police_stn_activity" />
         <activity android:name="com.example.disaster_management_v2.Hospital_activity" />
         <activity android:name="com.example.disaster_management_v2.Fire_brigade_activity" />

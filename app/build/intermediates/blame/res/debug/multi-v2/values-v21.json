@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Naitik\\Phase 2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\4b4ac7288bce1164b926243522245acc\\core-1.1.0-rc01\\res\\values-v21\\values-v21.xml",
@@ -42,25 +42,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\src\\main\\res\\values-v21\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "19",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "246"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "10",
-                        "endColumns": "12",
-                        "endOffsets": "577"
-                    }
-                },
-                {
                     "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\2dd61747247dcb31e7c1a6b5cf647fd5\\media-1.0.0-beta01\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
@@ -77,6 +58,25 @@
                         "endLines": "272,275,279,283",
                         "endColumns": "12,12,12,12",
                         "endOffsets": "19895,20058,20352,20647"
+                    }
+                },
+                {
+                    "source": "C:\\Naitik\\Phase 2\\Disaster_Management_v2\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "246"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "577"
                     }
                 },
                 {

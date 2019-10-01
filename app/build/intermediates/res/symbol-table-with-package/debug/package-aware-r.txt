@@ -1221,6 +1221,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnloc
 id button3
 id buttonPanel
 id cancel_action
@@ -1265,6 +1266,7 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
+id displayEmail
 id drawer_layout
 id drinkingWater
 id editText16
@@ -1328,6 +1330,7 @@ id item_touch_helper_previous_elevation
 id labeled
 id landmarkInput
 id largeLabel
+id lati
 id left
 id light
 id line1
@@ -1341,6 +1344,7 @@ id loginbuttton
 id loginpassword
 id loginphoneno
 id logout
+id longitu
 id map
 id masked
 id media_actions
@@ -1350,7 +1354,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id name
 id nameInput
 id nav_controller_view_tag
 id nav_graph
@@ -1400,6 +1403,7 @@ id reqstatus
 id requirementsheading
 id requirementssend
 id requirementsspinner
+id retrieve
 id right
 id right_icon
 id right_side
@@ -1466,7 +1470,7 @@ id textInputLayout4
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textView
+id textViewDB
 id text_input_password_toggle
 id textinput_counter
 id textinput_error
@@ -1492,6 +1496,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_offset_helper
 id viewreliefcampstatus
 id visible
@@ -1549,17 +1554,19 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_armed_forces_activity
+layout activity_data_retrieve
 layout activity_fire_brigade_activity
 layout activity_helper_dashboard
 layout activity_helper_registration
 layout activity_hospital_activity
 layout activity_login
 layout activity_main
+layout activity_map
 layout activity_police_stn_activity
 layout activity_registration_activity
 layout activity_relief_centre_register
 layout activity_requirement_status
-layout activity_retrieve_mapsactivity
+layout activity_tpactivity
 layout app_bar_helper_dashboard
 layout app_bar_main
 layout apply_relief_material_layout
@@ -1718,6 +1725,7 @@ string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string status_of_demanded_items
+string title_activity_map
 string title_activity_retrieve_mapsactivity
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

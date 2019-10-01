@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
+            "outputFile": "C:\\Naitik\\Phase 2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\0a7adbb17e21e0f33c4ee2db652f9070\\play-services-base-17.1.0\\res\\values-b+sr+Latn\\values.xml",

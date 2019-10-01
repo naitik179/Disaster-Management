@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "C:\\Naitik\\Phase 2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\c8cf811826e434f7883676d0d1197d17\\jetified-play-services-basement-17.0.0\\res\\values-bs\\values.xml",

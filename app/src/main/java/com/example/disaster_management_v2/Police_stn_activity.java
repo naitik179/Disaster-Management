@@ -271,7 +271,7 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_activity);
+        setContentView(R.layout.activity_police_stn_activity);
         searchView=(SearchView)findViewById(R.id.hospitalsearch);
 
 

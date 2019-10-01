@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Disaster_Management_v5\\Disaster_Management_v2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
+            "outputFile": "C:\\Naitik\\Phase 2\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ne\\values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\1c08170b10856312c97739dc089d29ed\\jetified-navigation-ui-2.1.0-rc01\\res\\values-ne\\values-ne.xml",

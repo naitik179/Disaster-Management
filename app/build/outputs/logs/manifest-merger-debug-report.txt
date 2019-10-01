@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0-rc01] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\1c08170b10856312c97739dc089d29ed\jetified-navigation-ui-2.1.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\07b47e65ab2b3f8f366aa762b10b0137\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -66,27 +66,27 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\ratho\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\54be32d79c6f62af79d756d1b940120a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6da7eee4e54c098aa91ddbf04d54452a\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\7c3f40922534760522232442d1a17b19\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
-INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
+INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
 	package
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:4:5-49
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-77:12
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-86:12
 		INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:11:5-69:19
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:11:5-79:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\9bac9c4889645f6890dde18e8b20da08\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
@@ -151,98 +151,106 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0-rc01] C:\Use
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:12:9-35
 	android:theme
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:17:9-40
-activity#com.example.disaster_management_v2.RetrieveMapsactivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:9-29:85
+activity#com.example.disaster_management_v2.MapActivity
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:9-29:67
 	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:13-73
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:13-55
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:13-49
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:13-40
+activity#com.example.disaster_management_v2.DataRetrieve
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:9-50
+	android:name
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:19-47
+activity#com.example.disaster_management_v2.tpactivity
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:9-48
+	android:name
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:19-45
 activity#com.example.disaster_management_v2.Armed_forces_activity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:9-59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:9-59
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:19-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:19-56
 activity#com.example.disaster_management_v2.Police_stn_activity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:9-57
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:9-57
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:19-54
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:19-54
 activity#com.example.disaster_management_v2.Hospital_activity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:9-55
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:9-55
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:19-52
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:19-52
 activity#com.example.disaster_management_v2.Fire_brigade_activity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:9-59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:9-59
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:19-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:19-56
 activity#com.example.disaster_management_v2.ReliefCentreRegisterActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:35:9-38:59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:45:9-48:59
 	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:13-45
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:13-45
 	android:theme
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:38:13-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:48:13-56
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:13-57
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:46:13-57
 activity#com.example.disaster_management_v2.HelperRegistrationActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:9-42:59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:49:9-52:59
 	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:41:13-45
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:51:13-45
 	android:theme
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:13-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:52:13-56
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:40:13-55
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:50:13-55
 activity#com.example.disaster_management_v2.HelperDashboardActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:9-46:59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:53:9-56:59
 	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:45:13-45
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:55:13-45
 	android:theme
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:46:13-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:56:13-56
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:13-52
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:54:13-52
 activity#com.example.disaster_management_v2.RequirementStatusActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:9-63
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:57:9-63
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:19-60
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:57:19-60
 activity#com.example.disaster_management_v2.LoginActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:48:9-57:20
-	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:50:13-45
-	android:theme
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:51:13-56
-	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:49:13-42
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:52:13-56:29
-action#android.intent.action.MAIN
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:53:17-69
-	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:53:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:55:17-77
-	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:55:27-74
-activity#com.example.disaster_management_v2.Registration_activity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:58:9-61:59
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:58:9-67:20
 	android:label
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:60:13-45
 	android:theme
 		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:61:13-56
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:59:13-50
-activity#com.example.disaster_management_v2.MainActivity
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:62:9-65:59
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:59:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:62:13-66:29
+action#android.intent.action.MAIN
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:63:17-69
+	android:name
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:63:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:65:17-77
+	android:name
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:65:27-74
+activity#com.example.disaster_management_v2.Registration_activity
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:68:9-71:59
 	android:label
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:64:13-45
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:70:13-45
 	android:theme
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:65:13-56
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:13-56
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:63:13-41
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:69:13-50
+activity#com.example.disaster_management_v2.MainActivity
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:72:9-75:59
+	android:label
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:74:13-45
+	android:theme
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:75:13-56
+	android:name
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:73:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:66:9-68:55
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:76:9-78:55
 	android:value
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:68:13-52
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:78:13-52
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:67:13-58
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:77:13-58
 uses-permission#android.permission.INTERNET
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:5-67
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:80:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\213d061d18ab828b0ccc2fd0af4acd6e\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\213d061d18ab828b0ccc2fd0af4acd6e\play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.firebase:firebase-database:19.0.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\73682cc1ef2d97ebed1b3b9eb3040722\firebase-database-19.0.0\AndroidManifest.xml:26:5-67
@@ -258,15 +266,15 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6afdd053bee1e6a18e04235e884caea8\play-services-measurement-sdk-api-17.2.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] C:\Users\ratho\.gradle\caches\transforms-2\files-2.1\6afdd053bee1e6a18e04235e884caea8\play-services-measurement-sdk-api-17.2.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:22-64
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:80:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:73:5-79
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:82:5-79
 	android:name
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:73:22-76
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:82:22-76
 dist:module
-ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:75:5-40
+ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:5-40
 	dist:instant
-		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:75:18-37
+		ADDED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:18-37
 uses-sdk
 INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Naitik\Phase 2\Disaster_Management_v2\app\src\main\AndroidManifest.xml

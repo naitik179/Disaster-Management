@@ -17,6 +17,7 @@
     <string name="title_activity_retrieve_mapsactivity">Map</string>
 
 
+    <string name="title_activity_map">Map</string>
     <string-array name="ArmedforcesSpinnervalues">
         <item>Choose From Below</item>
         <item>Helicopter Rescue</item>

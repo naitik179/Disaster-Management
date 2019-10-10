@@ -26,7 +26,6 @@
             android:name=".MapActivity"
             android:label="@string/title_activity_map" />
         <activity android:name=".DataRetrieve" />
-        <activity android:name=".tpactivity" />
         <activity android:name=".Armed_forces_activity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

@@ -1253,7 +1253,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnloc
 id button3
 id buttonGenerate
 id buttonPanel
@@ -1309,8 +1308,6 @@ id disableHome
 id displayEmail
 id drawer_layout
 id drinkingWater
-id editText16
-id editText17
 id editTextProductId1
 id editTextProductId2
 id editTextProductId3
@@ -1374,7 +1371,6 @@ id item_touch_helper_previous_elevation
 id labeled
 id landmarkInput
 id largeLabel
-id lati
 id left
 id light
 id line1
@@ -1388,7 +1384,6 @@ id loginbuttton
 id loginpassword
 id loginphoneno
 id logout
-id longitu
 id map
 id masked
 id media_actions
@@ -1415,6 +1410,7 @@ id notification_main_column_container
 id other
 id otherAge
 id otherGender
+id otherreq
 id othersText
 id outline
 id packed
@@ -1436,6 +1432,8 @@ id policestnheading
 id policestnsearch
 id progress_circular
 id progress_horizontal
+id quant
+id quantity
 id radio
 id recyclerViewID
 id registerAadhar
@@ -1636,7 +1634,6 @@ layout activity_registration_activity
 layout activity_relief_centre_register
 layout activity_request__status_
 layout activity_requirement_status
-layout activity_tpactivity
 layout app_bar_helper_dashboard
 layout app_bar_main
 layout contact_peer_admin

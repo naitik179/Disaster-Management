@@ -7,13 +7,12 @@
 
     <Spinner
         android:id="@+id/requirementsspinner"
-        android:layout_width="0dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="31dp"
+        android:layout_width="292dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/requirementsheading" />
 
@@ -22,7 +21,7 @@
         android:layout_width="246dp"
         android:layout_height="30dp"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="71dp"
         android:layout_marginEnd="106dp"
         android:fontFamily="sans-serif-black"
         android:text="Other Requirements"
@@ -30,47 +29,35 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/requirementsspinner" />
+        app:layout_constraintTop_toBottomOf="@+id/quantity" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/otherreq"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:hint="Other Requirements"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/therrequirements" />
-
-    <EditText
-        android:id="@+id/editText17"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="51dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="50dp"
-        android:ems="10"
-        android:hint="Other Requirements"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText16" />
 
     <Button
         android:id="@+id/requirementssend"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="86dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="87dp"
         android:text="Apply "
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText17" />
+        app:layout_constraintTop_toBottomOf="@+id/otherreq" />
 
     <TextView
         android:id="@+id/requirementsheading"
@@ -86,6 +73,38 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="169dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quant"
+        app:layout_constraintTop_toBottomOf="@+id/requirementsspinner" />
+
+    <TextView
+        android:id="@+id/quant"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:paddingTop="5dp"
+        android:text="Quantity"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requirementsspinner" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

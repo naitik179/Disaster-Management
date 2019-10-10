@@ -3,6 +3,7 @@ package com.example.disaster_management_v2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,7 +24,8 @@ import java.util.List;
 public class reg_new_inmates extends AppCompatActivity {
 
 
-    public EditText name,afname,aadhar,mobile;
+    public EditText name,afname,aadhar,mobile,gender;
+
     EditText totcount;
 
     EditText namea[]=new EditText[10];
@@ -36,7 +38,7 @@ public class reg_new_inmates extends AppCompatActivity {
     FirebaseAuth mauth;
     long maxid;
 
-    String n,a,ph;
+    String n,a,ph,g;
 
     private static final String TAG = "info" ;
     final int c=3;
@@ -53,11 +55,13 @@ public class reg_new_inmates extends AppCompatActivity {
         afname=findViewById(R.id.affectname);
         aadhar=findViewById(R.id.aadhar);
         mobile=findViewById(R.id.mobile);
+        gender=findViewById(R.id.gender_new_inmate);
         mreg=FirebaseDatabase.getInstance().getReference().child("Affected_People").child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("OtherFamilyMembers");
         mauth=FirebaseAuth.getInstance();
         n=afname.getText().toString();
         a=aadhar.getText().toString();
         ph=mobile.getText().toString();
+        g=gender.getText().toString();
         totcount=findViewById(R.id.totaleditreq);
 
         myLayout = (LinearLayout)findViewById(R.id.myLayout);
@@ -121,9 +125,9 @@ public class reg_new_inmates extends AppCompatActivity {
                     myLayout.addView(gendera[i], abc);
                     myLayout.addView(agea[i], abc);
 
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(namea[i].getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(gendera[i].getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Age").setValue(agea[i].getText().toString());
+                    //mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(namea[i].getText().toString());
+                   // mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(gendera[i].getText().toString());
+                   // mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Age").setValue(agea[i].getText().toString());
 
 
 
@@ -133,6 +137,7 @@ public class reg_new_inmates extends AppCompatActivity {
 
 
                 mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(afname.getText().toString());
+                mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Gender").setValue(gender.getText().toString());
                 mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(mobile.getText().toString());
 
 
@@ -152,10 +157,14 @@ public class reg_new_inmates extends AppCompatActivity {
                 for (int i = 0; i < count; i++) {
 
                     mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Name").setValue(namea[i].getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("PhoneNo").setValue(gendera[i].getText().toString());
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Gender").setValue(gendera[i].getText().toString());
                     mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Age").setValue(agea[i].getText().toString());
 
                 }
+
+
+                Intent i=new Intent(reg_new_inmates.this,MainActivity.class);
+                startActivity(i);
 
 
 

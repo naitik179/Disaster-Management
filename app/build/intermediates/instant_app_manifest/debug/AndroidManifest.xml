@@ -72,7 +72,6 @@
             android:name="com.example.disaster_management_v2.MapActivity"
             android:label="@string/title_activity_map" />
         <activity android:name="com.example.disaster_management_v2.DataRetrieve" />
-        <activity android:name="com.example.disaster_management_v2.tpactivity" />
         <activity android:name="com.example.disaster_management_v2.Armed_forces_activity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

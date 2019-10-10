@@ -95,7 +95,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.viewreliefcampstatus) {
             fragment=new ReliefCampStatus();
         } else if (id == R.id.contactpeeradmins) {
-            fragment=new contact_peer_admins();
+            //fragment=new contact_peer_admins();
+            Intent i=new Intent(MainActivity.this,Barcode_Generation_Activity.class);
+            startActivity(i);
         } else if (id == R.id.Emergencycontacts) {
             fragment=new Emergency_Contacts();
         }

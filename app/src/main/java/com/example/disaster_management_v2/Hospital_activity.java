@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Hospital_activity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
@@ -43,17 +44,6 @@ public class Hospital_activity extends AppCompatActivity implements SearchView.O
     Contacts contact;
 
 
-
-    //7-9-19
-
-    //int countimage;
-
-    /* int[] image={R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,
-             R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp};
- */
-   /* String[] hos_names={"Goregaon","Vashi","Thane","Andheri","Dadar","Vidyavihar","Ghatkoper","Kandivali","CSMT","Borivali"};
-    String[] hos_mob={"+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094"};
-*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,22 +57,9 @@ public class Hospital_activity extends AppCompatActivity implements SearchView.O
         mFirebaseAuth=FirebaseAuth.getInstance();
 
         mReg= FirebaseDatabase.getInstance().getReference().child("Emergency Contacts").child("Hospital");
-        contact=new Contacts();
+        //contact=new Contacts();
 
-
-        //countimage=image.length;
         contactsArrayList=new ArrayList<Contacts>();
-        contactsArrayList.add(new Contacts("Goregaon","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Vashi","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Thane","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Andheri","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Dadar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Vidyavihar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Ghatkopar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Kandivali","+91-7045750094"));
-        contactsArrayList.add(new Contacts("CSMT","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Borivali","+91-7045750094"));
-
 
         hospitallist.setAdapter(contactAdapter);
 
@@ -99,9 +76,13 @@ public class Hospital_activity extends AppCompatActivity implements SearchView.O
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds:dataSnapshot.getChildren())
                 {
-                    contact=ds.getValue(Contacts.class);
+                    //contact=ds.getValue(Contacts.class);
 //                    contactsArrayList.add(contact.getName().toString());
 //                    contactsArrayList.add(contact.getContact().toString());
+                      Map<Object, String> data = (Map<Object, String>) ds.getValue();
+
+
+                    contactsArrayList.add(new Contacts(data.get("Name"),data.get("Contact")));
 
                 }
                 hospitallist.setAdapter(contactAdapter);
@@ -114,6 +95,12 @@ public class Hospital_activity extends AppCompatActivity implements SearchView.O
         });
 
 
+
+        contactAdapter=new ContactAdapter(Hospital_activity.this, contactsArrayList);
+        hospitallist.setAdapter(contactAdapter);
+
+        hospitallist.setTextFilterEnabled(true);
+        setupSearchView();
 
         //
 

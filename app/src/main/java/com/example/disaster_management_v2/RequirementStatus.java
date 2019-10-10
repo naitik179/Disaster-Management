@@ -26,7 +26,7 @@ public class RequirementStatus extends Fragment {
         view.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
                                                                @Override
                                                                public void onClick(View v) {
-                                                                   Intent transfertomaps = new Intent(getContext(), MapActivity.class);
+                                                                   Intent transfertomaps = new Intent(getContext(), MainActivity.class);
                                                                    startActivity(transfertomaps);
 
                                                                }

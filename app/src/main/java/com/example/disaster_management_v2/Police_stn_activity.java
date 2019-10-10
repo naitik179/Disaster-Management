@@ -240,10 +240,11 @@ import com.google.firebase.database.ValueEventListener;
 
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class Police_stn_activity extends AppCompatActivity implements SearchView.OnQueryTextListener{
 
-    ListView hospitallist;
+    ListView policelist;
     private SearchView searchView;
     private ContactAdapter contactAdapter;
     private ArrayList<Contacts> contactsArrayList;
@@ -257,50 +258,25 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
     Contacts contact;
 
 
-
-    //7-9-19
-
-    //int countimage;
-
-    /* int[] image={R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,
-             R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp,R.drawable.ic_contact_phone_black_24dp};
- */
-   /* String[] hos_names={"Goregaon","Vashi","Thane","Andheri","Dadar","Vidyavihar","Ghatkoper","Kandivali","CSMT","Borivali"};
-    String[] hos_mob={"+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094","+91-7045750094"};
-*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_police_stn_activity);
-        searchView=(SearchView)findViewById(R.id.hospitalsearch);
+        searchView=(SearchView)findViewById(R.id.policestnsearch);
 
 
-        hospitallist=findViewById(R.id.hospital_list_view);
+        policelist=findViewById(R.id.police_list_view);
 
 
         mFirebaseAuth=FirebaseAuth.getInstance();
 
-        mReg= FirebaseDatabase.getInstance().getReference().child("Emergency Contacts").child("Hospital");
-        contact=new Contacts();
+        mReg= FirebaseDatabase.getInstance().getReference().child("Emergency Contacts").child("Police Stations");
 
-
-        //countimage=image.length;
         contactsArrayList=new ArrayList<Contacts>();
-        contactsArrayList.add(new Contacts("Goregaon","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Vashi","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Thane","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Andheri","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Dadar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Vidyavihar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Ghatkopar","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Kandivali","+91-7045750094"));
-        contactsArrayList.add(new Contacts("CSMT","+91-7045750094"));
-        contactsArrayList.add(new Contacts("Borivali","+91-7045750094"));
 
+        policelist.setAdapter(contactAdapter);
 
-        hospitallist.setAdapter(contactAdapter);
-
-        hospitallist.setTextFilterEnabled(true);
+        policelist.setTextFilterEnabled(true);
         setupSearchView();
 
 
@@ -313,12 +289,16 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot ds:dataSnapshot.getChildren())
                 {
-                    contact=ds.getValue(Contacts.class);
+                    //contact=ds.getValue(Contacts.class);
 //                    contactsArrayList.add(contact.getName().toString());
 //                    contactsArrayList.add(contact.getContact().toString());
+                    Map<Object, String> data = (Map<Object, String>) ds.getValue();
+
+
+                    contactsArrayList.add(new Contacts(data.get("Name"),data.get("Contact")));
 
                 }
-                hospitallist.setAdapter(contactAdapter);
+                policelist.setAdapter(contactAdapter);
             }
 
             @Override
@@ -328,6 +308,12 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
         });
 
 
+
+        contactAdapter=new ContactAdapter(Police_stn_activity.this, contactsArrayList);
+        policelist.setAdapter(contactAdapter);
+
+        policelist.setTextFilterEnabled(true);
+        setupSearchView();
 
         //
 
@@ -348,9 +334,9 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
     @Override
     public boolean onQueryTextChange(String newText) {
         if (TextUtils.isEmpty(newText)) {
-            hospitallist.clearTextFilter();
+            policelist.clearTextFilter();
         } else {
-            hospitallist.setFilterText(newText);
+            policelist.setFilterText(newText);
         }
         return true;
     }

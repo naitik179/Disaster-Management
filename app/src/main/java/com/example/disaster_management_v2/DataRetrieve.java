@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class DataRetrieve extends AppCompatActivity {
@@ -38,16 +39,12 @@ public class DataRetrieve extends AppCompatActivity {
         mRef=mDatabase.getReference("Sub Admin Registration");
         retrieveButton=findViewById(R.id.retrieve);
         //this.retrieveButton.setOnClickListener(this::runCode);
-        this.retrieveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                readData(v);
-            }
-        });
+
+       // readData();
 
     }
 
-    public void readData(View view){
+    public void readData(final ArrayList<String> phone_no, final ArrayList<String> names){
 
         mRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -56,15 +53,17 @@ public class DataRetrieve extends AppCompatActivity {
                     try {
                         Map<Object, String> data = (Map<Object, String>) snapshots.getValue();
 
-                        Log.d(TAG, "onDataChange: Landmark= " + data.get("Landmark"));
+                        //Log.d(TAG, "onDataChange: Landmark= " + data.get("Landmark"));
                         Log.d(TAG, "onDataChange: Email= "+data.get("Email id"));
-                        Log.d(TAG, "onDataChange: Email= "+data.get("Latitude"));
+                        /*Log.d(TAG, "onDataChange: Email= "+data.get("Latitude"));*/
                         Log.d(TAG, "onDataChange: Email= "+data.get("Phone no"));
-                        Log.d(TAG, "onDataChange: Email= "+data.get("Longitude"));
+                        phone_no.add(data.get("Phone no"));
+                        names.add(data.get("Email id"));
+                        /*Log.d(TAG, "onDataChange: Email= "+data.get("Longitude"));
                         Log.d(TAG, "onDataChange: Email= "+data.get("Aadhar UID"));
-                        Log.d(TAG, "onDataChange: Email= "+data.get("Affected People"));
-                        dataFrmDb.setText(data.get("Latitude"));
-                        Log.d(TAG, "onDataChange: Key= " + snapshots.getKey());
+                        Log.d(TAG, "onDataChange: Email= "+data.get("Affected People"));*/
+                        //dataFrmDb.setText(data.get("Latitude"));
+                        //Log.d(TAG, "onDataChange: Key= " + snapshots.getKey());
 
                     }
 

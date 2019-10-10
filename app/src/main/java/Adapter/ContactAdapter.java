@@ -1,5 +1,7 @@
 package Adapter;
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,8 @@ public class ContactAdapter extends BaseAdapter implements Filterable {
     public ArrayList<Contacts> firebrigadelist;
     public ArrayList<Contacts> orig;
     LayoutInflater linf;
+    View view;
+    int positionGlobal;
 
     public ContactAdapter(Context context, ArrayList<Contacts> firebrigadelist) {
         super();
@@ -100,9 +104,20 @@ public class ContactAdapter extends BaseAdapter implements Filterable {
             holder=(ContactHolder) convertView.getTag();
         }
 
+        view=convertView;
+        positionGlobal=position;
         holder.name.setText(firebrigadelist.get(position).getName());
         holder.mob.setText(String.valueOf(firebrigadelist.get(position).getContact()));
 
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+firebrigadelist.get(positionGlobal).getContact()));
+                view.getContext().startActivity(intent);
+
+            }
+        });
         return convertView;
     }
 

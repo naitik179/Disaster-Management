@@ -88,6 +88,9 @@ public class HelperDashboardActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.helperreliefcentre) {
+
+            Intent i = new Intent(HelperDashboardActivity.this, MapActivity.class);
+            startActivity(i);
             // Handle the camera action
         } else if (id == R.id.helpergallery) {
 

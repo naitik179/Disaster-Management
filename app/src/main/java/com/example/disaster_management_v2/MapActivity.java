@@ -33,8 +33,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     private DatabaseReference mRef;
     private GoogleMap mMap;
 
-    long latitude[]=new long[100];
-    long longitude[]=new long[100];
+    public double latitude[]=new double[100];
+    public double longitude[]=new double[100];
+    int i=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,36 +58,49 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
 
 
-
-    public void readData(){
+    /**
+     * Manipulates the map once available.
+     * This callback is triggered when the map is ready to be used.
+     * This is where we can add markers or lines, add listeners or move the camera. In this case,
+     * we just add a marker near Sydney, Australia.
+     * If Google Play services is not installed on the device, the user will be prompted to install
+     * it inside the SupportMapFragment. This method will only be triggered once the user has
+     * installed Google Play services and returned to the app.
+     */
+    @Override
+    public void onMapReady(final GoogleMap googleMap) {
 
         mRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
 
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                int i=0;
+
                 for (DataSnapshot snapshots: dataSnapshot.getChildren()) {
                     try {
-                        Map<Object, Long> data = (Map<Object, Long>) snapshots.getValue();
+                        Map<Object, Double> data = (Map<Object, Double>) snapshots.getValue();
 
-                        /*Log.d(TAG, "onDataChange: Landmark= " + data.get("Landmark"));
-                        Log.d(TAG, "onDataChange: Email= "+data.get("Email id"));*/
                         Log.d(TAG, "onDataChange: latitude= " + data.get("Latitude"));
-                        /*Log.d(TAG, "onDataChange: Email= "+data.get("Phone no"));*/
                         Log.d(TAG, "onDataChange: Longitude= " + data.get("Longitude"));
-                       /* Log.d(TAG, "onDataChange: Email= "+data.get("Aadhar UID"));
-                        Log.d(TAG, "onDataChange: Email= "+data.get("Affected People"));*/
-                        //dataFrmDb.setText(data.get("Latitude"));
                         Log.d(TAG, "onDataChange: Key= " + snapshots.getKey());
 
 
-                            latitude[i] = data.get("Latitude");
-                            longitude[i] =data.get("Longitude");
-                            i++;
+                        latitude[i] = data.get("Latitude");
+                        longitude[i] =data.get("Longitude");
 
 
-                        Log.i(TAG, "onDataChange: latitude="+latitude[i]);
-                        Log.i(TAG, "onDataChange: longitude="+longitude[i]);
+
+                        Log.i(TAG, "onDataChange: latitude in array="+latitude[i]);
+                        Log.i(TAG, "onDataChange: longitude= in array"+longitude[i]);
+                        mMap = googleMap;
+
+                        Log.i(TAG, "latitude: " + latitude[0] + " Longitude: " + longitude[0]);
+                        // Add a marker in Sydney and move the camera
+                        LatLng place = new LatLng(latitude[i], longitude[i]);
+                        mMap.addMarker(new MarkerOptions().position(place).title("Marker"+i));
+                        mMap.moveCamera(CameraUpdateFactory.newLatLng(place));
+
+                        i++;
+
                     }
 
                     catch (Exception e){
@@ -102,31 +116,9 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
             }
         });
-    }
 
 
-    /**
-     * Manipulates the map once available.
-     * This callback is triggered when the map is ready to be used.
-     * This is where we can add markers or lines, add listeners or move the camera. In this case,
-     * we just add a marker near Sydney, Australia.
-     * If Google Play services is not installed on the device, the user will be prompted to install
-     * it inside the SupportMapFragment. This method will only be triggered once the user has
-     * installed Google Play services and returned to the app.
-     */
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-        readData();
-        mMap = googleMap;
-        for (int i = 0; i < latitude.length; i++) {
 
-            if (latitude[i] >= 0) {
-                Log.i(TAG, "latitude: " + latitude[i] + " Longitude: " + longitude[i]);
-                // Add a marker in Sydney and move the camera
-                LatLng place = new LatLng(latitude[i], longitude[i]);
-                mMap.addMarker(new MarkerOptions().position(place).title("Marker " + i));
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(place));
-            }
-        }
+
     }
 }

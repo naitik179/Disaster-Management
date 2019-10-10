@@ -87,7 +87,8 @@ public class MainActivity extends AppCompatActivity
         Fragment fragment=null;
 
         if (id == R.id.registerinmates) {
-            fragment=new RegisterNewInmates();
+            Intent i = new Intent(MainActivity.this,reg_new_inmates.class);
+            startActivity(i);
         } else if (id == R.id.applyreliefmaterial) {
             fragment=new requirements();
         } else if (id == R.id.reqstatus) {

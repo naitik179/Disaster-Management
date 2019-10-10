@@ -3,6 +3,7 @@ package com.example.disaster_management_v2;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,6 +15,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,6 +29,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
     Button retrieveButton;
     public static final String TAG = "Info";
+    private final static int REQUEST_CODE_1 = 1;
     TextView dataFrmDb;
 
     private FirebaseDatabase mDatabase;
@@ -75,7 +78,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                for (DataSnapshot snapshots: dataSnapshot.getChildren()) {
+                for (final DataSnapshot snapshots: dataSnapshot.getChildren()) {
                     try {
                         Map<Object, Double> data = (Map<Object, Double>) snapshots.getValue();
 
@@ -99,7 +102,17 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         mMap.addMarker(new MarkerOptions().position(place).title("Marker"+i));
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(place));
 
+                        mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                            @Override
+                            public boolean onMarkerClick(Marker marker) {
+                                Intent i = new Intent(MapActivity.this, Request_Status_Activity.class);
+                                i.putExtra("RC Id","Key : "+snapshots.getKey());
+                                startActivity(i);
+                                return true;
+                            }
+                        });
                         i++;
+
 
                     }
 

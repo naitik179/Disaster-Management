@@ -84,28 +84,28 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\layout\\design_layout_snackbar_include.xml"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\layout\\select_dialog_multichoice_material.xml"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_menu_slideshow.xml.flat",
-        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable\\ic_menu_slideshow.xml"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",
@@ -116,12 +116,12 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color\\abc_secondary_text_material_dark.xml"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\4b4ac7288bce1164b926243522245acc\\core-1.1.0-rc01\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\4b4ac7288bce1164b926243522245acc\\core-1.1.0-rc01\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -200,16 +200,16 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\animator_design_fab_show_motion_spec.xml.flat",
-        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\animator\\design_fab_show_motion_spec.xml"
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_bottom_nav_item_tint.xml.flat",
@@ -556,6 +556,10 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_donate.jpeg.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xxhdpi\\donate.jpeg"
+    },
+    {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -662,10 +666,6 @@
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_apply_relief_material_layout.xml.flat",
-        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\apply_relief_material_layout.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -1240,6 +1240,10 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_clothes.jpg.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xxhdpi\\clothes.jpg"
+    },
+    {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
@@ -1784,6 +1788,10 @@
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_request__status_.xml.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_request__status_.xml"
+    },
+    {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
@@ -1806,6 +1814,10 @@
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\layout\\mtrl_layout_snackbar.xml"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_reg_new_inmates.xml.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_reg_new_inmates.xml"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_dialog_material_background.xml.flat",
@@ -1882,6 +1894,10 @@
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_food.jpeg.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xxhdpi\\food.jpeg"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -2042,6 +2058,10 @@
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_water.jpeg.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xxhdpi\\water.jpeg"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_person_add_black_24dp.png.flat",
@@ -2310,6 +2330,10 @@
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\ANKITA\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_medicine.jpg.flat",
+        "source": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xxhdpi\\medicine.jpg"
     },
     {
         "merged": "D:\\Final Phase 3\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",

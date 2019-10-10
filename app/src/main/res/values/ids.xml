@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="other" type="id"></item>
+    <item name="otherGender" type="id"></item>
+    <item name="otherAge" type="id"></item>
+
+</resources>

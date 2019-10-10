@@ -1,15 +1,41 @@
 package com.example.disaster_management_v2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 public class Armed_forces_activity extends AppCompatActivity {
+
+
+    FirebaseAuth mFirebaseAuth;
+    private DatabaseReference mReg,mref,mat,helirescue,unsafeland,medical;
+    Button submit;
+    Object no;
+    FirebaseUser user;
+    String s,n;
+    long maxid;
+    Spinner spinner_a;
+    int qua,q,flag=0;
+    String Q;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,26 +43,47 @@ public class Armed_forces_activity extends AppCompatActivity {
         setContentView(R.layout.activity_armed_forces_activity);
 
 
-        findViewById(R.id.armedforcesspinner);
 
-        Spinner spinner = (Spinner)findViewById(R.id.armedforcesspinner);
+
+        mFirebaseAuth=FirebaseAuth.getInstance();
+        mReg= FirebaseDatabase.getInstance().getReference();
+        //mref=FirebaseDatabase.getInstance().getReference().child("Armed_Forces_Request").child("Other Requirements").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("Requirements");
+
+
+        submit=findViewById(R.id.subarmedbutton);
+
+        spinner_a = (Spinner)findViewById(R.id.armedforcesspinner);
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.ArmedforcesSpinnervalues, android.R.layout.simple_spinner_item);
 // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 // Apply the adapter to the spinner
-        spinner.setAdapter(adapter);
+        spinner_a.setAdapter(adapter);
 
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+
+
+
+
+
+        spinner_a.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 if(parent.getItemAtPosition(position).equals("Choose From Below")){
                     //doing nothing
                 }
                 else{
-                    String s=parent.getItemAtPosition(position).toString();
-                    Toast.makeText(parent.getContext(),"You selected "+s,Toast.LENGTH_LONG).show();
+
+                    s = parent.getItemAtPosition(position).toString();
+                    if (s.compareTo("Helicopter Rescue")==0)
+                        mat=FirebaseDatabase.getInstance().getReference().child("Armed_Forces_Request").child(s).child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
+                    else if(s.compareTo("Trapped On Unsafe LAnd")==0)
+                        mat=FirebaseDatabase.getInstance().getReference().child("Armed_Forces_Request").child(s).child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
+                    else if (s.compareTo("Medical Aid")==0)
+                        mat=FirebaseDatabase.getInstance().getReference().child("Armed_Forces_Request").child(s).child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
+                    Toast.makeText(parent.getContext(), "You selected " + s, Toast.LENGTH_LONG).show();
+
                 }
             }
 
@@ -47,6 +94,15 @@ public class Armed_forces_activity extends AppCompatActivity {
         });
 
 
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    mReg.child("Armed_Forces_Request").child(s).child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(s);
+                     }
+                //Toast.makeText(,"Succesfully applied for Materials. Contact Admin for further details.",Toast.LENGTH_SHORT).show();
+            });
+
     }
+
 }
 

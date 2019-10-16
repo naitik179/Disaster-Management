@@ -23,14 +23,14 @@ public class RequirementStatus extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
 
-        view.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
-                                                               @Override
-                                                               public void onClick(View v) {
-                                                                   Intent transfertomaps = new Intent(getContext(), MainActivity.class);
-                                                                   startActivity(transfertomaps);
-
-                                                               }
-                                                           }
-        );
+//        view.findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+//                                                               @Override
+//                                                               public void onClick(View v) {
+//                                                                   Intent transfertomaps = new Intent(getContext(), MainActivity.class);
+//                                                                   startActivity(transfertomaps);
+//
+//                                                               }
+//                                                           }
+//        );
     }
 }

@@ -5,12 +5,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".reg_new_inmates"></activity>
+        <activity android:name=".Donation_Activity"></activity>
+        <activity android:name=".Contact_Peer_Admins_Activity"></activity>
+        <activity android:name=".PieChart" />
+        <activity android:name=".Analyze1" />
+        <activity android:name=".Analyze" />
+        <activity android:name=".reg_new_inmates" />
         <activity android:name=".Request_Status_Activity" />
         <activity android:name=".Barcode_Scan_Activity" />
         <activity android:name=".Barcode_Generation_Activity" />
@@ -77,17 +82,17 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
     </application>
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <dist:module dist:instant="true" />
 

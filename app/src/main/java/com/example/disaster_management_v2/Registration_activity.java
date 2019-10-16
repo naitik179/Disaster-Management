@@ -30,7 +30,7 @@ public class Registration_activity extends AppCompatActivity  {
         button1=findViewById(R.id.registerHelper);
         button2=findViewById(R.id.registerReliefCentre);
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent transferToHelperRegister = new Intent(Registration_activity.this, HelperRegistrationActivity.class);
@@ -38,7 +38,7 @@ public class Registration_activity extends AppCompatActivity  {
             }
         });
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent transferToReliefCentreRegister = new Intent(Registration_activity.this, ReliefCentreRegisterActivity.class);

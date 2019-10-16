@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,9 +32,10 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     public static final String TAG = "Info";
     private final static int REQUEST_CODE_1 = 1;
     TextView dataFrmDb;
+    Marker marker;
 
     private FirebaseDatabase mDatabase;
-    private DatabaseReference mRef;
+    private DatabaseReference mRef,mRef2;
     private GoogleMap mMap;
 
     public double latitude[]=new double[100];
@@ -55,6 +57,8 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         //initViews();
         mDatabase =FirebaseDatabase.getInstance();
         mRef=mDatabase.getReference("Sub Admin Registration");
+       mRef2=mDatabase.getReference("Sub Admin Registration");
+
 
 
     }
@@ -103,11 +107,45 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
                         mMap.moveCamera(CameraUpdateFactory.newLatLng(place));
 
                         mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
+                            String markerkey;
                             @Override
                             public boolean onMarkerClick(Marker marker) {
-                                Intent i = new Intent(MapActivity.this, Request_Status_Activity.class);
-                                i.putExtra("RC Id","Key : "+snapshots.getKey());
-                                startActivity(i);
+                                Double id =marker.getPosition().latitude;
+                                //Toast.makeText(MapActivity.this,"Latitude is "+id.toString(),Toast.LENGTH_LONG).show();
+
+
+                                mRef2.orderByChild("Latitude").equalTo(id).addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                                        for (DataSnapshot childSnapshot: dataSnapshot.getChildren()) {
+                                            markerkey = childSnapshot.getKey();
+                                            Log.i(TAG, "Marker key is " + markerkey);
+
+                                            Intent i = new Intent(MapActivity.this, Request_Status_Activity.class);
+                                            i.putExtra("RC Id","Key : "+markerkey);
+                                            startActivity(i);
+                                        }
+
+                                    }
+
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                                    }
+                                });
+
+                                //Toast.makeText(MapActivity.this,"Key is "+markerkey,Toast.LENGTH_LONG).show();
+
+
+
+
+
+                                //Toast.makeText(MapActivity.this,"Title is "+i,Toast.LENGTH_LONG).show();
+//                                Intent i = new Intent(MapActivity.this, Request_Status_Activity.class);
+//                                i.putExtra("RC Id","Key : "+markerkey);
+//                                startActivity(i);
                                 return true;
                             }
                         });

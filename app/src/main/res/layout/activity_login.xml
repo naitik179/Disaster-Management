@@ -8,20 +8,20 @@
 
     <TextView
         android:id="@+id/displayEmail"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="92dp"
-        android:layout_marginEnd="151dp"
-        android:fontFamily="sans-serif"
+        android:layout_width="139dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="136dp"
+        android:fontFamily="@font/sb"
         android:text="Login"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="40dp"
         android:textStyle="bold"
+        android:textColor="#003171"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/iconimage" />
 
     <TextView
         android:id="@+id/toregister"
@@ -37,7 +37,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/loginButn"
         android:layout_width="205dp"
         android:layout_height="0dp"
@@ -45,17 +45,24 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="103dp"
         android:text="Login"
+        android:background="@drawable/cardlayout"
+        android:elevation="40dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/sb"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toregister" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailinput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:elevation="20dp"
+        android:textColorHint="#F81B0303"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="59dp"
             android:hint="Email Id"
+
             android:inputType="textEmailSubject" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,9 +81,11 @@
         android:id="@+id/loginpassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="21dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="12dp"
+        android:elevation="20dp"
+        android:textColorHint="#F81B0303"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailinput">
@@ -85,16 +95,19 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:hint="Enter Your Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:shadowDx="200" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="12dp"
+        android:elevation="20dp"
+        android:textColorHint="#F81B0303"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginpassword">
@@ -106,5 +119,17 @@
             android:hint="Phone No"
             android:inputType="phone" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iconimage"
+        android:layout_width="0dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="127dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

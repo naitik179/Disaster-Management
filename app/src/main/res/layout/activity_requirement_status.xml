@@ -17,10 +17,13 @@
         android:textColor="#f1f1f1"
         android:textSize="30dp"
         android:textAlignment="center"
+        android:fontFamily="@font/sb"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <Button
+
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/clothes"
         android:layout_width="50mm"
         android:layout_height="wrap_content"
@@ -31,18 +34,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.3"
         android:textSize="20dp"
-        android:background="@color/colorPrimary"
+        android:fontFamily="@font/rg"
+        android:background="@drawable/cardlayout"
         android:textColor="#f1f1f1"/>
 
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/drinkingWater"
         android:layout_width="50mm"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/cardlayout"
         android:text="@string/drinking_water"
         android:textColor="#f1f1f1"
         android:textSize="20dp"
+        android:fontFamily="@font/rg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/clothes"
@@ -50,14 +55,15 @@
         app:layout_constraintTop_toBottomOf="@id/clothes"
         app:layout_constraintVertical_bias="0.137" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/Medicine"
         android:layout_width="50mm"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/cardlayout"
         android:text="@string/medicines"
         android:textColor="#f1f1f1"
         android:textSize="20dp"
+        android:fontFamily="@font/rg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/drinkingWater"
@@ -65,14 +71,15 @@
         app:layout_constraintTop_toBottomOf="@id/drinkingWater"
         app:layout_constraintVertical_bias="0.176" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/food"
         android:layout_width="50mm"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/cardlayout"
         android:text="@string/food"
         android:textColor="#f1f1f1"
         android:textSize="20dp"
+        android:fontFamily="@font/rg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@id/Medicine"

@@ -6,7 +6,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -118,6 +120,12 @@ public class Barcode_Scan_Activity extends AppCompatActivity implements ZXingSca
         builder.setMessage(scanResult);
         AlertDialog alert= builder.create();
         alert.show();
+
+        Intent sendIntent =new Intent(Intent.ACTION_VIEW);
+        //sendIntent.setData(Uri.parse("smsto:"+ phoneNum));
+        //sendIntent.putExtra("address",phoneNum);
+        alert.getContext().startActivity(sendIntent);
+
     }
 
 

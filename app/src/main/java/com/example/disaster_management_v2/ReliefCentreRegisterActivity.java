@@ -41,7 +41,6 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     private DatabaseReference mReg,mRef;
     Button registerButton;
-    int type=1;
     Double latitude;
     Double longitude;
     int count=0;
@@ -377,7 +376,6 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
                     }
                     else {
                         startActivity(new Intent(ReliefCentreRegisterActivity.this,MainActivity.class));
-                        mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Type").setValue(type);
                         mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Email id").setValue(email.getText().toString());
                         mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Phone No").setValue(phone.getText().toString());
                         mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Aadhar UID").setValue(aadhar.getText().toString());
@@ -385,8 +383,8 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
                         mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Landmark").setValue(landmark.getText().toString());
                         mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Aadhar UID").setValue(aadhar.getText().toString());
                         mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Nearest Police Thana").setValue(policeThana.getText().toString());
-                        mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Latitude").setValue(latitude.toString(latitude));
-                        mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Longitude").setValue(longitude.toString(longitude));
+                        mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Latitude").setValue(latitude);
+                        mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Longitude").setValue(longitude);
 
                     }
 

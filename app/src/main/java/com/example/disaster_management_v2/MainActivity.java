@@ -1,5 +1,6 @@
 package com.example.disaster_management_v2;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
 
 
 
@@ -94,10 +96,12 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.reqstatus) {
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
-            fragment=new ReliefCampStatus();
+           // fragment=new ReliefCampStatus();
+            Intent i1= new Intent(MainActivity.this,PieChart.class);
+            startActivity(i1);
         } else if (id == R.id.contactpeeradmins) {
             //fragment=new contact_peer_admins();
-            Intent i=new Intent(MainActivity.this,Barcode_Generation_Activity.class);
+            Intent i=new Intent(MainActivity.this,Contact_Peer_Admins_Activity.class);
             startActivity(i);
         } else if (id == R.id.Emergencycontacts) {
             fragment=new Emergency_Contacts();

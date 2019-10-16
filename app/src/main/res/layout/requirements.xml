@@ -23,7 +23,8 @@
         android:layout_marginStart="105dp"
         android:layout_marginTop="71dp"
         android:layout_marginEnd="106dp"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/sb"
+        android:textColor="#000"
         android:text="Other Requirements"
         android:textAlignment="center"
         android:textSize="20dp"
@@ -31,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quantity" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/otherreq"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -39,10 +40,11 @@
         android:layout_marginTop="56dp"
         android:layout_marginEnd="50dp"
         android:ems="10"
+        android:textColorHint="#000"
         android:hint="Other Requirements"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/therrequirements" />
 
@@ -54,6 +56,11 @@
         android:layout_marginTop="75dp"
         android:layout_marginEnd="87dp"
         android:text="Apply "
+        android:textColor="#f1f1f1"
+        android:fontFamily="@font/sb"
+        android:background="@drawable/cardlayout"
+        android:elevation="20dp"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +72,11 @@
         android:layout_height="42dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="92dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/sb"
+        android:textColor="#000"
         android:text="Apply For Relief Material"
         android:textAlignment="center"
         android:textSize="30dp"
@@ -74,7 +85,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/quantity"
         android:layout_width="169dp"
         android:layout_height="51dp"
@@ -83,6 +94,8 @@
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:hint="Quantity"
+        android:fontFamily="@font/rg"
+        android:textColorHint="#000"
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"

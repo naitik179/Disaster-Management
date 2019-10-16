@@ -15,9 +15,10 @@
             android:id="@+id/inmateregname"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="155dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -28,9 +29,10 @@
             android:id="@+id/aadharuid"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="11dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inmateregname">
@@ -47,10 +49,11 @@
             android:id="@+id/inmateregmobile"
             android:layout_width="0dp"
             android:layout_height="70dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="#000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/aadharuid">
 
@@ -80,12 +83,16 @@
 
         <Button
             android:id="@+id/addbtn"
-            android:layout_width="100dp"
-            android:layout_height="55dp"
+            android:layout_width="94dp"
+            android:layout_height="53dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="105dp"
+            android:background="@drawable/cardlayout"
             android:text="ADD"
+            android:textSize="15dp"
+            android:textColor="#f1f1f1"
+            android:fontFamily="@font/rg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/save"
             app:layout_constraintTop_toBottomOf="@+id/totaleditreq" />
@@ -97,12 +104,13 @@
             android:layout_marginStart="101dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="12dp"
+            android:background="@drawable/cardlayout"
             android:text="Save"
-            app:layout_constraintBottom_toTopOf="@+id/myLayout"
+            android:textColor="#f1f1f1"
+            android:fontFamily="@font/rg"
             app:layout_constraintEnd_toStartOf="@+id/addbtn"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/totaleditreq"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/totaleditreq" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/affectname"
@@ -112,36 +120,38 @@
             android:layout_marginTop="122dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="15dp"
+            android:textColorHint="#000"
             android:hint="Name"
             app:layout_constraintBottom_toTopOf="@+id/aadharuid"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/gender_new_inmate"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="10dp"
             android:ems="10"
             android:hint="Gender"
+            android:textColorHint="#000"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/inmateregmobile" />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/totaleditreq"
             android:layout_width="0dp"
             android:layout_height="48dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="10dp"
             android:ems="10"
             android:hint="1"
-            android:inputType="textPersonName"
+            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gender_new_inmate" />

@@ -56,11 +56,10 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.disaster_management_v2.clothes_form" />
         <activity android:name="com.example.disaster_management_v2.Donation_Activity" />
         <activity android:name="com.example.disaster_management_v2.Contact_Peer_Admins_Activity" />
         <activity android:name="com.example.disaster_management_v2.PieChart" />
-        <activity android:name="com.example.disaster_management_v2.piechart" />
-        <activity android:name="com.example.disaster_management_v2.Piechart" />
         <activity android:name="com.example.disaster_management_v2.Analyze1" />
         <activity android:name="com.example.disaster_management_v2.Analyze" />
         <activity android:name="com.example.disaster_management_v2.reg_new_inmates" />

@@ -52,6 +52,7 @@ public class HelperRegistrationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_helper_registration);
+
         mFirebaseAuth=FirebaseAuth.getInstance();
         email=findViewById(R.id.emailid);
         phone=findViewById(R.id.registerPhoneno);
@@ -59,6 +60,7 @@ public class HelperRegistrationActivity extends AppCompatActivity {
         confirmPassword=findViewById(R.id.repeatPassword);
         name=findViewById(R.id.registerName);
         registerButton= findViewById(R.id.RegisterButton);
+
         mReg= FirebaseDatabase.getInstance().getReference().child("Helper Registration");
 
 

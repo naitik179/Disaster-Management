@@ -1,7 +1,7 @@
-#Wed Oct 16 14:39:58 IST 2019
-base.0=C\:\\Naitik\\Phase3\\Disaster_Management_v2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Wed Oct 23 00:25:26 IST 2019
+base.0=C\:\\Users\\PRIYA\\Desktop\\DM\\Disaster_Management_v2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Naitik\\Phase3\\Disaster_Management_v2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\PRIYA\\Desktop\\DM\\Disaster_Management_v2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

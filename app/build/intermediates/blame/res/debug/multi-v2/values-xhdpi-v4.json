@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Phase3\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+            "outputFile": "C:\\Users\\PRIYA\\Desktop\\DM\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xhdpi-v4\\values-xhdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\074b0510c06f32d4aaf6b1b7890dbae2\\jetified-core-1.9\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "source": "C:\\Users\\PRIYA\\.gradle\\caches\\transforms-2\\files-2.1\\ebf39a68b61872440cf3bf3b833c9462\\jetified-core-1.9\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

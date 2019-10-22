@@ -1,5 +1,6 @@
 package com.example.disaster_management_v2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +36,8 @@ public class requirements extends Fragment {
     long maxid;
     int qua,q,flag=0;
     String Q;
+    private Button clothes_button;
+
 
     @Nullable
     @Override
@@ -55,6 +58,20 @@ public class requirements extends Fragment {
 
         updateReq=view.findViewById(R.id.requirementssend);
         Spinner spinner = (Spinner) view.findViewById(R.id.requirementsspinner);
+
+        //added Clothes form (Priya) (if there are any issues
+        clothes_button = (Button)view.findViewById(R.id.apply_clothes);
+
+        clothes_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(requirements.this.getActivity(), clothes_form.class);
+                startActivity(intent);
+            }
+        });
+        //
+
+
 // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(view.getContext(),
                 R.array.Requirementsspinnervalues, android.R.layout.simple_spinner_item);
@@ -95,6 +112,7 @@ public class requirements extends Fragment {
                     else if (s.compareTo("Food")==0)
                         mat=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Food").child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
                     Toast.makeText(parent.getContext(), "You selected " + s, Toast.LENGTH_LONG).show();
+
                     mat.addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot ds) {
@@ -142,4 +160,6 @@ public class requirements extends Fragment {
             }
         });
     }
+
+
 }

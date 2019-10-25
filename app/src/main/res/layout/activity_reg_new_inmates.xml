@@ -122,6 +122,7 @@
             android:layout_marginBottom="15dp"
             android:textColorHint="#000"
             android:hint="Name"
+            android:inputType="textPersonName"
             app:layout_constraintBottom_toTopOf="@+id/aadharuid"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

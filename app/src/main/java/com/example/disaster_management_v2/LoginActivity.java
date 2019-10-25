@@ -26,9 +26,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
     Button loginButton;
-    TextView registerTransfer;
+    TextView registerTransfer,reset;
     private DatabaseReference helper,reliefCenter;
-    EditText email,password,phone;
+    EditText email,password;
     FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
     @Override
@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
         mAuth=FirebaseAuth.getInstance();
         email = findViewById(R.id.emailid);
         password = findViewById(R.id.password);
-        phone=findViewById(R.id.loginphoneno);
+        //phone=findViewById(R.id.loginphoneno);
         mAuthStateListener=new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -93,17 +93,17 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     });
 
-                 /*  reliefCenter.addListenerForSingleValueEvent(new ValueEventListener() {
-                       @Override
-                       void onDataChange(DataSnapshot snapshot) {
-                           if (snapshot.hasChild(mAuth.getInstance().getCurrentUser().getUid())) {
-                               // run some code
-                               Toast.makeText(LoginActivity.this, "You are Logged in", Toast.LENGTH_SHORT).show();
-                               Intent i=new Intent(LoginActivity.this,MainActivity.class);
-                               startActivity(i);
-                           }
-                       }
-                   });*/
+                /*  reliefCenter.addListenerForSingleValueEvent(new ValueEventListener() {
+                      @Override
+                      void onDataChange(DataSnapshot snapshot) {
+                          if (snapshot.hasChild(mAuth.getInstance().getCurrentUser().getUid())) {
+                              // run some code
+                              Toast.makeText(LoginActivity.this, "You are Logged in", Toast.LENGTH_SHORT).show();
+                              Intent i=new Intent(LoginActivity.this,MainActivity.class);
+                              startActivity(i);
+                          }
+                      }
+                  });*/
 
                 }
                 else
@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 String e=email.getText().toString();
                 String pwd=password.getText().toString();
-                String pne=phone.getText().toString();
+
                 if(e.isEmpty())
                 {
                     email.setError("Please Enter email id!!");
@@ -129,16 +129,12 @@ public class LoginActivity extends AppCompatActivity {
                     password.setError("Please enter Your Password!!");
                     password.requestFocus();
                 }
-                else if(pne.isEmpty())
-                {
-                    phone.setError("Please enter phone  no!!!");
-                    phone.requestFocus();
-                }
-                else if(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty())
+
+                else if(e.isEmpty()&&pwd.isEmpty())
                 {
                     Toast.makeText(LoginActivity.this, "Fields are Empty!!", Toast.LENGTH_SHORT).show();
                 }
-                else if(!(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty()))
+                else if(!(e.isEmpty()&&pwd.isEmpty()))
                 {
                     mAuth.signInWithEmailAndPassword(e,pwd).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
@@ -185,6 +181,14 @@ public class LoginActivity extends AppCompatActivity {
                 Intent launchActivity1= new Intent(LoginActivity.this,Registration_activity.class);
                 startActivity(launchActivity1);
 
+            }
+        });
+        reset=findViewById(R.id.forgot);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(LoginActivity.this,Forgot.class);
+                startActivity(i);
             }
         });
 

@@ -38,7 +38,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
     public void onBindViewHolder(ViewHolder holder, int position) {
         ListItem listItem = listItems.get(position);
         holder.name.setText(listItem.getName());
-        holder.description.setText(listItem.getDescription());
+        holder.description.setText(listItem.getGender());
 
     }
 

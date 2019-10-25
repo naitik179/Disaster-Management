@@ -56,17 +56,22 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.disaster_management_v2.clothes_form" />
+        <activity android:name="com.example.disaster_management_v2.Med" />
+        <activity android:name="com.example.disaster_management_v2.water" />
+        <activity android:name="com.example.disaster_management_v2.Toiletries" />
+        <activity android:name="com.example.disaster_management_v2.RequirementLayout" />
+        <activity android:name="com.example.disaster_management_v2.Forgot" />
         <activity android:name="com.example.disaster_management_v2.Donation_Activity" />
         <activity android:name="com.example.disaster_management_v2.Contact_Peer_Admins_Activity" />
         <activity android:name="com.example.disaster_management_v2.PieChart" />
-        <activity android:name="com.example.disaster_management_v2.piechart" />
-        <activity android:name="com.example.disaster_management_v2.Piechart" />
         <activity android:name="com.example.disaster_management_v2.Analyze1" />
         <activity android:name="com.example.disaster_management_v2.Analyze" />
         <activity android:name="com.example.disaster_management_v2.reg_new_inmates" />
         <activity android:name="com.example.disaster_management_v2.Request_Status_Activity" />
         <activity android:name="com.example.disaster_management_v2.Barcode_Scan_Activity" />
         <activity android:name="com.example.disaster_management_v2.Barcode_Generation_Activity" />
+        <activity android:name="com.example.disaster_management_v2.AdminInitialActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -215,6 +220,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.disaster_management_v2.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

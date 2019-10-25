@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -70,10 +71,6 @@ public class reg_new_inmates extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-
-
-
                 mreg.addValueEventListener(new ValueEventListener() {
 
 
@@ -94,80 +91,91 @@ public class reg_new_inmates extends AppCompatActivity {
                     }
                 });
 
+              // if(!(totcount.getText().toString().isEmpty())) {
 
-                count=Integer.valueOf(totcount.getText().toString());
+                    if (afname.getText().length()==0) {
+                        afname.setError("Please Enter Your Name");
+                        afname.requestFocus();
 
+                    } else if (aadhar.getText().length()==0) {
+                        aadhar.setError("Please Enter Aadhar UID");
+                        aadhar.requestFocus();
 
+                    } else if (aadhar.getText().length() != 12) {
+                        aadhar.setError("Aadhar number should be 12 digits!!!");
+                        aadhar.requestFocus();
+                    } else if (mobile.getText().length()==0) {
+                        mobile.setError("Please Enter your phone number!!!");
+                        mobile.requestFocus();
+                    } else if (mobile.getText().length() != 10) {
+                        mobile.setError("Phone number should be 10 digits!!!");
+                        mobile.requestFocus();
+                    } else if (gender.getText().length()==0) {
+                        gender.setError("Enter Your Gender!!");
+                        gender.requestFocus();
+                    } else {
 
-                for (int i = 0; i < count; i++) {
-                    namea[i] = new EditText(reg_new_inmates.this);
-                    gendera[i] = new EditText(reg_new_inmates.this);
-                    agea[i] = new EditText(reg_new_inmates.this);
-                    myLayout=(LinearLayout) findViewById(R.id.myLayout);
-                    namea[i].setHint("Enter the name of the family member");
+                        count = Integer.valueOf(totcount.getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(afname.getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Gender").setValue(gender.getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(mobile.getText().toString());
+                        for (int i = 0; i < count; i++) {
+                            namea[i] = new EditText(reg_new_inmates.this);
+                            gendera[i] = new EditText(reg_new_inmates.this);
+                            agea[i] = new EditText(reg_new_inmates.this);
+                            myLayout = (LinearLayout) findViewById(R.id.myLayout);
+                            namea[i].setHint("Enter the name of the family member");
 
-                    gendera[i].setHint("Enter Gender of the Members");
-                    agea[i].setHint("Enter the age");
-                    namea[i].setId(i);
-                    gendera[i].setId(i);
-                    agea[i].setId(i);
+                            gendera[i].setHint("Enter Gender of the Members");
+                            agea[i].setHint("Enter the age");
+                            namea[i].setId(i);
+                            gendera[i].setId(i);
+                            agea[i].setId(i);
 
+                            LinearLayout.LayoutParams abc = new LinearLayout.LayoutParams(
 
+                                    LinearLayout.LayoutParams.MATCH_PARENT,
+                                    LinearLayout.LayoutParams.WRAP_CONTENT
+                            );
 
+                            myLayout.addView(namea[i], abc);
+                            myLayout.addView(gendera[i], abc);
+                            myLayout.addView(agea[i], abc);
 
-                    LinearLayout.LayoutParams abc = new LinearLayout.LayoutParams(
-
-                            LinearLayout.LayoutParams.MATCH_PARENT,
-                            LinearLayout.LayoutParams.WRAP_CONTENT
-                    );
-
-                    myLayout.addView(namea[i], abc);
-                    myLayout.addView(gendera[i], abc);
-                    myLayout.addView(agea[i], abc);
-
-                    //mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(namea[i].getText().toString());
-                   // mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(gendera[i].getText().toString());
-                   // mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Age").setValue(agea[i].getText().toString());
-
-
-
-
-
-                }
-
-
-                mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(afname.getText().toString());
-                mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Gender").setValue(gender.getText().toString());
-                mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(mobile.getText().toString());
-
-
-
-
-
+                        }
+                    }
             }
         });
         savebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-
-
-
-
                 for (int i = 0; i < count; i++) {
+                    if (namea[i].getText().toString().isEmpty() && gendera[i].getText().toString().isEmpty() && agea[i].getText().toString().isEmpty()) {
+                        namea[i].setError("Please Enter name!!");
+                        namea[i].requestFocus();
+                        gendera[i].setError("Please Enter gender here!!!");
+                        agea[i].setError("Please Enter age here!!");
+                        Toast.makeText(reg_new_inmates.this, "All Fields are necessary!!!", Toast.LENGTH_LONG).show();
+                    } else if (namea[i].getText().length()==0) {
+                        namea[i].setError("Please Enter Your Name!!");
+                        namea[i].requestFocus();
 
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Name").setValue(namea[i].getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Gender").setValue(gendera[i].getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Age").setValue(agea[i].getText().toString());
+                    } else if (gendera[i].getText().length()==0) {
+                        gendera[i].setError("Please Enter your Gender!!!");
+                        gendera[i].requestFocus();
+                    } else if (agea[i].getText().length()==0) {
+                        agea[i].setError("Enter Your Age!!");
+                        agea[i].requestFocus();
+                    } else {
 
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Name").setValue(namea[i].getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Gender").setValue(gendera[i].getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Age").setValue(agea[i].getText().toString());
+                        Intent a = new Intent(reg_new_inmates.this, MainActivity.class);
+                        startActivity(a);
+                    }
                 }
-
-
-                Intent i=new Intent(reg_new_inmates.this,MainActivity.class);
-                startActivity(i);
-
-
-
             }
         });
     }

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RequirementLayout">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Food"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/food"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="140dp"
+                android:text="FOOD"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textFontWeight="550"
+                android:textSize="40dp">
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Clothes"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Food">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/clothes"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="150dp"
+                android:text="CLOTHES"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textFontWeight="550"
+                android:textSize="40dp">
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Medicine"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clothes">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="262dp"
+                android:paddingBottom="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/medicine"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="150dp"
+                android:text="MEDICINES"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textFontWeight="550"
+                android:textSize="40dp">
+
+            </TextView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Water"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Medicine">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingBottom="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/water"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="150dp"
+                android:text="DRINKING WATER"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textFontWeight="550"
+                android:textSize="40dp">
+
+            </TextView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Toiletries"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="30dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="10dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Water">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:paddingBottom="100dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/water"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="150dp"
+                android:text="Toiletries"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textFontWeight="550"
+                android:textSize="40dp">
+
+            </TextView>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

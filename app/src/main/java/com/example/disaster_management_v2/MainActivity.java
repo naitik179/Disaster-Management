@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+//        tx.replace(R.id.nav_host_fragment, new RC_dashboard());
+//        tx.commit();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Disaster Management App");
@@ -91,8 +94,15 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.registerinmates) {
             Intent i = new Intent(MainActivity.this,reg_new_inmates.class);
             startActivity(i);
-        } else if (id == R.id.applyreliefmaterial) {
-            fragment=new requirements();
+
+        }
+        else if(id == R.id.home){
+//            fragment = new RC_dashboard();
+        }
+
+
+        else if (id == R.id.applyreliefmaterial) {
+            fragment=new RequirementLayout();
         } else if (id == R.id.reqstatus) {
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
@@ -111,13 +121,16 @@ public class MainActivity extends AppCompatActivity
                Intent itomain=new Intent(MainActivity.this, LoginActivity.class);
                startActivity(itomain);
         }
+        else{
+//            fragment = new RC_dashboard();
+        }
 
         if(fragment!=null)
         {
             FragmentManager fragmentManager=getSupportFragmentManager();
             FragmentTransaction ft=fragmentManager.beginTransaction();
 
-            ft.replace(R.id.screen_area,fragment);
+            ft.replace(R.id.nav_host_fragment,fragment);
             ft.commit();
 
         }

@@ -39,7 +39,7 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
     EditText email,password,affectedPeople;
     EditText landmark,phone,aadhar,policeThana,confirmPassword;
     FirebaseAuth mFirebaseAuth;
-    private DatabaseReference mReg,mRef;
+    private DatabaseReference mReg,mRef,reliefContact;
     Button registerButton;
     Double latitude;
     Double longitude;
@@ -73,146 +73,22 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
         registerButton= findViewById(R.id.RegisterButton);
         mReg= FirebaseDatabase.getInstance().getReference().child("Sub Admin Registration");
         mRef=FirebaseDatabase.getInstance().getReference().child("Police Thana Details");
+        reliefContact=FirebaseDatabase.getInstance().getReference().child("Relief Center Contacts");
+
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 fetchLocation();
 
-//                String e=email.getText().toString();
-//                String pwd=password.getText().toString();
-//                String cpwd=confirmPassword.getText().toString();
-//                String pne=phone.getText().toString();
-//                String ap=affectedPeople.getText().toString();
-//                String lmark=landmark.getText().toString();
-//                String aid=aadhar.getText().toString();
-//                String pt=policeThana.getText().toString();
-//                if(e.isEmpty())
-//                {
-//                    email.setError("Please Enter email id!!");
-//                    email.requestFocus();
-//
-//                }
-//                else if(pne.isEmpty())
-//                {
-//                    phone.setError("Please Enter your phone number!!!");
-//                    phone.requestFocus();
-//                }
-//                else if(aid.isEmpty())
-//                {
-//                    aadhar.setError("Please Enter Aadhar UID");
-//                    aadhar.requestFocus();
-//                    count++;
-//                }
-//                else if(ap.isEmpty())
-//                {
-//                    affectedPeople.setError("Enter no of people affected in disaster!!");
-//                    affectedPeople.requestFocus();
-//                    count++;
-//                }
-//                else if(pt.isEmpty())
-//                {
-//                    policeThana.setError("Enter nearest Police Thana details");
-//                    policeThana.requestFocus();
-//                }
-//                else if(lmark.isEmpty())
-//                {
-//
-//                    landmark.setError("Enter nearest Landmark");
-//                    landmark.requestFocus();
-//                }
-//                else if(pwd.isEmpty())
-//                {
-//
-//                    password.setError("Please enter Your Password!!");
-//                    password.requestFocus();
-//                }
-//                else if(cpwd.isEmpty())
-//                {
-//
-//                    confirmPassword.setError("Confirm your Password");
-//                    confirmPassword.requestFocus();
-//                }
-//                else if(!(pwd.equals(cpwd)))
-//                {
-//
-//                    confirmPassword.setError("Password does not Match");
-//                    confirmPassword.requestFocus();
-//                }
-//                else if(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && aid.isEmpty() && ap.isEmpty() && lmark.isEmpty() && pt.isEmpty() && cpwd.isEmpty())
-//                {
-//
-//                    Toast.makeText(ReliefCentreRegisterActivity.this, "Fields are Empty!!", Toast.LENGTH_SHORT).show();
-//                }
-//                else if(!(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty()&&aid.isEmpty()&&ap.isEmpty()&&lmark.isEmpty()&&pt.isEmpty()&&cpwd.isEmpty()))
-//                {
-//                    mFirebaseAuth.createUserWithEmailAndPassword(e,pwd).addOnCompleteListener(ReliefCentreRegisterActivity.this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//                            if(!task.isSuccessful()){
-//                                Toast.makeText(ReliefCentreRegisterActivity.this, "Signup Unsuccessful, Please Try Again!!", Toast.LENGTH_SHORT).show();
-//                            }
-//                            else {
-//                                startActivity(new Intent(ReliefCentreRegisterActivity.this,MainActivity.class));
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Type").setValue(type);
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Email id").setValue(email.getText().toString());
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Phone No").setValue(phone.getText().toString());
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Aadhar UID").setValue(aadhar.getText().toString());
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Affected People").setValue(affectedPeople.getText().toString());
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Landmark").setValue(landmark.getText().toString());
-//                                mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Aadhar UID").setValue(aadhar.getText().toString());
-//                                mRef.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Nearest Police Thana").setValue(policeThana.getText().toString());
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Latitude").setValue(latitude.toString(latitude));
-//                                mReg.child(mFirebaseAuth.getInstance().getCurrentUser().getUid()+"/Longitude").setValue(longitude.toString(longitude));
-//
-//                            }
-//
-//                        }
-//                    });
-//                }
-//                else
-//                {
-//                    Toast.makeText(ReliefCentreRegisterActivity.this, "Error Occurred!!", Toast.LENGTH_SHORT).show();
-//                }
-//                //Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
-//                //startActivity(toReliefCentreDashboard);
-//
 //
             }
 
         });
 
-
-
-
-
-
-
-
         registerButton = findViewById(R.id.RegisterButton);
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-
-//        registerButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-////                fetchLocation();
-//
-//
-//            }
-//        });
-
-
-//        registerButton= findViewById(R.id.RegisterButton);
-//        registerButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
-//                startActivity(toReliefCentreDashboard);
-//            }
-//        });
-//    }
     }
 
     private void fetchLocation() {
@@ -284,16 +160,7 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if(requestCode == MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION){
             if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED){
-                //abc
 
-//                registerButton = findViewById(R.id.RegisterButton);
-//                registerButton.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View v) {
-//                        Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
-//                        startActivity(toReliefCentreDashboard);
-//            }
-//        });
             }else{
 
             }
@@ -309,6 +176,11 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
         String lmark=landmark.getText().toString();
         String aid=aadhar.getText().toString();
         String pt=policeThana.getText().toString();
+        if(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && aid.isEmpty() && ap.isEmpty() && lmark.isEmpty() && pt.isEmpty() && cpwd.isEmpty())
+        {
+
+            Toast.makeText(ReliefCentreRegisterActivity.this, "Fields are Empty!!", Toast.LENGTH_SHORT).show();
+        }
         if(e.isEmpty())
         {
             email.setError("Please Enter email id!!");
@@ -320,11 +192,21 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
             phone.setError("Please Enter your phone number!!!");
             phone.requestFocus();
         }
+        else if(pne.length()!=10)
+        {
+            phone.setError("Phone number should be 10 digits!!!");
+            phone.requestFocus();
+        }
         else if(aid.isEmpty())
         {
             aadhar.setError("Please Enter Aadhar UID");
             aadhar.requestFocus();
             count++;
+        }
+        else if(aid.length()!=12)
+        {
+            aadhar.setError("Aadhar number should be 12 digits!!!");
+            aadhar.requestFocus();
         }
         else if(ap.isEmpty())
         {
@@ -349,6 +231,11 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
             password.setError("Please enter Your Password!!");
             password.requestFocus();
         }
+        else if(pwd.length()<8)
+        {
+            password.setError("Password should be atleast 8 characters long!!!");
+            password.requestFocus();
+        }
         else if(cpwd.isEmpty())
         {
 
@@ -360,11 +247,6 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
 
             confirmPassword.setError("Password does not Match");
             confirmPassword.requestFocus();
-        }
-        else if(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && aid.isEmpty() && ap.isEmpty() && lmark.isEmpty() && pt.isEmpty() && cpwd.isEmpty())
-        {
-
-            Toast.makeText(ReliefCentreRegisterActivity.this, "Fields are Empty!!", Toast.LENGTH_SHORT).show();
         }
         else if(!(e.isEmpty()&&pwd.isEmpty()&&pne.isEmpty()&&aid.isEmpty()&&ap.isEmpty()&&lmark.isEmpty()&&pt.isEmpty()&&cpwd.isEmpty()))
         {
@@ -395,14 +277,5 @@ public class ReliefCentreRegisterActivity extends AppCompatActivity {
         {
             Toast.makeText(ReliefCentreRegisterActivity.this, "Error Occurred!!", Toast.LENGTH_SHORT).show();
         }
-        //Intent toReliefCentreDashboard = new Intent(ReliefCentreRegisterActivity.this, MainActivity.class);
-        //startActivity(toReliefCentreDashboard);
-
-
     }
-
-
-
-
-
 }

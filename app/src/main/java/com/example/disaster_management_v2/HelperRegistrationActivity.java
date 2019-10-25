@@ -93,10 +93,19 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                     phone.setError("Please Enter your phone number!!!");
                     phone.requestFocus();
                 }
+                else if(pne.length()!=10){
+                    phone.setError("Phone number should be 10 digits!!!");
+                    phone.requestFocus();
+                }
 
                 else if(pwd.isEmpty())
                 {
                     password.setError("Please enter Your Password!!");
+                    password.requestFocus();
+                }
+                else if(pwd.length()<8)
+                {
+                    password.setError("Password should be atleast 8 characters long!!");
                     password.requestFocus();
                 }
                 else if(cpwd.isEmpty())
@@ -115,8 +124,6 @@ public class HelperRegistrationActivity extends AppCompatActivity {
                 }
                 else if(!(e.isEmpty() && pwd.isEmpty() && pne.isEmpty() && cpwd.isEmpty() && n.isEmpty()))
                 {
-
-
 
                     mFirebaseAuth.createUserWithEmailAndPassword(e,pwd).addOnCompleteListener(HelperRegistrationActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override

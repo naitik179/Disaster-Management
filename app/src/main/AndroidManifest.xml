@@ -3,6 +3,19 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.disaster_management_v2">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <dist:module dist:instant="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -10,8 +23,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Donation_Activity"></activity>
-        <activity android:name=".Contact_Peer_Admins_Activity"></activity>
+        <activity android:name=".clothes_form"></activity>
+        <activity android:name=".Med" />
+        <activity android:name=".water" />
+        <activity android:name=".Toiletries" />
+        <activity android:name=".RequirementLayout" />
+        <activity android:name=".Forgot" />
+        <activity android:name=".Donation_Activity" />
+        <activity android:name=".Contact_Peer_Admins_Activity" />
         <activity android:name=".PieChart" />
         <activity android:name=".Analyze1" />
         <activity android:name=".Analyze" />
@@ -19,6 +38,7 @@
         <activity android:name=".Request_Status_Activity" />
         <activity android:name=".Barcode_Scan_Activity" />
         <activity android:name=".Barcode_Generation_Activity" />
+        <activity android:name=".AdminInitialActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -82,18 +102,5 @@
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
     </application>
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
-    <dist:module dist:instant="true" />
 
 </manifest>

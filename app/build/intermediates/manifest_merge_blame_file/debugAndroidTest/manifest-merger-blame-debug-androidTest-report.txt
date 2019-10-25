@@ -3,31 +3,31 @@
 3    package="com.example.disaster_management_v2.test" >
 4
 5    <uses-sdk
-5-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:5:5-74
+5-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:5:5-74
 6        android:minSdkVersion="21"
-6-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:5:15-41
+6-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:5:15-41
 7        android:targetSdkVersion="28" />
-7-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:5:42-71
+7-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:11:5-15:84
+9-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:11:5-15:84
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:11:22-76
+10-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:11:22-76
 11        android:functionalTest="false"
-11-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:14:22-52
+11-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:14:22-52
 12        android:handleProfiling="false"
-12-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:13:22-53
+12-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:13:22-53
 13        android:label="Tests for com.example.disaster_management_v2"
-13-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:15:22-82
+13-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:15:22-82
 14        android:targetPackage="com.example.disaster_management_v2" />
-14-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:12:22-80
+14-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:12:22-80
 15
 16    <application android:debuggable="true" >
-16-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:7:5-9:19
-16-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:7:18-43
+16-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:7:5-9:19
+16-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:7:18-43
 17        <uses-library android:name="android.test.runner" />
-17-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:8:9-60
-17-->C:\Naitik\Phase3\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger8607440056496037477.xml:8:23-57
+17-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:8:9-60
+17-->D:\Desktop\Disaster_Management_v2\app\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger6712284226534087315.xml:8:23-57
 18    </application>
 19
 20</manifest>

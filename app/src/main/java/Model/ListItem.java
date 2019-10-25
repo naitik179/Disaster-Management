@@ -2,11 +2,11 @@ package Model;
 
 public class ListItem {
     private String name;
-    private String description;
+    private String gender;
 
-    public ListItem(String name, String description) {
+    public ListItem(String name, String gender) {
         this.name = name;
-        this.description = description;
+        this.gender = gender;
     }
 
     public String getName() {
@@ -17,11 +17,11 @@ public class ListItem {
         this.name = name;
     }
 
-    public String getDescription() {
-        return description;
+    public String getGender() {
+        return gender;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

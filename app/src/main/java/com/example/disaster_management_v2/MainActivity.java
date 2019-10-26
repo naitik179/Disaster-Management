@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-//        tx.replace(R.id.nav_host_fragment, new RC_dashboard());
-//        tx.commit();
+        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+        tx.replace(R.id.nav_host_fragment, new RC_dashboard());
+        tx.commit();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle("Disaster Management App");
@@ -91,7 +91,13 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
         Fragment fragment=null;
 
-        if (id == R.id.registerinmates) {
+
+        if(id==R.id.home){
+            Intent i=new Intent(MainActivity.this,MainActivity.class);
+            startActivity(i);
+        }
+
+        else if (id == R.id.registerinmates) {
             Intent i = new Intent(MainActivity.this,reg_new_inmates.class);
             startActivity(i);
 

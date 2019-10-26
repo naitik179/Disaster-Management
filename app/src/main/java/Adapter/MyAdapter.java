@@ -60,7 +60,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
             view.setOnClickListener(this);
 
             name = (TextView) view.findViewById(R.id.title);
-            description = (TextView) view.findViewById(R.id.description);
+            description = (TextView) view.findViewById(R.id.gender);
 
         }
 

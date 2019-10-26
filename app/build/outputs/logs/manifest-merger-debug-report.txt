@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
 MERGED from [androidx.navigation:navigation-ui:2.1.0-rc01] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\b020f76b4ff36ad404b3c1238d0ac9c1\jetified-navigation-ui-2.1.0-rc01\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\07b47e65ab2b3f8f366aa762b10b0137\appcompat-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -77,22 +77,22 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Pranav\.gradle\caches\transfor
 MERGED from [com.google.android.gms:play-services-vision-license:11.8.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\2240cfa7f7fc88c9977ec6e99a2f4972\play-services-vision-license-11.8.0\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\7c3f40922534760522232442d1a17b19\firebase-database-collection-17.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\50eb0dc0f4c70754e338bee09d51ef27\play-services-vision-common-license-11.8.0\AndroidManifest.xml:2:1-6:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
-INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
+INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
 	package
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:4:5-49
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	xmlns:dist
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:3:5-61
 	android:versionCode
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-106:12
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:1-112:12
 		INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:2:11-69
@@ -151,7 +151,7 @@ ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:17
 	dist:instant
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:17:18-37
 application
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:19:5-104:19
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:19:5-110:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\6ae0516d2d3235c0ace324e7a6769422\material-1.0.0\AndroidManifest.xml:22:5-20
 MERGED from [me.dm7.barcodescanner:zxing:1.9] C:\Users\Pranav\.gradle\caches\transforms-2\files-2.1\1994da8910c7419bb2fb5af29a8ffa41\zxing-1.9\AndroidManifest.xml:11:5-20
@@ -234,170 +234,194 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:11.8.0] 
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:25:9-40
+activity#com.example.disaster_management_v2.Food_Activity
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:26:9-60
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:26:19-48
 activity#com.example.disaster_management_v2.clothes_form
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:26:9-59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:9-50
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:26:19-47
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:19-47
 activity#com.example.disaster_management_v2.Med
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:9-41
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:9-41
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:27:19-38
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:19-38
 activity#com.example.disaster_management_v2.water
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:9-43
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:9-43
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:28:19-40
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:19-40
 activity#com.example.disaster_management_v2.Toiletries
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:9-48
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:30:9-48
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:29:19-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:30:19-45
 activity#com.example.disaster_management_v2.RequirementLayout
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:30:9-55
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:9-55
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:30:19-52
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:19-52
 activity#com.example.disaster_management_v2.Forgot
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:9-44
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:9-44
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:31:19-41
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:19-41
 activity#com.example.disaster_management_v2.Donation_Activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:9-55
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:9-55
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:32:19-52
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:19-52
 activity#com.example.disaster_management_v2.Contact_Peer_Admins_Activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:9-66
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:9-66
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:33:19-63
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:19-63
 activity#com.example.disaster_management_v2.PieChart
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:9-46
-	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:34:19-43
-activity#com.example.disaster_management_v2.Analyze1
 ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:35:9-46
 	android:name
 		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:35:19-43
+activity#com.example.disaster_management_v2.Analyze1
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:9-46
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:19-43
 activity#com.example.disaster_management_v2.Analyze
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:9-45
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:9-45
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:36:19-42
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:19-42
 activity#com.example.disaster_management_v2.reg_new_inmates
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:9-53
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:38:9-53
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:37:19-50
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:38:19-50
 activity#com.example.disaster_management_v2.Request_Status_Activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:38:9-61
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:9-61
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:38:19-58
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:19-58
 activity#com.example.disaster_management_v2.Barcode_Scan_Activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:9-59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:40:9-59
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:39:19-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:40:19-56
 activity#com.example.disaster_management_v2.Barcode_Generation_Activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:40:9-65
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:41:9-65
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:40:19-62
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:41:19-62
 activity#com.example.disaster_management_v2.AdminInitialActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:41:9-58
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:9-58
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:41:19-55
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:42:19-55
+activity#com.example.disaster_management_v2.food_status
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:9-49
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:43:19-46
+activity#com.example.disaster_management_v2.clothes_status
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:9-52
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:44:19-49
+activity#com.example.disaster_management_v2.water_status
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:45:9-50
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:45:19-47
+activity#com.example.disaster_management_v2.toil_status
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:46:9-49
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:46:19-46
+activity#com.example.disaster_management_v2.med_status
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:9-48
+	android:name
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:47:19-45
 activity#com.example.disaster_management_v2.MapActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:50:9-52:58
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:56:9-58:58
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:52:13-55
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:58:13-55
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:51:13-40
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:57:13-40
 activity#com.example.disaster_management_v2.DataRetrieve
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:53:9-50
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:59:9-50
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:53:19-47
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:59:19-47
 activity#com.example.disaster_management_v2.Armed_forces_activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:54:9-59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:60:9-59
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:54:19-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:60:19-56
 activity#com.example.disaster_management_v2.Police_stn_activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:63:9-57
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:69:9-57
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:63:19-54
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:69:19-54
 activity#com.example.disaster_management_v2.Hospital_activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:64:9-55
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:70:9-55
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:64:19-52
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:70:19-52
 activity#com.example.disaster_management_v2.Fire_brigade_activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:65:9-59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:9-59
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:65:19-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:19-56
 activity#com.example.disaster_management_v2.ReliefCentreRegisterActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:66:9-69:59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:72:9-75:59
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:68:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:74:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:69:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:75:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:67:13-57
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:73:13-57
 activity#com.example.disaster_management_v2.HelperRegistrationActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:70:9-73:59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:76:9-79:59
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:72:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:78:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:73:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:79:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:71:13-55
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:77:13-55
 activity#com.example.disaster_management_v2.HelperDashboardActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:74:9-77:59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:80:9-83:59
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:76:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:82:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:77:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:83:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:75:13-52
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:81:13-52
 activity#com.example.disaster_management_v2.RequirementStatusActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:78:9-63
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:9-63
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:78:19-60
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:19-60
 activity#com.example.disaster_management_v2.LoginActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:79:9-88:20
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:85:9-94:20
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:81:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:87:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:82:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:88:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:80:13-42
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:86:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:83:13-87:29
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:89:13-93:29
 action#android.intent.action.MAIN
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:17-69
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:90:17-69
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:84:25-66
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:90:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:86:17-77
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:92:17-77
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:86:27-74
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:92:27-74
 activity#com.example.disaster_management_v2.Registration_activity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:89:9-92:59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:95:9-98:59
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:91:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:97:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:92:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:98:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:90:13-50
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:96:13-50
 activity#com.example.disaster_management_v2.MainActivity
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:93:9-96:59
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:99:9-102:59
 	android:label
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:95:13-45
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:101:13-45
 	android:theme
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:96:13-56
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:102:13-56
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:94:13-41
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:100:13-41
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:98:9-100:55
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:104:9-106:55
 	android:value
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:100:13-52
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:106:13-52
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:99:13-58
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:105:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:101:9-103:39
+ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:107:9-109:39
 	android:value
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:103:13-36
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:109:13-36
 	android:name
-		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:102:13-70
+		ADDED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml:108:13-70
 uses-sdk
 INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Desktop\Disaster_Management_v2\app\src\main\AndroidManifest.xml

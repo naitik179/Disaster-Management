@@ -10,9 +10,9 @@
 
         android:id="@+id/myLayout"
 
-        android:layout_width="198dp"
+        android:layout_width="184dp"
 
-        android:layout_height="246dp"
+        android:layout_height="269dp"
 
         android:layout_marginStart="57dp"
         android:layout_marginTop="38dp"
@@ -31,6 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Quantity"
+            android:textColorHint="#000"
+            android:fontFamily="@font/rg"
             android:inputType="number"
             android:visibility="invisible"
             tools:visibility="invisible" />
@@ -40,6 +43,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Quantity"
+            android:textColorHint="#000"
+            android:fontFamily="@font/rg"
+            android:layout_marginTop="10dp"
             android:inputType="number"
             android:visibility="invisible"
             tools:visibility="invisible" />
@@ -48,7 +55,11 @@
             android:id="@+id/t3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
+            android:hint="Quantity"
+            android:textColorHint="#000"
+            android:fontFamily="@font/rg"
             android:inputType="number"
             android:visibility="invisible"
             tools:visibility="invisible" />
@@ -57,7 +68,11 @@
             android:id="@+id/t4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
+            android:hint="Quantity"
+            android:textColorHint="#000"
+            android:fontFamily="@font/rg"
             android:inputType="textPersonName"
             android:visibility="invisible"
             tools:visibility="invisible" />
@@ -66,7 +81,11 @@
             android:id="@+id/t5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
+            android:hint="Quantity"
+            android:textColorHint="#000"
+            android:fontFamily="@font/rg"
             android:inputType="number"
             android:visibility="invisible"
             tools:visibility="invisible" />
@@ -147,8 +166,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Other requirments"
         android:inputType="text"
-        android:text="Other requirments"
+        android:textColorHint="#000"
+        android:fontFamily="@font/rg"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cb5" />

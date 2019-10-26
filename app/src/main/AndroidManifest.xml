@@ -23,7 +23,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".clothes_form"></activity>
+        <activity android:name=".Food_Activity"></activity>
+        <activity android:name=".clothes_form" />
         <activity android:name=".Med" />
         <activity android:name=".water" />
         <activity android:name=".Toiletries" />
@@ -39,6 +40,11 @@
         <activity android:name=".Barcode_Scan_Activity" />
         <activity android:name=".Barcode_Generation_Activity" />
         <activity android:name=".AdminInitialActivity" />
+        <activity android:name=".food_status" />
+        <activity android:name=".clothes_status" />
+        <activity android:name=".water_status" />
+        <activity android:name=".toil_status" />
+        <activity android:name=".med_status" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

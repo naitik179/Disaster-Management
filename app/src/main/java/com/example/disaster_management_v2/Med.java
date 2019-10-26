@@ -3,6 +3,7 @@ package com.example.disaster_management_v2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -145,118 +146,167 @@ public class Med extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i("Cricket","S!:"+s1);
+                if(flag1==0 && flag2==0 && flag3==0 && flag4==0 && flag5==0)
+                {
+                    Toast.makeText(Med.this,"Select atleast 1 type of medicine to apply for Medicines!!",Toast.LENGTH_SHORT).show();
+                }
                 if(flag1==1) {
-                    s1 = Integer.parseInt(q1.getText().toString());
 
-                    mReg.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    if(q1.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Med.this, "Quantity for medicine of First Aid is Empty!!", Toast.LENGTH_SHORT).show();
+                        flag1=0;
+                    }
 
-                            n1=dataSnapshot.child("quantity").getValue();
-                            n1s=String.valueOf(n1);
-                            sa=Integer.parseInt(n1s);
+                    else {
+                        flag1=1;
+                        s1 = Integer.parseInt(q1.getText().toString());
 
-                        }
+                        mReg.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                                n1 = dataSnapshot.child("quantity").getValue();
+                                n1s = String.valueOf(n1);
+                                sa = Integer.parseInt(n1s);
 
-                        }
-                    });
+                            }
 
-                    Log.i("Pranav","value:"+sa);
-                    int s1Total=s1+sa;
-                    mReg.child("quantity").setValue(s1Total);
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+
+                        Log.i("Pranav", "value:" + sa);
+                        int s1Total = s1 + sa;
+                        mReg.child("quantity").setValue(s1Total);
+                    }
                 }
 
                 if(flag2==1) {
-                    s2 = Integer.parseInt(q2.getText().toString());
-                    mreg2.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n2=dataSnapshot.child("quantity").getValue();
-                            n2s=String.valueOf(n2);
-                            sb=Integer.parseInt(n2s);
+                    if(q2.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Med.this, "Quantity for medicine of Viral Fever is Empty!!", Toast.LENGTH_SHORT).show();
+                        flag2=0;
+                    }
+                    else {
+                        flag2=1;
+                        s2 = Integer.parseInt(q2.getText().toString());
 
-                        }
+                        mreg2.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n2 = dataSnapshot.child("quantity").getValue();
+                                n2s = String.valueOf(n2);
+                                sb = Integer.parseInt(n2s);
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            }
 
-                        }
-                    });
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                    // Log.i("Pranav","value:"+sa);
-                    int s2Total=s2+sb;
-                    need2.child("quantity").setValue(s2Total);
+                            }
+                        });
+
+                        // Log.i("Pranav","value:"+sa);
+                        int s2Total = s2 + sb;
+                        need2.child("quantity").setValue(s2Total);
+                    }
                 }
                 if(flag3==1) {
-                    s3 = Integer.parseInt(q3.getText().toString());
+                    if(q3.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Med.this, "Quantity for medicine of Jaundice is Empty!!", Toast.LENGTH_SHORT).show();
+                    flag3=0;
+                    }
+                    else {
+                        flag3=1;
+                        s3 = Integer.parseInt(q3.getText().toString());
 
-                    mreg3.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n3=dataSnapshot.child("quantity").getValue();
-                            n3s=String.valueOf(n3);
-                            sc=Integer.parseInt(n3s);
+                        mreg3.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n3 = dataSnapshot.child("quantity").getValue();
+                                n3s = String.valueOf(n3);
+                                sc = Integer.parseInt(n3s);
 
-                        }
+                            }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        }
-                    });
+                            }
+                        });
 
-                    // Log.i("Pranav","value:"+sa);
-                    int s3Total=s3+sc;
-                    need3.child("quantity").setValue(s3Total);
+                        // Log.i("Pranav","value:"+sa);
+                        int s3Total = s3 + sc;
+                        need3.child("quantity").setValue(s3Total);
+                    }
 
                 }
 
                 if(flag4==1) {
-                    s4 = Integer.parseInt(q4.getText().toString());
 
-                    mreg4.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n4=dataSnapshot.child("quantity").getValue();
-                            n4s=String.valueOf(n4);
-                            sd=Integer.parseInt(n4s);
+                    if(q4.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Med.this, "Quantity of medicine for Cholera is Empty!!", Toast.LENGTH_SHORT).show();
+                        flag4=0;
+                    }
+                    else {
+                        flag4=1;
+                        s4 = Integer.parseInt(q4.getText().toString());
 
-                        }
+                        mreg4.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n4 = dataSnapshot.child("quantity").getValue();
+                                n4s = String.valueOf(n4);
+                                sd = Integer.parseInt(n4s);
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            }
 
-                        }
-                    });
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                    // Log.i("Pranav","value:"+sa);
-                    int s4Total=s4+sd;
-                    need4.child("quantity").setValue(s4Total);
+                            }
+                        });
+
+                        // Log.i("Pranav","value:"+sa);
+                        int s4Total = s4 + sd;
+                        need4.child("quantity").setValue(s4Total);
+                    }
                 }
 
                 if (flag5 == 1) {
-                    s5 = Integer.parseInt(q5.getText().toString());
-                    mreg5.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n5=dataSnapshot.child("quantity").getValue();
-                            n5s=String.valueOf(n5);
-                            se=Integer.parseInt(n5s);
+                    if(q5.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Med.this, "Quantity for Cold Medicine is Empty!!", Toast.LENGTH_SHORT).show();
 
-                        }
+                    }
+                    else {
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                        s5 = Integer.parseInt(q5.getText().toString());
 
-                        }
-                    });
+                        mreg5.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n5 = dataSnapshot.child("quantity").getValue();
+                                n5s = String.valueOf(n5);
+                                se = Integer.parseInt(n5s);
 
-                    // Log.i("Pranav","value:"+sa);
-                    int s5Total=s5+se;
-                    need5.child("quantity").setValue(s5Total);
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+
+                        // Log.i("Pranav","value:"+sa);
+                        int s5Total = s5 + se;
+                        need5.child("quantity").setValue(s5Total);
+                    }
                 }
 
 

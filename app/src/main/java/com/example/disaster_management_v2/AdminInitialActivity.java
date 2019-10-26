@@ -4,6 +4,9 @@ import android.app.LauncherActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,17 +23,21 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import Adapter.MyAdapter;
-import Model.Contacts;
 import Model.ListItem;
 
 public class AdminInitialActivity extends AppCompatActivity {
-    private RecyclerView  recyclerView ;
-    private RecyclerView.Adapter adapter;
-    private List<ListItem> listItems;
+    private RecyclerView  recyclerView;
+    private RecyclerView.Adapter adapter,adapter1;
+    private List<ListItem> listItems,listItems1;
+
+
+
+
     FirebaseAuth mFirebaseAuth;
     private DatabaseReference mReg;
 
@@ -39,49 +46,76 @@ public class AdminInitialActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.initialadminactivity);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewID);
-
-         recyclerView.setHasFixedSize(true);
-
         mFirebaseAuth=FirebaseAuth.getInstance();
 
-        mReg= FirebaseDatabase.getInstance().getReference().child("Affected_People");
-         //every item has a fixed size
+        mReg= FirebaseDatabase.getInstance().getReference().child("Affected_People").child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerViewID1);
+         recyclerView.setHasFixedSize(true);
+        //every item has a fixed size
         recyclerView.setLayoutManager(new
                 LinearLayoutManager(this));
 
-
+        /*recyclerView1 = (RecyclerView) findViewById(R.id.recyclerViewID2);
+        recyclerView1.setHasFixedSize(true);
+        *///every item has a fixed size
+        /*ecyclerView1.setLayoutManager(new
+                LinearLayoutManager(this));
+*/
         listItems = new ArrayList<>();
+        listItems1 = new ArrayList<>();
+        //RC_list=new ArrayList<>();
 
-        for (int i = 0; i<10; i++) {
-            /*ListItem listItem = new ListItem(
-                    "Relief centre " + (i+1),
-                    "City "
-            );
-            listItems.add(listItem);*/
-        }
+
         mReg.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                //listItems.clear();
-                for(DataSnapshot RCs:dataSnapshot.getChildren())
-                {
-                  Log.i("Naitik","Pranav");
-                    for (DataSnapshot Aadhars:RCs.getChildren()
+
+                TextView Total_Count=findViewById(R.id.title);
+                boolean flag=false;
+                int i=1;
+
+
+                //EditText value=findViewById(R.id.RC_num);
+
+                      //Map<Object, String> data = (Map<Object, String>) ds.getValue();
+                    for (DataSnapshot Aadhars: dataSnapshot.getChildren()
                          ) {
-                             String name=String.valueOf(Aadhars.child("Name").getValue());
-                             String gen=String.valueOf(Aadhars.child("Gender").getValue());
-                             Log.i("name","namee:"+name);
+
 
                         ListItem listItem = new ListItem(
-                                "Name: " + name,
-                                "Gender : "+gen
+                                "Name : " + String.valueOf(Aadhars.child("Name").getValue()),
+                                "Gender : "+String.valueOf(Aadhars.child("Gender").getValue())
                         );
                         listItems.add(listItem);
+
+                        //RC_list.add(i,listItem);
+
+                       for (DataSnapshot Familys: Aadhars.child("Other Family Members").getChildren()
+                             ){
+                           Log.i("Info", "onDataChange: Family :"+Familys.child("Name").getValue());
+                            ListItem listItem1 = new ListItem(
+                                    "Name : " + String.valueOf(Familys.child("Name").getValue()),
+                                    "Gender : " + String.valueOf(Familys.child("Gender").getValue())
+                            );
+                            listItems.add(listItem1);
+                                //RC_list.add(listItem1);
+                           i++;
+
+                          // RC_list.add(i,listItem);
+                        }
+
+                       i++;
                     }
 
-                }
+                    recyclerView.setAdapter(adapter1);
 
+
+
+                recyclerView .setAdapter(adapter);
+                //recyclerView1.setAdapter(adapter2);
+                Total_Count.setText(Total_Count.getText() + String.valueOf(i));
+                Toast.makeText(AdminInitialActivity.this, "Total RC count :"+i, Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -90,12 +124,13 @@ public class AdminInitialActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         adapter = new MyAdapter(this, listItems);
+        adapter1 = new MyAdapter(this, listItems1);
+        //adapter2 = new MyAdapter(this, RC_list);
 
-        recyclerView .setAdapter(adapter);
+
+
+
 
     }
 }

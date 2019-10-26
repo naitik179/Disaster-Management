@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Clothes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:height="55dp"
+            android:background="#00BCD4"
+            android:text="Clothes"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/Male"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Male"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Clothes" />
+
+        <TextView
+            android:id="@+id/Female"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="190dp"
+            android:paddingLeft="20dp"
+            android:text="Female"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Male" />
+
+        <TextView
+            android:id="@+id/Children"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="190dp"
+            android:paddingLeft="20dp"
+            android:text="Children"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Female" />
+
+        <TextView
+            android:id="@+id/Infant"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="190dp"
+            android:paddingLeft="20dp"
+            android:text="Infant"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Children" />
+
+        <TextView
+            android:id="@+id/male_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Male" />
+
+        <TextView
+            android:id="@+id/male_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/male_s" />
+
+        <TextView
+            android:id="@+id/male_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/male_l" />
+
+        <TextView
+            android:id="@+id/male_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/male_xl" />
+
+        <TextView
+            android:id="@+id/female_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Female" />
+
+        <TextView
+            android:id="@+id/female_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/female_s" />
+
+        <TextView
+            android:id="@+id/female_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/female_l" />
+
+        <TextView
+            android:id="@+id/female_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/female_xl" />
+
+        <TextView
+            android:id="@+id/children_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Children" />
+
+        <TextView
+            android:id="@+id/children_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/children_s" />
+
+        <TextView
+            android:id="@+id/children_xl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/children_l" />
+
+        <TextView
+            android:id="@+id/children_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/children_xl" />
+
+        <TextView
+            android:id="@+id/infant_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Infant" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

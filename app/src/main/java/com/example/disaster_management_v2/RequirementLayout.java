@@ -30,6 +30,14 @@ public class RequirementLayout extends Fragment {
         water=view.findViewById(R.id.Water);
         medicine=view.findViewById(R.id.Medicine);
 
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i= new Intent(getActivity(),Food_Activity.class);
+                startActivity(i);
+            }
+        });
+
         clothes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

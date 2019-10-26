@@ -21,6 +21,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import static android.widget.Toast.LENGTH_SHORT;
+
 public class Toiletries extends AppCompatActivity {
 
     CheckBox cb11, cb2, cb3, cb4, cb5;
@@ -30,6 +32,7 @@ public class Toiletries extends AppCompatActivity {
     Button tt;
     int flag1=0,flag2=0,flag3=0,flag4=0,flag5=0;
     int s1,s2,s3,s4,s5,sa,sb,sc,sd,se;
+    int cc=0;
     Object n1,n2,n3,n4,n5;
     public Fragment fragment;
 
@@ -150,24 +153,35 @@ public class Toiletries extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.i("Cricket","S!:"+s1);
+
+                if(flag1==0 && flag2==0 && flag3==0 && flag4==0 && flag5==0)
+                {
+                    Toast.makeText(Toiletries.this,"Apply in atleast One Field to apply for Toiletries", LENGTH_SHORT).show();
+                }
                 if(flag1==1) {
-                    s1 = Integer.parseInt(q1.getText().toString());
+                    if(q1.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Toiletries.this,"Quantity in Sanitary Napkins is Required", LENGTH_SHORT).show();
+                    }
+                    else {
+                        s1 = Integer.parseInt(q1.getText().toString());
+                        cc++;
+                        mReg.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
-                    mReg.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n1 = dataSnapshot.child("quantity").getValue();
+                                n1s = String.valueOf(n1);
+                                sa = Integer.parseInt(n1s);
 
-                             n1=dataSnapshot.child("quantity").getValue();
-                             n1s=String.valueOf(n1);
-                            sa=Integer.parseInt(n1s);
+                            }
 
-                        }
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
+                            }
+                        });
+                    }
 
                     Log.i("Pranav","value:"+sa);
                     int s1Total=s1+sa;
@@ -175,43 +189,57 @@ public class Toiletries extends AppCompatActivity {
                 }
 
                 if(flag2==1) {
-                    s2 = Integer.parseInt(q2.getText().toString());
-                    mreg2.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n2=dataSnapshot.child("quantity").getValue();
-                            n2s=String.valueOf(n2);
-                            sb=Integer.parseInt(n2s);
 
-                        }
+                    if(q2.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Toiletries.this,"Quantity in Soap is Required", LENGTH_SHORT).show();
+                    }
+                    else {
+                        s2 = Integer.parseInt(q2.getText().toString());
+                        cc++;
+                        mreg2.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n2 = dataSnapshot.child("quantity").getValue();
+                                n2s = String.valueOf(n2);
+                                sb = Integer.parseInt(n2s);
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            }
 
-                        }
-                    });
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+                    }
 
                     // Log.i("Pranav","value:"+sa);
                     int s2Total=s2+sb;
                     need2.child("quantity").setValue(s2Total);
                 }
                 if(flag3==1) {
-                    s3 = Integer.parseInt(q3.getText().toString());
+                    if(q3.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Toiletries.this,"Quantity in Diaper is Required", LENGTH_SHORT).show();
+                    }
+                    else {
+                        s3 = Integer.parseInt(q3.getText().toString());
+                        cc++;
+                        mreg3.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n3 = dataSnapshot.child("quantity").getValue();
+                                n3s = String.valueOf(n3);
+                                sc = Integer.parseInt(n3s);
 
-                    mreg3.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n3=dataSnapshot.child("quantity").getValue();
-                            n3s=String.valueOf(n3);
-                            sc=Integer.parseInt(n3s);
+                            }
 
-                        }
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                        }
-                    });
+                            }
+                        });
+                    }
 
                     // Log.i("Pranav","value:"+sa);
                     int s3Total=s3+sc;
@@ -220,22 +248,29 @@ public class Toiletries extends AppCompatActivity {
                 }
 
                 if(flag4==1) {
-                    s4 = Integer.parseInt(q4.getText().toString());
+                    if(q4.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Toiletries.this,"Quantity in Sanitary Napkins is Required", LENGTH_SHORT).show();
+                    }
+                    else {
+                        s4 = Integer.parseInt(q4.getText().toString());
+                        cc++;
 
-                    mreg4.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n4=dataSnapshot.child("quantity").getValue();
-                            n4s=String.valueOf(n4);
-                            sd=Integer.parseInt(n4s);
+                        mreg4.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n4 = dataSnapshot.child("quantity").getValue();
+                                n4s = String.valueOf(n4);
+                                sd = Integer.parseInt(n4s);
 
-                        }
+                            }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        }
-                    });
+                            }
+                        });
+                    }
 
                     // Log.i("Pranav","value:"+sa);
                     int s4Total=s4+sd;
@@ -243,35 +278,53 @@ public class Toiletries extends AppCompatActivity {
                 }
 
                 if (flag5 == 1) {
-                    s5 = Integer.parseInt(q5.getText().toString());
-                    mreg5.addValueEventListener(new ValueEventListener() {
-                        @Override
-                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                            n5=dataSnapshot.child("quantity").getValue();
-                            n5s=String.valueOf(n5);
-                            se=Integer.parseInt(n5s);
+                    if(q5.getText().toString().isEmpty())
+                    {
+                        Toast.makeText(Toiletries.this,"Quantity in Blankets is Required", LENGTH_SHORT).show();
+                    }
+                    else {
+                        s5 = Integer.parseInt(q5.getText().toString());
+                        cc++;
+                        mreg5.addValueEventListener(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                n5 = dataSnapshot.child("quantity").getValue();
+                                n5s = String.valueOf(n5);
+                                se = Integer.parseInt(n5s);
 
-                        }
+                            }
 
-                        @Override
-                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
 
-                        }
-                    });
+                            }
+                        });
+                    }
 
                     // Log.i("Pranav","value:"+sa);
                     int s5Total=s5+se;
                     need5.child("quantity").setValue(s5Total);
                 }
+                if(cc!=0)
+                {
+                    Intent i=new Intent(Toiletries.this,MainActivity.class);
+                    startActivity(i);
+                }
 
-                 fragment =new RequirementLayout();
+
 
 
             }
 
 
 
+
+
+
+
         });
+
     }
 
 }
+

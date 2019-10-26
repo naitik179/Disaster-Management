@@ -32,7 +32,7 @@ import Adapter.MyAdapter;
 import Model.DataGet;
 
 
-public class contact_peer_admins extends Fragment {
+ class contact_peer_admins extends Fragment {
 
 
 

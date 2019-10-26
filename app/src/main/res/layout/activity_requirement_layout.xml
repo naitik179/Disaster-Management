@@ -166,7 +166,7 @@
                 android:layout_height="250dp"
                 android:paddingBottom="100dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/water"></ImageView>
+                android:src="@drawable/toiletries"></ImageView>
 
             <TextView
                 android:layout_width="match_parent"

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_status">
+
+    <TextView
+        android:id="@+id/teaQ"
+        android:layout_width="121dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/wheatQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tea"
+        app:layout_constraintTop_toBottomOf="@+id/riceQ" />
+
+    <TextView
+        android:id="@+id/wheatQ"
+        android:layout_width="121dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="302dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/wheat"
+        app:layout_constraintTop_toBottomOf="@+id/teaQ" />
+
+    <TextView
+        android:id="@+id/dal"
+        android:layout_width="119dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="614dp"
+        android:text="Dal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dalQ"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/milk"
+        android:layout_width="127dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="553dp"
+        android:text="Milk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dal" />
+
+    <TextView
+        android:id="@+id/milkQ"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/riceQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/milk"
+        app:layout_constraintTop_toBottomOf="@+id/dalQ" />
+
+    <TextView
+        android:id="@+id/riceQ"
+        android:layout_width="119dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/teaQ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rice"
+        app:layout_constraintTop_toBottomOf="@+id/milkQ" />
+
+    <TextView
+        android:id="@+id/rice"
+        android:layout_width="113dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Rice"
+        app:layout_constraintBottom_toTopOf="@+id/tea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/milk" />
+
+    <TextView
+        android:id="@+id/tea"
+        android:layout_width="104dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tea"
+        app:layout_constraintBottom_toTopOf="@+id/wheat"
+        app:layout_constraintEnd_toStartOf="@+id/teaQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rice" />
+
+    <TextView
+        android:id="@+id/wheat"
+        android:layout_width="103dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="332dp"
+        android:text="Wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/wheatQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tea" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -220,7 +220,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingTop="150dp"
-                android:text="OTHERS"
+                android:text="TOILETRIES"
                 android:textAlignment="center"
                 android:textColor="#000"
                 android:textFontWeight="550"

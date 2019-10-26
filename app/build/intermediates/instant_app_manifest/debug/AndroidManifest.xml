@@ -56,6 +56,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.disaster_management_v2.Food_Activity" />
         <activity android:name="com.example.disaster_management_v2.clothes_form" />
         <activity android:name="com.example.disaster_management_v2.Med" />
         <activity android:name="com.example.disaster_management_v2.water" />
@@ -72,6 +73,11 @@
         <activity android:name="com.example.disaster_management_v2.Barcode_Scan_Activity" />
         <activity android:name="com.example.disaster_management_v2.Barcode_Generation_Activity" />
         <activity android:name="com.example.disaster_management_v2.AdminInitialActivity" />
+        <activity android:name="com.example.disaster_management_v2.food_status" />
+        <activity android:name="com.example.disaster_management_v2.clothes_status" />
+        <activity android:name="com.example.disaster_management_v2.water_status" />
+        <activity android:name="com.example.disaster_management_v2.toil_status" />
+        <activity android:name="com.example.disaster_management_v2.med_status" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

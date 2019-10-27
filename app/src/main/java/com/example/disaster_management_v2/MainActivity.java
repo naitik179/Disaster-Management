@@ -1,28 +1,21 @@
 package com.example.disaster_management_v2;
+
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -98,9 +91,9 @@ public class MainActivity extends AppCompatActivity
         }
 
         else if (id == R.id.registerinmates) {
-            Intent i = new Intent(MainActivity.this,reg_new_inmates.class);
-            startActivity(i);
-
+//            Intent i = new Intent(MainActivity.this,reg_new_inmates.class);
+//            startActivity(i);
+            fragment=new reg_new_inmates();
         }
         else if(id == R.id.home){
 //            fragment = new RC_dashboard();
@@ -113,8 +106,7 @@ public class MainActivity extends AppCompatActivity
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
            // fragment=new ReliefCampStatus();
-            Intent i1= new Intent(MainActivity.this,PieChart.class);
-            startActivity(i1);
+            fragment=new PieChart();
         } else if (id == R.id.contactpeeradmins) {
             //fragment=new contact_peer_admins();
             Intent i=new Intent(MainActivity.this,Contact_Peer_Admins_Activity.class);
@@ -128,7 +120,7 @@ public class MainActivity extends AppCompatActivity
                startActivity(itomain);
         }
         else{
-//            fragment = new RC_dashboard();
+            fragment = new RC_dashboard();
         }
 
         if(fragment!=null)

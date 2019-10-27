@@ -154,9 +154,11 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_margin="30dp"
+            android:layout_marginBottom="70dp"
             android:elevation="5dp"
             app:cardCornerRadius="10dp"
 
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Water">
@@ -172,14 +174,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingTop="150dp"
-                android:text="Toiletries"
+                android:text="TOILETRIES"
                 android:textAlignment="center"
                 android:textColor="#000"
                 android:textFontWeight="550"
                 android:textSize="40dp">
 
             </TextView>
-
 
 
         </androidx.cardview.widget.CardView>

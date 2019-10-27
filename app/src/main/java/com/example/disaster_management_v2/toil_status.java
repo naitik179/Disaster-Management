@@ -1,9 +1,15 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -12,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class toil_status extends AppCompatActivity
+public class toil_status extends Fragment
 {
     FirebaseAuth mFirebaseAuth;
     TextView blanket_q,diapers_q,disinfectant_q,sanitary_q,soap_q;
@@ -23,17 +29,23 @@ public class toil_status extends AppCompatActivity
 
     private DatabaseReference mat;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toil_status);
 
-        blanket_q = findViewById(R.id.bl_q);
-        diapers_q = findViewById(R.id.di_q);
-        disinfectant_q = findViewById(R.id.dis_q);
-        sanitary_q = findViewById(R.id.sn_q);
-        soap_q = findViewById(R.id.s_q);
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_toil_status,null);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+        blanket_q = view.findViewById(R.id.bl_q);
+        diapers_q = view.findViewById(R.id.di_q);
+        disinfectant_q = view.findViewById(R.id.dis_q);
+        sanitary_q = view.findViewById(R.id.sn_q);
+        soap_q = view.findViewById(R.id.s_q);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
         mat=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Toiletries").child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
@@ -136,4 +148,5 @@ public class toil_status extends AppCompatActivity
         });
 
     }
+
 }

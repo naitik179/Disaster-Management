@@ -1188,6 +1188,7 @@ id FUNCTION
 id Female
 id First_Aid
 id Food
+id Food_heading
 id Infant
 id Infants
 id Jaundice
@@ -1323,6 +1324,7 @@ id clip_horizontal
 id clip_vertical
 id clothes
 id clothesText
+id clothes_display
 id clothes_donate
 id collapseActionView
 id contact_list_view
@@ -1398,7 +1400,9 @@ id fitXY
 id fixed
 id food
 id foodText
+id food_display
 id food_donate
+id food_other_items_display
 id forever
 id forgot
 id gender
@@ -1457,6 +1461,7 @@ id male_total
 id male_xl
 id map
 id masked
+id med_display
 id media_actions
 id medicineText
 id medicine_donate
@@ -1640,6 +1645,7 @@ id title1
 id titleDividerNoCustom
 id title_Form
 id title_template
+id toil_display
 id toiletries
 id toiletriesbtn
 id toolbar
@@ -1666,8 +1672,10 @@ id username
 id view_offset_helper
 id viewreliefcampstatus
 id visible
+id water
 id waterQuantity
 id waterText
+id water_display
 id wheat
 id wheatInput
 id wheatQ
@@ -1763,6 +1771,7 @@ layout activity_pie_chart
 layout activity_police_stn_activity
 layout activity_reg_new_inmates
 layout activity_relief_centre_register
+layout activity_req_summary
 layout activity_request__status_
 layout activity_requirement_layout
 layout activity_requirement_status

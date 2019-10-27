@@ -1,9 +1,14 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -13,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class food_status extends AppCompatActivity {
+public class food_status extends Fragment {
     TextView q1,q2,q3,q4,q5,dis1,dis2,dis3,dis4,dis5;
     String n1s,n2s,n3s,n4s,n5s;
     int s1,s2,s3,s4,s5;
@@ -23,24 +28,30 @@ public class food_status extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     private DatabaseReference mReg;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_status);
-        q1 = findViewById(R.id.dal);
-        dis1 = findViewById(R.id.dalQ);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_food_status,null);
+    }
 
-        q2 = findViewById(R.id.milk);
-        dis2 = findViewById(R.id.milkQ);
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        q3 = findViewById(R.id.rice);
-        dis3 = findViewById(R.id.riceQ);
+        q1 = view.findViewById(R.id.dal);
+        dis1 = view.findViewById(R.id.dalQ);
 
-        q4 = findViewById(R.id.tea);
-        dis4 = findViewById(R.id.teaQ);
+        q2 = view.findViewById(R.id.milk);
+        dis2 = view.findViewById(R.id.milkQ);
 
-        q5 = findViewById(R.id.wheat);
-        dis5 = findViewById(R.id.wheatQ);
+        q3 = view.findViewById(R.id.rice);
+        dis3 = view.findViewById(R.id.riceQ);
+
+        q4 = view.findViewById(R.id.tea);
+        dis4 = view.findViewById(R.id.teaQ);
+
+        q5 = view.findViewById(R.id.wheat);
+        dis5 = view.findViewById(R.id.wheatQ);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
         mReg= FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Food").child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
@@ -49,7 +60,7 @@ public class food_status extends AppCompatActivity {
         mReg.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-               // c = ds.child("Cholera").child("quantity").getValue();
+                // c = ds.child("Cholera").child("quantity").getValue();
 
                 n1=dataSnapshot.child("Dal_Quantity").getValue();
                 n2=dataSnapshot.child("Milk_Quantity").getValue();
@@ -150,3 +161,4 @@ public class food_status extends AppCompatActivity {
 
     }
 }
+

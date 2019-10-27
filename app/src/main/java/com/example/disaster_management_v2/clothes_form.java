@@ -1,12 +1,16 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 
-public class clothes_form extends AppCompatActivity {
+public class clothes_form extends Fragment {
 
     FirebaseAuth mFirebaseAuth;
     private DatabaseReference mReg,mat;
@@ -35,24 +39,29 @@ public class clothes_form extends AppCompatActivity {
     String m_s_db,m_l_db,m_xl_db,f_s_db,f_l_db,f_xl_db,c_s_db,c_l_db,c_xl_db,i_c_db;
     int m_s_db_int,m_l_db_int,m_xl_db_int,f_s_db_int,f_l_db_int,f_xl_db_int,c_s_db_int,c_l_db_int,c_xl_db_int,i_c_db_int;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clothes_form);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_clothes_form,null);
+    }
 
-        male_s = findViewById(R.id.male_s);
-        male_l = findViewById(R.id.male_l);
-        male_xl= findViewById(R.id.male_xl);
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        female_s= findViewById(R.id.female_s);
-        female_l= findViewById(R.id.female_l);
-        female_xl= findViewById(R.id.female_xl);
+        male_s = view.findViewById(R.id.male_s);
+        male_l = view.findViewById(R.id.male_l);
+        male_xl= view.findViewById(R.id.male_xl);
 
-        child_s= findViewById(R.id.child_s);
-        child_l= findViewById(R.id.child_l);
-        child_xl= findViewById(R.id.child_xl);
+        female_s= view.findViewById(R.id.female_s);
+        female_l= view.findViewById(R.id.female_l);
+        female_xl= view.findViewById(R.id.female_xl);
 
-        infant= findViewById(R.id.infant);
+        child_s= view.findViewById(R.id.child_s);
+        child_l= view.findViewById(R.id.child_l);
+        child_xl= view.findViewById(R.id.child_xl);
+
+        infant= view.findViewById(R.id.infant);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
 
@@ -150,32 +159,36 @@ public class clothes_form extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast toast=Toast.makeText(getApplicationContext(),"db error" + databaseError,Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getContext(),"db error" + databaseError,Toast.LENGTH_SHORT);
                 toast.show();
 
             }
         });
 
-        btn = (Button) findViewById(R.id.submit);
+        btn = (Button) view.findViewById(R.id.submit);
 
 
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mat.child("Male").child("S").setValue(Integer.parseInt(male_s.getText().toString()) + m_s_db_int );
-                mat.child("Male").child("L").setValue(Integer.parseInt(male_l.getText().toString()) + m_l_db_int );
-                mat.child("Male").child("XL").setValue(Integer.parseInt(male_xl.getText().toString()) + m_xl_db_int );
+                try {
+                    mat.child("Male").child("S").setValue(Integer.parseInt(male_s.getText().toString()) + m_s_db_int);
+                    mat.child("Male").child("L").setValue(Integer.parseInt(male_l.getText().toString()) + m_l_db_int);
+                    mat.child("Male").child("XL").setValue(Integer.parseInt(male_xl.getText().toString()) + m_xl_db_int);
 
-                mat.child("Female").child("S").setValue(Integer.parseInt(female_s.getText().toString()) + f_s_db_int );
-                mat.child("Female").child("L").setValue(Integer.parseInt(female_l.getText().toString()) + f_l_db_int );
-                mat.child("Female").child("XL").setValue(Integer.parseInt(female_xl.getText().toString()) + f_xl_db_int );
+                    mat.child("Female").child("S").setValue(Integer.parseInt(female_s.getText().toString()) + f_s_db_int);
+                    mat.child("Female").child("L").setValue(Integer.parseInt(female_l.getText().toString()) + f_l_db_int);
+                    mat.child("Female").child("XL").setValue(Integer.parseInt(female_xl.getText().toString()) + f_xl_db_int);
 
-                mat.child("Children").child("S").setValue(Integer.parseInt(child_s.getText().toString()) + c_s_db_int );
-                mat.child("Children").child("L").setValue(Integer.parseInt(child_l.getText().toString()) + c_l_db_int );
-                mat.child("Children").child("XL").setValue(Integer.parseInt(child_xl.getText().toString()) + c_xl_db_int );
+                    mat.child("Children").child("S").setValue(Integer.parseInt(child_s.getText().toString()) + c_s_db_int);
+                    mat.child("Children").child("L").setValue(Integer.parseInt(child_l.getText().toString()) + c_l_db_int);
+                    mat.child("Children").child("XL").setValue(Integer.parseInt(child_xl.getText().toString()) + c_xl_db_int);
 
-                mat.child("Infant").child("count").setValue(Integer.parseInt(infant.getText().toString()) + i_c_db_int );
+                    mat.child("Infant").child("count").setValue(Integer.parseInt(infant.getText().toString()) + i_c_db_int);
+                } catch (Exception e) {
+
+                }
             }
         });
     }

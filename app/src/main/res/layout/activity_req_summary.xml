@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Clothes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:height="55dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:fontFamily="@font/sb"
+            android:textColor="#fefefe"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="CLOTHES"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/clothes_display"
+            android:layout_width="0dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Clothes" />
+
+        <TextView
+            android:id="@+id/Medicine"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:height="55dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:fontFamily="@font/sb"
+            android:textColor="#fefefe"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="MEDICINES"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            app:layout_constraintTop_toBottomOf="@+id/clothes_display"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/med_display"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Medicine" />
+
+        <TextView
+            android:id="@+id/toiletries"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="9dp"
+            android:height="55dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:fontFamily="@font/sb"
+            android:text="TOILETRIES"
+            android:textAlignment="center"
+            android:textColor="#fefefe"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/med_display" />
+
+        <TextView
+            android:id="@+id/toil_display"
+            android:layout_width="0dp"
+            android:layout_height="380dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toiletries" />
+
+        <TextView
+            android:id="@+id/water"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:height="55dp"
+            android:text="WATER"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:fontFamily="@font/sb"
+            android:textColor="#fefefe"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/toil_display"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/water_display"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/water" />
+
+
+        <TextView
+            android:id="@+id/food"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:height="55dp"
+            android:text="FOOD"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:background="@color/design_default_color_primary_dark"
+            android:fontFamily="@font/sb"
+            android:textColor="#fefefe"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/water_display"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/food_display"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food" />
+
+        <TextView
+            android:id="@+id/food_other_items_display"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:paddingLeft="135dp"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/food_display" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,12 +1,16 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -17,7 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class Food_Activity extends AppCompatActivity {
+public class Food_Activity extends Fragment {
 
     EditText rice,dal,wheat,tea,others,milk,otherName;
     Button submit;
@@ -26,18 +30,24 @@ public class Food_Activity extends AppCompatActivity {
     DatabaseReference mref,mreg;
     FirebaseAuth mauth;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_);
-        rice=findViewById(R.id.rice);
-        dal=findViewById(R.id.dal);
-        wheat=findViewById(R.id.wheat);
-        tea=findViewById(R.id.tea);
-        others=findViewById(R.id.otherQuantity);
-        milk=findViewById(R.id.milk);
-        otherName=findViewById(R.id.otherName);
-        submit=findViewById(R.id.sumitButton);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_food_,null);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        rice=view.findViewById(R.id.rice);
+        dal=view.findViewById(R.id.dal);
+        wheat=view.findViewById(R.id.wheat);
+        tea=view.findViewById(R.id.tea);
+        others=view.findViewById(R.id.otherQuantity);
+        milk=view.findViewById(R.id.milk);
+        otherName=view.findViewById(R.id.otherName);
+        submit=view.findViewById(R.id.sumitButton);
 
         mref= FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Food");
         mreg=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Food").child(mauth.getInstance().getCurrentUser().getUid());
@@ -103,7 +113,7 @@ public class Food_Activity extends AppCompatActivity {
                         }
                     });
 
-                    Intent i = new Intent(Food_Activity.this, MainActivity.class);
+                    Intent i = new Intent(getContext(), MainActivity.class);
                     startActivity(i);
                 }
 
@@ -112,4 +122,5 @@ public class Food_Activity extends AppCompatActivity {
         });
 
     }
-}
+    }
+

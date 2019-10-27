@@ -32,10 +32,16 @@
         <activity android:name=".Forgot" />
         <activity android:name=".Donation_Activity" />
         <activity android:name=".Contact_Peer_Admins_Activity" />
+
         <activity android:name=".PieChart" />
-        <activity android:name=".Analyze1" />
-        <activity android:name=".Analyze" />
-        <activity android:name=".reg_new_inmates" />
+
+        <activity android:name=".Analyze1"/>
+
+        <activity android:name=".Analyze"/>
+
+        <activity android:name=".reg_new_inmates"
+            android:label="Disaster Management"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Request_Status_Activity" />
         <activity android:name=".Barcode_Scan_Activity" />
         <activity android:name=".Barcode_Generation_Activity" />
@@ -66,7 +72,9 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:name=".Police_stn_activity" />
+        <activity android:name=".Police_stn_activity"
+            android:label="Disaster Management"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Hospital_activity" />
         <activity android:name=".Fire_brigade_activity" />
         <activity

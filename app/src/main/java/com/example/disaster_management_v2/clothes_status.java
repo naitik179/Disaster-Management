@@ -1,9 +1,14 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -13,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class clothes_status extends AppCompatActivity {
+public class clothes_status extends Fragment {
 
     FirebaseAuth mFirebaseAuth;
     TextView male_s,male_l,male_xl,male_total,female_s,female_l,female_xl,female_total,children_s,children_l,children_xl,children_total,infant;
@@ -23,28 +28,34 @@ public class clothes_status extends AppCompatActivity {
     int m_s_db_int,m_l_db_int,m_xl_db_int,f_s_db_int,f_l_db_int,f_xl_db_int,c_s_db_int,c_l_db_int,c_xl_db_int,i_c_db_int;
 
     private DatabaseReference mReg,mat;
+
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_clothes_status);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_clothes_status,null);
+    }
 
-        male_s = findViewById(R.id.male_s);
-        male_l = findViewById(R.id.male_l);
-        male_xl = findViewById(R.id.male_xl);
-        male_total = findViewById(R.id.male_total);
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-       female_s = findViewById(R.id.female_s);
-       female_l = findViewById(R.id.female_l);
-       female_xl = findViewById(R.id.female_xl);
-       female_total = findViewById(R.id.female_total);
 
-       children_s = findViewById(R.id.children_s);
-       children_l = findViewById(R.id.children_l);
-       children_xl = findViewById(R.id.children_xl);
-       children_total = findViewById(R.id.children_total);
+        male_s = view.findViewById(R.id.male_s);
+        male_l = view.findViewById(R.id.male_l);
+        male_xl = view.findViewById(R.id.male_xl);
+        male_total = view.findViewById(R.id.male_total);
 
-       infant = findViewById(R.id.infant_total);
+        female_s = view.findViewById(R.id.female_s);
+        female_l = view.findViewById(R.id.female_l);
+        female_xl = view.findViewById(R.id.female_xl);
+        female_total = view.findViewById(R.id.female_total);
+
+        children_s = view.findViewById(R.id.children_s);
+        children_l = view.findViewById(R.id.children_l);
+        children_xl = view.findViewById(R.id.children_xl);
+        children_total = view.findViewById(R.id.children_total);
+
+        infant = view.findViewById(R.id.infant_total);
 
 
         mFirebaseAuth=FirebaseAuth.getInstance();

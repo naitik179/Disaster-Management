@@ -67,7 +67,10 @@
         <activity android:name="com.example.disaster_management_v2.PieChart" />
         <activity android:name="com.example.disaster_management_v2.Analyze1" />
         <activity android:name="com.example.disaster_management_v2.Analyze" />
-        <activity android:name="com.example.disaster_management_v2.reg_new_inmates" />
+        <activity
+            android:name="com.example.disaster_management_v2.reg_new_inmates"
+            android:label="Disaster Management"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.disaster_management_v2.Request_Status_Activity" />
         <activity android:name="com.example.disaster_management_v2.Barcode_Scan_Activity" />
         <activity android:name="com.example.disaster_management_v2.Barcode_Generation_Activity" />
@@ -98,7 +101,10 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:name="com.example.disaster_management_v2.Police_stn_activity" />
+        <activity
+            android:name="com.example.disaster_management_v2.Police_stn_activity"
+            android:label="Disaster Management"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.disaster_management_v2.Hospital_activity" />
         <activity android:name="com.example.disaster_management_v2.Fire_brigade_activity" />
         <activity

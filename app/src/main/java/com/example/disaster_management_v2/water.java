@@ -1,14 +1,21 @@
 package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
@@ -17,7 +24,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class water extends AppCompatActivity {
+public class water extends Fragment {
 
     EditText q1;
     Button tt;
@@ -29,12 +36,19 @@ public class water extends AppCompatActivity {
     FirebaseAuth mFirebaseAuth;
     private DatabaseReference mReg,md1,need1;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_water);
-        q1 = findViewById(R.id.waterQuantity);
-        tt=findViewById(R.id.applyWater);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_water,null);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+        q1 = view.findViewById(R.id.waterQuantity);
+        tt=view.findViewById(R.id.applyWater);
 
 
         mFirebaseAuth=FirebaseAuth.getInstance();
@@ -60,13 +74,16 @@ public class water extends AppCompatActivity {
 
                     s1 = Integer.parseInt(q1.getText().toString());
 
-                    mReg.addValueEventListener(new ValueEventListener() {
+                    mReg.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
 
                             n1 = dataSnapshot.child("quantity").getValue();
                             n1s = String.valueOf(n1);
                             sa = Integer.parseInt(n1s);
+
+                            int s1Total = s1 + sa;
+                            mReg.child("quantity").setValue(s1Total);
 
                         }
 
@@ -77,10 +94,13 @@ public class water extends AppCompatActivity {
                     });
 
 
-                    int s1Total = s1 + sa;
-                    mReg.child("quantity").setValue(s1Total);
-                    Intent i=new Intent(water.this,MainActivity.class);
-                    startActivity(i);
+                    Toast.makeText(getContext(),"Applied Successfully",Toast.LENGTH_SHORT).show();
+                    Fragment fragment = new RequirementLayout();
+                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    fragmentTransaction.replace(getId(), fragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
 
                 }
 
@@ -88,4 +108,5 @@ public class water extends AppCompatActivity {
             }
         });
     }
-}
+    }
+

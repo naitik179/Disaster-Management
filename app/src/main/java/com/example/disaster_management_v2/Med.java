@@ -30,7 +30,7 @@ public class Med extends Fragment {
 
     CheckBox cb11, cb2, cb3, cb4, cb5;
     LinearLayout myLayout;
-    EditText q1, q2, q3, q4, q5;
+    EditText q1, q2, q3, q4, q5,othermed;
     String n1s,n2s,n3s,n4s,n5s;
     Button tt;
     int flag1=0,flag2=0,flag3=0,flag4=0,flag5=0;
@@ -39,10 +39,12 @@ public class Med extends Fragment {
     int txt1,txt2,txt3,txt4,txt5;
     int s1Total,s2Total,s3Total,s4Total,s5Total;
     int toreq=0;
+    long maxid;
+    int flago;
 
 
     FirebaseAuth mFirebaseAuth;
-    private DatabaseReference mReg,mreg2,mreg3,mreg4,mreg5,md1,md2,md3,md4,md5,need1,need2,need3,need4,need5;
+    private DatabaseReference mReg,mreg2,mreg3,mreg4,mreg5,md1,md2,md3,md4,md5,need1,need2,need3,need4,need5,mref,mref1;
 
     @Nullable
     @Override
@@ -65,6 +67,7 @@ public class Med extends Fragment {
         q4 = view.findViewById(R.id.t4);
         q5 = view.findViewById(R.id.t5);
         tt=view.findViewById(R.id.toiletriesbtn);
+        othermed=view.findViewById(R.id.othermed);
 
         mFirebaseAuth=FirebaseAuth.getInstance();
         mReg=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("First Aid");
@@ -73,9 +76,29 @@ public class Med extends Fragment {
         mreg4=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("Glucose");
         mreg5=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("Cold");
 
+
+        mref=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("other_req_med");
+        mref1=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid()).child("other_req_med");
+
         md1=FirebaseDatabase.getInstance().getReference().child("Material_Application").child("Med").child(mFirebaseAuth.getInstance().getCurrentUser().getUid());
 
         String mdd1=md1.toString();
+
+
+        mref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists())
+                {
+                    maxid=(dataSnapshot.getChildrenCount());
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
 
 //        Log.i("value ","")
         cb11.setOnClickListener(new View.OnClickListener() {
@@ -170,11 +193,20 @@ public class Med extends Fragment {
             }
         });
 
+
+        if(othermed.getText().toString()=="")
+        {
+            flago=0;
+        }
+        else{
+            flago=1;
+        }
+
         tt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.i("Cricket","S!:"+s1);
-                if(flag1==0 && flag2==0 && flag3==0 && flag4==0 && flag5==0)
+                if(flag1==0 && flag2==0 && flag3==0 && flag4==0 && flag5==0 && flago==0)
                 {
                     Toast.makeText(getContext(),"Select atleast 1 type of medicine to apply for Medicines!!",Toast.LENGTH_SHORT).show();
                 }
@@ -382,6 +414,14 @@ public class Med extends Fragment {
                     // mreg5.child("quantity").setValue(s5Total);
                     toreq++;
                 }
+
+                if(!(othermed.getText().toString().isEmpty()))
+                {
+                    mref1.child(String.valueOf(maxid +1)).setValue(othermed.getText().toString());
+                    Toast.makeText(getContext(),"Successfully appplied for the other requirements",Toast.LENGTH_SHORT).show();
+                    toreq++;
+                }
+
 
 
                 if(toreq!=0) {

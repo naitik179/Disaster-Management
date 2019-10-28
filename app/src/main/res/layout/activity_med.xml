@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +29,7 @@
         android:layout_marginBottom="37dp"
         android:inputType="numberDecimal"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/or"
+        app:layout_constraintBottom_toTopOf="@+id/othermed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/cb1"
         app:layout_constraintTop_toBottomOf="@+id/textView">
@@ -171,7 +179,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cb4" />
 
     <EditText
-        android:id="@+id/or"
+        android:id="@+id/othermed"
         android:layout_width="359dp"
         android:layout_height="0dp"
         android:layout_marginStart="20dp"
@@ -197,6 +205,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/or" />
+        app:layout_constraintTop_toBottomOf="@+id/othermed" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

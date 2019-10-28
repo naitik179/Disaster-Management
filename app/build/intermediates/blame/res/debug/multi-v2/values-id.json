@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "C:\\Users\\PRIYA\\Desktop\\dm_updated\\Disaster_Management_v2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\3ca378d91c045272cc22d2644e4a9277\\jetified-zxing-android-embedded-3.2.0\\res\\values-id\\values-id.xml",
+                    "source": "C:\\Users\\PRIYA\\.gradle\\caches\\transforms-2\\files-2.1\\b632d8bada4a50627f8f6feb93b78165\\jetified-zxing-android-embedded-3.2.0\\res\\values-id\\values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

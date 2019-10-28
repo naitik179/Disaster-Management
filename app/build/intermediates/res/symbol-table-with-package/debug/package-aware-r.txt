@@ -1181,6 +1181,7 @@ id Ch_q
 id Children
 id Cholera
 id Clothes
+id Cold
 id Diapers
 id Disinfectant
 id Emergencycontacts
@@ -1189,6 +1190,7 @@ id Female
 id First_Aid
 id Food
 id Food_heading
+id Glucose
 id Infant
 id Infants
 id Jaundice
@@ -1326,6 +1328,7 @@ id clothes
 id clothesText
 id clothes_display
 id clothes_donate
+id cold_q
 id collapseActionView
 id contact_list_view
 id contact_peer_admin_listview
@@ -1408,6 +1411,7 @@ id forgot
 id gender
 id gender_new_inmate
 id ghost_view
+id glucose_q
 id gone
 id group_divider
 id groups
@@ -1671,6 +1675,8 @@ id user_profile_short_bio
 id username
 id view_offset_helper
 id viewreliefcampstatus
+id viral_fever
+id viral_fever_q
 id visible
 id water
 id waterQuantity

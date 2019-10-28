@@ -1,101 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".med_status">
 
-    <TextView
-        android:id="@+id/Medicines"
-        android:layout_width="388dp"
-        android:layout_height="44dp"
-        android:layout_margin="10dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:height="55dp"
-        android:background="#00BCD4"
-        android:backgroundTint="@color/colorPrimary"
-        android:fontFamily="@font/sb"
-        android:text="Medicines"
-        android:textAlignment="center"
-        android:textColor="#fefefe"
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Cholera"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="40dp"
-        android:paddingLeft="20dp"
-        android:text="CHOLERA"
-        android:textColor="#000"
-        android:fontFamily="@font/rg"
-        android:textSize="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/Medicines" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/Ch_q"
-        android:layout_width="wrap_content"
-        android:fontFamily="@font/rg"
-        android:textColor="#000"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="25dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Cholera" />
+        <TextView
+            android:id="@+id/Medicines"
+            android:layout_width="388dp"
+            android:layout_height="44dp"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:height="55dp"
+            android:background="#00BCD4"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="@font/sb"
+            android:text="Medicines"
+            android:textAlignment="center"
+            android:textColor="#fefefe"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/First_Aid"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="40dp"
-        android:paddingLeft="20dp"
-        android:text="FIRST AID"
-        android:fontFamily="@font/rg"
-        android:textColor="#000"
-        android:textSize="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/Ch_q" />
+        <TextView
+            android:id="@+id/Cholera"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="CHOLERA"
+            android:textColor="#000"
+            android:fontFamily="@font/rg"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Medicines" />
 
-    <TextView
-        android:id="@+id/fa_q"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/rg"
-        android:textColor="#000"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/First_Aid" />
+        <TextView
+            android:id="@+id/Ch_q"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cholera" />
 
-    <TextView
-        android:id="@+id/Jaundice"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="40dp"
-        android:paddingLeft="20dp"
-        android:textColor="#000"
-        android:fontFamily="@font/rg"
-        android:text="JAUNDICE"
-        android:textSize="25dp"
-        app:layout_constraintTop_toBottomOf="@+id/fa_q" />
+        <TextView
+            android:id="@+id/First_Aid"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="FIRST AID"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Ch_q" />
 
-    <TextView
-        android:id="@+id/j_q"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:fontFamily="@font/rg"
-        android:textColor="#000"
-        android:layout_marginTop="25dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Jaundice" />
+        <TextView
+            android:id="@+id/fa_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/First_Aid" />
+
+        <TextView
+            android:id="@+id/Jaundice"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/rg"
+            android:text="JAUNDICE"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/fa_q" />
+
+        <TextView
+            android:id="@+id/j_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Jaundice" />
+
+        <TextView
+            android:id="@+id/Cold"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/rg"
+            android:text="COLD"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/j_q" />
+
+        <TextView
+            android:id="@+id/cold_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Cold" />
+
+        <TextView
+            android:id="@+id/Glucose"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/rg"
+            android:text="GLUCOSE"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/cold_q" />
+
+        <TextView
+            android:id="@+id/glucose_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Glucose" />
+
+        <TextView
+            android:id="@+id/viral_fever"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/rg"
+            android:text="VIRAL FEVER"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/glucose_q" />
+
+        <TextView
+            android:id="@+id/viral_fever_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/rg"
+            android:textColor="#000"
+            android:layout_marginTop="25dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viral_fever" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -89,7 +89,7 @@ public class ContactAdapter extends BaseAdapter implements Filterable {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         ContactHolder holder;
         if(convertView==null)
         {
@@ -113,7 +113,7 @@ public class ContactAdapter extends BaseAdapter implements Filterable {
             @Override
             public void onClick(View v) {
                 Intent intent =new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:"+firebrigadelist.get(positionGlobal).getContact()));
+                intent.setData(Uri.parse("tel:"+String.valueOf(firebrigadelist.get(position).getContact())));
                 view.getContext().startActivity(intent);
 
             }

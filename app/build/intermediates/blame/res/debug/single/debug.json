@@ -1,15 +1,15 @@
 [
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_layout_snackbar.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\layout\\mtrl_layout_snackbar.xml"
     },
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
@@ -44,16 +44,16 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_show_password.xml.flat",
-        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\drawable-v21\\avd_show_password.xml"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\animator_mtrl_btn_state_list_anim.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\animator\\mtrl_btn_state_list_anim.xml"
     },
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_48dp.png"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_avd_show_password.xml.flat",
+        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\drawable-v21\\avd_show_password.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -80,16 +80,16 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\6ae0516d2d3235c0ace324e7a6769422\\material-1.0.0\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_exit_anim.xml.flat",
-        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\1c08170b10856312c97739dc089d29ed\\jetified-navigation-ui-2.1.0-rc01\\res\\anim\\nav_default_exit_anim.xml"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_food_requirements.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_food_requirements.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_food_requirements.xml.flat",
-        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_food_requirements.xml"
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_exit_anim.xml.flat",
+        "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\1c08170b10856312c97739dc089d29ed\\jetified-navigation-ui-2.1.0-rc01\\res\\anim\\nav_default_exit_anim.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",

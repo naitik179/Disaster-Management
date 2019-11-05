@@ -77,14 +77,15 @@ public class water extends Fragment {
                     mReg.addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
                         public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            try {
+                                n1 = dataSnapshot.child("quantity").getValue();
+                                n1s = String.valueOf(n1);
+                                sa = Integer.parseInt(n1s);
 
-                            n1 = dataSnapshot.child("quantity").getValue();
-                            n1s = String.valueOf(n1);
-                            sa = Integer.parseInt(n1s);
-
-                            int s1Total = s1 + sa;
-                            mReg.child("quantity").setValue(s1Total);
-
+                                int s1Total = s1 + sa;
+                                Log.i("Info", "onDataChange: Water="+s1Total);
+                                mReg.child("quantity").setValue(s1Total);
+                            }catch(Exception e){}
                         }
 
                         @Override

@@ -34,6 +34,7 @@
         android:layout_marginEnd="18dp"
         android:ems="10"
         android:inputType="number"
+        android:hint="Enter quantity in litres"
         app:layout_constraintEnd_toStartOf="@+id/litres"
         app:layout_constraintStart_toEndOf="@+id/waterText"
         app:layout_constraintTop_toTopOf="parent" />

@@ -231,9 +231,7 @@ public class Med extends Fragment {
                                 try {
                                     n1 = dataSnapshot.child("quantity").getValue();
                                     n1s = String.valueOf(n1);
-                                }
-                                catch(Exception e){}
-                                    try {
+
                                         sa = Integer.parseInt(n1s);
                                         s1Total = s1 + sa;
                                         mReg.child("quantity").setValue(s1Total);
@@ -307,11 +305,17 @@ public class Med extends Fragment {
                         mreg3.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                n3 = dataSnapshot.child("quantity").getValue();
-                                n3s = String.valueOf(n3);
-                                sc = Integer.parseInt(n3s);
-                                s3Total = s3 + sc;
-                                mreg3.child("quantity").setValue(s3Total);
+                                try {
+                                    n3 = dataSnapshot.child("quantity").getValue();
+                                    n3s = String.valueOf(n3);
+                                }catch (Exception e){}
+                                try {
+
+                                    sc = Integer.parseInt(n3s);
+                                    s3Total = s3 + sc;
+                                    mreg3.child("quantity").setValue(s3Total);
+                                }
+                                catch (Exception e){}
 
                             }
 
@@ -343,12 +347,17 @@ public class Med extends Fragment {
                         mreg4.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                n4 = dataSnapshot.child("quantity").getValue();
-                                n4s = String.valueOf(n4);
-                                sd = Integer.parseInt(n4s);
-                                s4Total = s4 + sd;
-                                mreg4.child("quantity").setValue(s4Total);
-
+                                try {
+                                    n4 = dataSnapshot.child("quantity").getValue();
+                                    n4s = String.valueOf(n4);
+                                    sd = Integer.parseInt(n4s);
+                                }
+                                catch (Exception e){}
+                                try {
+                                    s4Total = s4 + sd;
+                                    mreg4.child("quantity").setValue(s4Total);
+                                }
+                                catch (Exception e){}
                             }
 
                             @Override
@@ -376,11 +385,17 @@ public class Med extends Fragment {
                         mreg5.addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                                n5 = dataSnapshot.child("quantity").getValue();
-                                n5s = String.valueOf(n5);
-                                se = Integer.parseInt(n5s);
-                                s5Total = s5 + se;
-                                mreg5.child("quantity").setValue(s5Total);
+                                try {
+                                    n5 = dataSnapshot.child("quantity").getValue();
+                                    n5s = String.valueOf(n5);
+                                    se = Integer.parseInt(n5s);
+                                }
+                                catch (Exception e){}
+                                try {
+
+                                    s5Total = s5 + se;
+                                    mreg5.child("quantity").setValue(s5Total);
+                                }catch (Exception e){}
 
                             }
 

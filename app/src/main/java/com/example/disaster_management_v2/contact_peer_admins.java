@@ -41,6 +41,7 @@ import Model.DataGet;
     private FirebaseDatabase mDatabase;
     private DatabaseReference mRef;
     final String TAG =" Info";
+    public String phone_no;
 
     int[] image={R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,
             R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact,R.drawable.contact};
@@ -150,7 +151,7 @@ import Model.DataGet;
 
                 //contactadmins.setImageResource(image[position]);
 
-                contact_view.setOnClickListener(new View.OnClickListener() {
+                convertView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         Intent intent =new Intent(Intent.ACTION_DIAL);

@@ -1,4 +1,4 @@
- <ScrollView
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,9 +10,8 @@
         android:layout_height="match_parent"
         tools:context=".ReliefCentreRegisterActivity">
 
-
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inmateregname"
+            android:id="@+id/inmate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -22,6 +21,28 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inmateregname"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DATE">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/affectname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#000"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,6 +83,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Mobile No"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerAge"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inmateregmobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/AGE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Age Here"
                 android:inputType="phone" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -112,21 +153,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/totaleditreq" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/affectname"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="122dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="15dp"
-            android:textColorHint="#000"
-            android:hint="Name"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toTopOf="@+id/aadharuid"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/gender_new_inmate"
@@ -141,7 +170,22 @@
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/inmateregmobile" />
+            app:layout_constraintTop_toBottomOf="@+id/registerAge" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Enter Address here"
+            android:textColorHint="#000"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_new_inmate" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/totaleditreq"
@@ -155,11 +199,49 @@
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/gender_new_inmate" />
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+
+        <TextView
+            android:id="@+id/titleInmate"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="30dp"
+            android:text="New Inmate Registration"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/DATE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DATE"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inmateDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Date of Registering Inmate in DD-MM-YY format"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>
-

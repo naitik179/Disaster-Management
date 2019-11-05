@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ToiletriesRequirements">
+        <LinearLayout
+
+            android:id="@+id/donateToiletries"
+
+            android:layout_width="184dp"
+
+            android:layout_height="269dp"
+
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="38dp"
+
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="37dp"
+            android:inputType="numberDecimal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/toiletriesDonate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tcb1"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity4">
+
+            <EditText
+                android:id="@+id/dt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/dt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/dt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/dt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/dt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textToiletries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:clickable="false"
+            android:text="Donate items in Toiletries"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#fefefe"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/requiredBlanket"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Blankets Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textToiletries" />
+
+        <TextView
+            android:id="@+id/requiredBlanketQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredBlanket"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textToiletries" />
+
+        <TextView
+            android:id="@+id/requiredDiapers"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Diapers Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredBlanket" />
+
+        <TextView
+            android:id="@+id/requiredDiapersQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredDiapers"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredBlanketQuantity" />
+
+        <TextView
+            android:id="@+id/requiredDisinfectant"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Disinfectants Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDiapers" />
+
+        <TextView
+            android:id="@+id/requiredDisinfectantQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredDisinfectant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDiapersQuantity" />
+        <TextView
+            android:id="@+id/requiredNapkins"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Sanitary Napkins Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDisinfectant" />
+
+        <TextView
+            android:id="@+id/requiredNapkinsQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredNapkins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDisinfectantQuantity" />
+        <TextView
+            android:id="@+id/requiredSoap"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Soap Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredNapkins" />
+
+        <TextView
+            android:id="@+id/requiredSoapQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredSoap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredNapkinsQuantity" />
+
+        <TextView
+            android:id="@+id/negativeQuantity4"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:text="(Negative Quantity Signifies The Extra Amount Of Requested Items At Present)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredSoap" />
+
+
+        <CheckBox
+            android:id="@+id/tcb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Sanitary napkins"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity4" />
+
+        <CheckBox
+            android:id="@+id/tcb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Soap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcb1" />
+
+        <CheckBox
+            android:id="@+id/tcb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Diaper"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcb2" />
+
+        <CheckBox
+            android:id="@+id/tcb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Disinfectants"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcb3" />
+
+        <CheckBox
+            android:id="@+id/tcb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Blankets"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcb4" />
+
+
+        <Button
+            android:id="@+id/toiletriesDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:text="SEND"
+            android:textColor="#fefefe"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tcb5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

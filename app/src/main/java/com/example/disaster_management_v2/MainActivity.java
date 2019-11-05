@@ -102,15 +102,18 @@ public class MainActivity extends AppCompatActivity
 
         else if (id == R.id.applyreliefmaterial) {
             fragment=new RequirementLayout();
+            /*Intent i=new Intent(MainActivity.this,Relief_Centre_List_Activity.class);
+            startActivity(i);*/
+
         } else if (id == R.id.reqstatus) {
             fragment=new RequirementStatus();
         } else if (id == R.id.viewreliefcampstatus) {
            // fragment=new ReliefCampStatus();
-            fragment=new PieChart();
-        } else if (id == R.id.contactpeeradmins) {
-            //fragment=new contact_peer_admins();
-            Intent i=new Intent(MainActivity.this,Contact_Peer_Admins_Activity.class);
+           // fragment=new PieChart();
+            Intent i = new Intent(MainActivity.this, req_summary.class);
             startActivity(i);
+        } else if (id == R.id.contactpeeradmins) {
+            fragment=new Contact_Peer_Admins_Activity();
         } else if (id == R.id.Emergencycontacts) {
             fragment=new Emergency_Contacts();
         }

@@ -4,7 +4,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -85,18 +88,35 @@ public class clothes_form extends Fragment {
                 if (m_s_db==null || m_s_db.equals(""))
                     m_s_db_int = 0;
                 else {
-                    m_s_db_int = Integer.parseInt(m_s_db);
+                    try {
+                        m_s_db_int = Integer.parseInt(m_s_db);
+                    }
+                    catch (Exception e){
+
+                    }
                 }
 
                 if (m_l_db==null || m_l_db.equals(""))
                     m_l_db_int = 0;
-                else
-                    m_l_db_int = Integer.parseInt(m_l_db);
+                else {
+                    try {
+                        m_l_db_int = Integer.parseInt(m_l_db);
+                    }
+                    catch (Exception e){
+
+                    }
+                }
 
                 if (m_xl_db==null || m_xl_db.equals(""))
                     m_xl_db_int = 0;
-                else
-                    m_xl_db_int = Integer.parseInt(m_xl_db);
+                else {
+                    try {
+                        m_xl_db_int = Integer.parseInt(m_xl_db);
+                    }
+                    catch (Exception e){
+
+                    }
+                }
 
                 //Female
 
@@ -111,18 +131,31 @@ public class clothes_form extends Fragment {
                 if (f_s_db==null || f_s_db.equals(""))
                     f_s_db_int = 0;
                 else
-                    f_s_db_int = Integer.parseInt(f_s_db);
+                {
+                    try{
+                        f_s_db_int = Integer.parseInt(f_s_db);
 
+                    }
+                    catch (Exception e){
+
+                    }
+                }
                 if (f_l_db==null || f_l_db.equals(""))
                     f_l_db_int = 0;
-                else
-                    f_l_db_int = Integer.parseInt(f_l_db);
+                else {
+                    try{f_l_db_int = Integer.parseInt(f_l_db);}
+                    catch (Exception e){}
+
+                }
 
                 if (f_xl_db==null || f_xl_db.equals(""))
                     f_xl_db_int = 0;
-                else
-                    f_xl_db_int = Integer.parseInt(f_xl_db);
+                else {
 
+                    try{f_xl_db_int = Integer.parseInt(f_xl_db);}
+                    catch (Exception e){}
+
+                }
                 //children
                 c_s = ds.child("Children").child("S").getValue();
                 c_l = ds.child("Children").child("L").getValue();
@@ -134,27 +167,41 @@ public class clothes_form extends Fragment {
 
                 if (c_s_db==null || c_s_db.equals(""))
                     c_s_db_int = 0;
-                else
-                    c_s_db_int = Integer.parseInt(c_s_db);
+                else {
 
+                    try{c_s_db_int = Integer.parseInt(c_s_db);}
+                    catch (Exception e){}
+
+                }
                 if (c_l_db==null || c_l_db.equals(""))
                     c_l_db_int = 0;
-                else
-                    c_l_db_int = Integer.parseInt(c_l_db);
+                else {
 
+                    try{c_l_db_int = Integer.parseInt(c_l_db);}
+                    catch (Exception e){}
+
+                }
                 if (c_xl_db==null || c_xl_db.equals(""))
                     c_xl_db_int = 0;
-                else
-                    c_xl_db_int = Integer.parseInt(c_xl_db);
+                else {
 
+                    try{
+                        c_xl_db_int = Integer.parseInt(c_xl_db);
+                    }
+                    catch (Exception e){}
+
+                }
                 //infant
                 i_c = ds.child("Infant").child("count").getValue();
                 i_c_db  = String.valueOf(i_c);
                 if (i_c_db==null || i_c_db.equals(""))
                     i_c_db_int = 0;
-                else
-                    i_c_db_int = Integer.parseInt(i_c_db);
+                else {
 
+                    try{i_c_db_int = Integer.parseInt(i_c_db);}
+                    catch (Exception e){}
+
+                }
             }
 
             @Override
@@ -176,19 +223,29 @@ public class clothes_form extends Fragment {
                     mat.child("Male").child("S").setValue(Integer.parseInt(male_s.getText().toString()) + m_s_db_int);
                     mat.child("Male").child("L").setValue(Integer.parseInt(male_l.getText().toString()) + m_l_db_int);
                     mat.child("Male").child("XL").setValue(Integer.parseInt(male_xl.getText().toString()) + m_xl_db_int);
+                }
+                catch (Exception e){}
 
+                try {
                     mat.child("Female").child("S").setValue(Integer.parseInt(female_s.getText().toString()) + f_s_db_int);
                     mat.child("Female").child("L").setValue(Integer.parseInt(female_l.getText().toString()) + f_l_db_int);
                     mat.child("Female").child("XL").setValue(Integer.parseInt(female_xl.getText().toString()) + f_xl_db_int);
-
+                }
+                catch (Exception e){}
+                try {
                     mat.child("Children").child("S").setValue(Integer.parseInt(child_s.getText().toString()) + c_s_db_int);
                     mat.child("Children").child("L").setValue(Integer.parseInt(child_l.getText().toString()) + c_l_db_int);
                     mat.child("Children").child("XL").setValue(Integer.parseInt(child_xl.getText().toString()) + c_xl_db_int);
-
+                }
+                catch (Exception e){}
+                try{
                     mat.child("Infant").child("count").setValue(Integer.parseInt(infant.getText().toString()) + i_c_db_int);
                 } catch (Exception e) {
 
                 }
+                Toast.makeText(getContext(), "Clothes Request recoded!!", Toast.LENGTH_SHORT).show();
+
+
             }
         });
     }

@@ -49,9 +49,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="59dp"
                 android:fontFamily="@font/rg"
-                android:hint="Enter quntity of rice required (kg)"
 
-                android:inputType="textEmailSubject" />
+                android:hint="Enter amount of rice required (kg)"
+
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -76,7 +77,7 @@
                 android:layout_height="59dp"
                 android:hint="Enter the amount of wheat required (kg)"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -100,7 +101,7 @@
                 android:fontFamily="@font/rg"
                 android:hint="Enter the amount of dal required (kg)"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -124,7 +125,7 @@
                 android:fontFamily="@font/rg"
                 android:hint="Enter the amount of tea required (kg)"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -148,7 +149,7 @@
                 android:fontFamily="@font/rg"
                 android:hint="Enter the amount of milk required (ltr)"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -190,7 +191,7 @@
                 android:fontFamily="@font/rg"
                 android:hint="Enter the name of the requested food item"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -214,7 +215,7 @@
                 android:fontFamily="@font/rg"
                 android:hint="Enter the amount of the requested food item"
 
-                android:inputType="textEmailSubject" />
+                android:inputType="numberDecimal" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <androidx.appcompat.widget.AppCompatButton

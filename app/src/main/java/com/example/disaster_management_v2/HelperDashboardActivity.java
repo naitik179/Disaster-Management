@@ -20,6 +20,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.Menu;
@@ -83,18 +84,16 @@ public class HelperDashboardActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        Fragment fragment=null;
         if (id == R.id.helperreliefcentre) {
-
-            Intent i = new Intent(HelperDashboardActivity.this, MapActivity.class);
+            Intent i = new Intent(HelperDashboardActivity.this, RequiredItems.class);
             startActivity(i);
+            //  fragment=new RequiredItems();
             // Handle the camera action
         } else if (id == R.id.helpergallery) {
 
         } else if (id == R.id.helperreliefcentrereqdisplay) {
-
-
-
+            //fragment = new RequiredItems();
         } else if (id == R.id.helperlogut) {
             FirebaseAuth.getInstance().signOut();
             Intent itomain=new Intent(HelperDashboardActivity.this, LoginActivity.class);

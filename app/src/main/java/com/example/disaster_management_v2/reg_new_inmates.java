@@ -2,9 +2,14 @@ package com.example.disaster_management_v2;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Context;
 import android.content.Intent;
@@ -34,57 +39,72 @@ import java.util.List;
 public class reg_new_inmates extends Fragment{
 
 
-    public EditText name,afname,aadhar,mobile,gender;
+    public EditText name,afname,aadhar,mobile,gender,date,address,AGE;
 
     EditText totcount;
 
     EditText namea[]=new EditText[10];
     EditText agea[]=new EditText[10];
     EditText gendera[]=new EditText[10];
-    int count;
+    int count,change=0;
     public LinearLayout myLayout;
     public Button add,savebtn;
     DatabaseReference mref,mreg;
     FirebaseAuth mauth;
     long maxid;
 
-    String n,a,ph,g;
+    String n,a,ph,g,ad,d,Age;
 
     private static final String TAG = "info" ;
     final int c=3;
     List<EditText> allEds = new ArrayList<EditText>();
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.activity_reg_new_inmates,null);
-
-
     }
 
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         add= view.findViewById(R.id.addbtn);
         savebtn=view.findViewById(R.id.save);
         mref= FirebaseDatabase.getInstance().getReference().child("Affected_People");
-
+        date=view.findViewById(R.id.inmateDate);
         afname=view.findViewById(R.id.affectname);
         aadhar=view.findViewById(R.id.aadhar);
         mobile=view.findViewById(R.id.mobile);
+        AGE=view.findViewById(R.id.AGE);
         gender=view.findViewById(R.id.gender_new_inmate);
+        address=view.findViewById(R.id.address);
         mreg=FirebaseDatabase.getInstance().getReference().child("Affected_People").child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("OtherFamilyMembers");
         mauth=FirebaseAuth.getInstance();
         n=afname.getText().toString();
         a=aadhar.getText().toString();
+        d=date.getText().toString();
+        ad=address.getText().toString();
         ph=mobile.getText().toString();
+        Age=AGE.getText().toString();
         g=gender.getText().toString();
         totcount=view.findViewById(R.id.totaleditreq);
+/*
+        Toolbar toolbar = (Toolbar)v1.findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
 
-        myLayout = (LinearLayout)getView().findViewById(R.id.myLayout);
+        DrawerLayout drawer = (DrawerLayout) v.findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);   */
+
+        myLayout = (LinearLayout)view.findViewById(R.id.myLayout);
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,8 +131,22 @@ public class reg_new_inmates extends Fragment{
                 });
 
                 // if(!(totcount.getText().toString().isEmpty())) {
+                if(date.getText().length()==0)
+                {
+                    date.setError("Enter Date of Setting Up Relief Center in DD-MM-YYYY Format!!!");
+                    date.requestFocus();
+                }
+                else if(date.getText().length()!=10)
+                {
+                    date.setError("Date cannot Exceed more than 10 Characters in Length!! ");
+                    date.requestFocus();
 
-                if (afname.getText().length()==0) {
+                }
+                else if(d.indexOf("/")==2||d.indexOf("/")==5||d.indexOf("/")==4){
+                    date.setError("Enter Date in DD-MM-YYYY Format!!!");
+                    date.requestFocus();
+                }
+                else if (afname.getText().length()==0) {
                     afname.setError("Please Enter Your Name");
                     afname.requestFocus();
 
@@ -129,24 +163,40 @@ public class reg_new_inmates extends Fragment{
                 } else if (mobile.getText().length() != 10) {
                     mobile.setError("Phone number should be 10 digits!!!");
                     mobile.requestFocus();
+                }else if (AGE.getText().length()==0){
+                    AGE.setError("Age Cannot Be Empty!");
+                    AGE.requestFocus();
                 } else if (gender.getText().length()==0) {
                     gender.setError("Enter Your Gender!!");
                     gender.requestFocus();
-                } else {
+                }
+                else if (address.getText().length()==0){
+                    address.setError("Address Cannot Be Empty!!!!");
+                    address.requestFocus();
+                }
+                else {
+                    if(totcount.getText().length()==0)
+                    {
+                        count=0;
+                    }
+                    else {
+                        count = Integer.valueOf(totcount.getText().toString());
+                    }
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Name").setValue(afname.getText().toString());
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Gender").setValue(gender.getText().toString());
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("PhoneNo").setValue(mobile.getText().toString());
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Age").setValue(AGE.getText().toString());
+                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Address").setValue(address.getText().toString());
 
-                    count = Integer.valueOf(totcount.getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Name").setValue(afname.getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Gender").setValue(gender.getText().toString());
-                    mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("PhoneNo").setValue(mobile.getText().toString());
                     for (int i = 0; i < count; i++) {
-                        namea[i] =new EditText(getActivity());
-                        gendera[i] = new EditText(getActivity());
-                        agea[i] = new EditText(getActivity());
+                        namea[i] = new EditText(getContext());
+                        gendera[i] = new EditText(getContext());
+                        agea[i] = new EditText(getContext());
                         myLayout = (LinearLayout)view.findViewById(R.id.myLayout);
-                        namea[i].setHint("Enter the name of the family member");
+                        namea[i].setHint("Enter the name of the Family Member");
 
-                        gendera[i].setHint("Enter Gender of the Members");
-                        agea[i].setHint("Enter the age");
+                        gendera[i].setHint("Enter Gender of the Member");
+                        agea[i].setHint("Enter the Age");
                         namea[i].setId(i);
                         gendera[i].setId(i);
                         agea[i].setId(i);
@@ -168,8 +218,9 @@ public class reg_new_inmates extends Fragment{
         savebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                change=0;
                 for (int i = 0; i < count; i++) {
+
                     if (namea[i].getText().toString().isEmpty() && gendera[i].getText().toString().isEmpty() && agea[i].getText().toString().isEmpty()) {
                         namea[i].setError("Please Enter name!!");
                         namea[i].requestFocus();
@@ -187,24 +238,33 @@ public class reg_new_inmates extends Fragment{
                         agea[i].setError("Enter Your Age!!");
                         agea[i].requestFocus();
                     } else {
+                        change++;
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Name").setValue(namea[i].getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Gender").setValue(gendera[i].getText().toString());
+                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(date.getText().toString()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Age").setValue(agea[i].getText().toString());
+                        Toast.makeText(getContext(), "Succesfully Registered "+(count+1)+" Inmates.", Toast.LENGTH_SHORT).show();
 
-                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Name").setValue(namea[i].getText().toString());
-                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Gender").setValue(gendera[i].getText().toString());
-                        mref.child(mauth.getInstance().getCurrentUser().getUid()).child(aadhar.getText().toString()).child("Other Family Members").child(String.valueOf(i)).child("Age").setValue(agea[i].getText().toString());
-                        Intent a = new Intent(getActivity(), MainActivity.class);
-                        startActivity(a);
                     }
+                }
+                if(change==count) {
+                    Intent a = new Intent(getContext(), MainActivity.class);
+                    startActivity(a);
                 }
             }
         });
     }
 
 
-
-
-
-
     }
+
+
+
+
+
+
+
+
+
 
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {

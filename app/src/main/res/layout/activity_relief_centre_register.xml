@@ -6,225 +6,291 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-  <androidx.constraintlayout.widget.ConstraintLayout
-      android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ReliefCentreRegisterActivity">
-
-
-    <TextView
-        android:id="@+id/RegisterHeading"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Register"
-        android:textAlignment="center"
-        android:textSize="50dp"
-        android:fontFamily="@font/rg"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:context=".ReliefCentreRegisterActivity">
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailInput"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterHeading">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailid"
+        <TextView
+            android:id="@+id/RegisterHeading"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
-            android:hint="Enter your email id"
-            android:inputType="textEmailAddress"
-            android:paddingRight="5dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="70dp"
+            android:text="Register"
+            android:textAlignment="center"
+            android:textSize="50dp"
+            android:fontFamily="@font/rg"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phoneInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerPhoneno"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DateInput"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter your phone no"
-            android:drawableRight="@drawable/ic_phone_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="phone" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RegisterHeading">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/aadharInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textColorHint="#000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phoneInput">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+                android:hint="Enter Date of Relief Center Setup in DD-MM-YYYY format"
+                android:inputType="date"
+                android:paddingRight="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerAadhar"
-            android:layout_width="match_parent"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInput"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter Aadhar UID"
-            android:drawableRight="@drawable/ic_credit_card_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="number" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DateInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+                android:hint="Enter your email id"
+                android:inputType="textEmailAddress"
+                android:paddingRight="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPhoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your phone no"
+                android:drawableRight="@drawable/ic_phone_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aadharInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColorHint="#000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerAadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Aadhar UID"
+                android:drawableRight="@drawable/ic_credit_card_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/peopleInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aadharInput">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/peopleInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/aadharInput">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerPeople"
-            android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_credit_card_black_24dp"
+                android:hint="Specify Name for Relief Center"
+                android:inputType="text"
+                android:paddingRight="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmName"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/peopleInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_credit_card_black_24dp"
+                android:hint="Confirm Name for Relief Center"
+                android:inputType="text"
+                android:paddingRight="5dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/policeInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPolice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter nearest police station"
+                android:drawableRight="@drawable/ic_stars_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/landmarkInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/policeInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter nearest landmark"
+                android:drawableRight="@drawable/ic_location_on_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="textPostalAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pincodeInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/landmarkInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Pincode"
+                android:drawableRight="@drawable/ic_location_on_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:textColorHint="#000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pincodeInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/registerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password here"
+                android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordRepeatInput"
+            android:layout_width="0dp"
+            android:layout_height="66dp"
+            android:textColorHint="#000"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInput">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/repeatPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repeat password here"
+                android:drawableRight="@drawable/ic_lock_outline_black_24dp"
+                android:paddingRight="5dp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/RegisterButton"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Enter number of affected people"
-            android:drawableRight="@drawable/ic_person_add_black_24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/sb"
+            android:background="@drawable/cardlayout"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
             android:paddingRight="5dp"
-            android:inputType="number" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:text="Register"
+            android:textColor="#f1f1f1"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordRepeatInput"
+            app:layout_goneMarginBottom="2dp" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/policeInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peopleInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerPolice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter nearest police station"
-            android:drawableRight="@drawable/ic_stars_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/landmarkInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/policeInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerLandmark"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter nearest landmark"
-            android:drawableRight="@drawable/ic_location_on_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="textPostalAddress" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:textColorHint="#000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/landmarkInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/registerPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter password here"
-            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordRepeatInput"
-        android:layout_width="0dp"
-        android:layout_height="66dp"
-        android:textColorHint="#000"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInput">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/repeatPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Repeat password here"
-            android:drawableRight="@drawable/ic_lock_outline_black_24dp"
-            android:paddingRight="5dp"
-            android:inputType="textPassword" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-      <Button
-          android:id="@+id/RegisterButton"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_marginLeft="12dp"
-          android:layout_marginTop="10dp"
-          android:layout_marginRight="12dp"
-          android:layout_marginBottom="40dp"
-          android:fontFamily="@font/sb"
-          android:background="@drawable/cardlayout"
-          android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
-          android:paddingRight="5dp"
-          android:text="Register"
-          android:textColor="#f1f1f1"
-          android:textSize="20dp"
-          app:layout_constraintBottom_toBottomOf="parent"
-          app:layout_constraintLeft_toLeftOf="parent"
-          app:layout_constraintRight_toRightOf="parent"
-          app:layout_constraintTop_toBottomOf="@id/passwordRepeatInput"
-          app:layout_goneMarginBottom="2dp" />
-
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

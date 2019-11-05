@@ -3,19 +3,6 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.example.disaster_management_v2">
 
-    <uses-feature
-        android:name="android.hardware.camera"
-        android:required="true" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CALL_PHONE" />
-
-    <dist:module dist:instant="true" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -23,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Food_Activity"></activity>
+        <activity android:name=".Relief_Centre_List_Activity"></activity>
+        <activity android:name=".Pdfgeneration" />
+        <activity android:name=".Food_Activity" />
         <activity android:name=".clothes_form" />
         <activity android:name=".Med" />
         <activity android:name=".water" />
@@ -32,14 +21,11 @@
         <activity android:name=".Forgot" />
         <activity android:name=".Donation_Activity" />
         <activity android:name=".Contact_Peer_Admins_Activity" />
-
         <activity android:name=".PieChart" />
-
-        <activity android:name=".Analyze1"/>
-
-        <activity android:name=".Analyze"/>
-
-        <activity android:name=".reg_new_inmates"
+        <activity android:name=".Analyze1" />
+        <activity android:name=".Analyze" />
+        <activity
+            android:name=".reg_new_inmates"
             android:label="Disaster Management"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Request_Status_Activity" />
@@ -51,6 +37,14 @@
         <activity android:name=".water_status" />
         <activity android:name=".toil_status" />
         <activity android:name=".med_status" />
+        <activity android:name=".FoodRequirements"/>
+        <activity android:name=".MedicineRequirements"/>
+        <activity android:name=".ClothesRequirements"/>
+        <activity android:name=".ToiletriesRequirements"/>
+        <activity android:name=".RequiredItems"/>
+        <activity android:name=".WaterRequirement"/>
+        <activity android:name=".req_summary"/>
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -72,9 +66,10 @@
              sign the APK for publishing.
              You can define the keys for the debug and release targets in src/debug/ and src/release/.
         -->
-        <activity android:name=".Police_stn_activity"
+        <activity
+            android:name=".Police_stn_activity"
             android:label="Disaster Management"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Hospital_activity" />
         <activity android:name=".Fire_brigade_activity" />
         <activity
@@ -115,6 +110,29 @@
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/path" />
+        </provider>
     </application>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <dist:module dist:instant="true" />
 
 </manifest>

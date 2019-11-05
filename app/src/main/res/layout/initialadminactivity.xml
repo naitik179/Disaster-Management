@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
         android:id="@+id/title1"
@@ -14,14 +17,24 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:layout_below="@id/title1"
+        android:layout_marginLeft="50dp"
         android:layout_weight="1"
         android:text="Total Relief center count : "
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textStyle="bold"
-        android:layout_below="@id/title1"/>
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/totalInmates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/title1"
+        android:layout_marginLeft="310dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"/>
 
 
 
@@ -34,14 +47,43 @@
         android:text="General List of all the inmates is as follows"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:visibility="invisible"
+        tools:visibility="invisible"
+        android:layout_below="@id/getInmates"/>
+
+    <EditText
+        android:id="@+id/getDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:hint="Enter Date to get Details of Inmates in DD-MM-YYYY format"
+        android:textSize="15dp"
         android:layout_below="@id/title"/>
+
+    <Button
+        android:id="@+id/getInmates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getDate"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@color/colorPrimary"
+        android:elevation="20dp"
+        android:text="Get Inmates"
+        android:textColor="#fefefe"
+        android:textSize="15dp" />
 
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewID1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="invisible"
+        tools:visibility="invisible"
         android:layout_below="@id/t1"/>
+
 
 
 

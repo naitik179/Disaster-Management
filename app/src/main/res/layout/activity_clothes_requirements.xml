@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClothesRequirements">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Clothes1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:height="55dp"
+            android:background="#00BCD4"
+            android:text="Clothes Requirement"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/Male1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Male"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/Clothes1" />
+
+        <TextView
+            android:id="@+id/size_m1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Male1" />
+
+        <TextView
+            android:id="@+id/quantity_text_m1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity Required"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_m1" />
+
+        <TextView
+            android:id="@+id/S_text_m1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_m1"
+            app:layout_constraintTop_toBottomOf="@+id/Male1" />
+
+        <TextView
+            android:id="@+id/L_text_m1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_m1"
+            app:layout_constraintTop_toBottomOf="@+id/Male1" />
+
+        <TextView
+            android:id="@+id/XL_text_m1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_m1"
+            app:layout_constraintTop_toBottomOf="@+id/Male1" />
+
+        <TextView
+            android:id="@+id/male_s1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_m1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_m1" />
+
+        <TextView
+            android:id="@+id/male_l1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/male_s1"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_m1" />
+
+        <TextView
+            android:id="@+id/male_xl1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/male_l1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_m1" />
+
+        /*Female*/
+        <TextView
+            android:id="@+id/Female1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Female"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/male_l1" />
+
+        <TextView
+            android:id="@+id/size_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Female1" />
+
+        <TextView
+            android:id="@+id/quantity_text_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity Required"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_f1" />
+
+        <TextView
+            android:id="@+id/S_text_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_f1"
+            app:layout_constraintTop_toBottomOf="@+id/Female1" />
+
+        <TextView
+            android:id="@+id/L_text_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_f1"
+            app:layout_constraintTop_toBottomOf="@+id/Female1" />
+
+        <TextView
+            android:id="@+id/XL_text_f1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_f1"
+            app:layout_constraintTop_toBottomOf="@+id/Female1" />
+
+        <TextView
+            android:id="@+id/female_s1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_f1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_f1" />
+
+        <TextView
+            android:id="@+id/female_l1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/female_s1"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_f1" />
+
+        <TextView
+            android:id="@+id/female_xl1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/female_l1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_f1" />
+
+        /* Children */
+        <TextView
+            android:id="@+id/Children1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Children"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/female_l1" />
+
+        <TextView
+            android:id="@+id/size_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Children1" />
+
+        <TextView
+            android:id="@+id/quantity_text_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity Required"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_c1" />
+
+        <TextView
+            android:id="@+id/S_text_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_c1"
+            app:layout_constraintTop_toBottomOf="@+id/Children1" />
+
+        <TextView
+            android:id="@+id/L_text_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_c1"
+            app:layout_constraintTop_toBottomOf="@+id/Children1" />
+
+        <TextView
+            android:id="@+id/XL_text_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_c1"
+            app:layout_constraintTop_toBottomOf="@+id/Children1" />
+
+        <TextView
+            android:id="@+id/child_s1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_c1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_c1" />
+
+        <TextView
+            android:id="@+id/child_l1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/child_s1"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_c1" />
+
+        <TextView
+            android:id="@+id/child_xl1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+
+            app:layout_constraintStart_toEndOf="@+id/child_l1"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_c1" />
+
+        /*Infants*/
+        <TextView
+            android:id="@+id/Infants1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Infants"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/child_l1" />
+
+        <TextView
+            android:id="@+id/quantity_text_i1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Infants1" />
+
+        <TextView
+            android:id="@+id/infant1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_i1"
+            app:layout_constraintTop_toBottomOf="@+id/Infants1" />
+
+        <TextView
+            android:id="@+id/negativeQuantity2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="29dp"
+            android:text="(Negative Quantity Signifies The Extra Amount Of Requested Items At Present)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infant1" />
+
+
+        /*Donate*/
+
+        <TextView
+            android:id="@+id/donateClothes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:height="55dp"
+            android:background="#00BCD4"
+            android:text="Donate Clothes Here"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity2"
+            tools:layout_editor_absoluteX="0dp" />
+        <TextView
+            android:id="@+id/Male2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Male"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/donateClothes" />
+
+        <TextView
+            android:id="@+id/size_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Male2" />
+
+        <TextView
+            android:id="@+id/quantity_text_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_m2" />
+
+        <TextView
+            android:id="@+id/S_text_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_m2"
+            app:layout_constraintTop_toBottomOf="@+id/Male2" />
+
+        <TextView
+            android:id="@+id/L_text_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_m2"
+            app:layout_constraintTop_toBottomOf="@+id/Male2" />
+
+        <TextView
+            android:id="@+id/XL_text_m2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_m2"
+            app:layout_constraintTop_toBottomOf="@+id/Male2" />
+
+        <EditText
+            android:id="@+id/male_s2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_m2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_m2" />
+
+        <EditText
+            android:id="@+id/male_l2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/male_s2"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_m2" />
+
+        <EditText
+            android:id="@+id/male_xl2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/male_l2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_m2" />
+
+        /*Female*/
+        <TextView
+            android:id="@+id/Female2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Female"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/male_l2" />
+
+        <TextView
+            android:id="@+id/size_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Female2" />
+
+        <TextView
+            android:id="@+id/quantity_text_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_f2" />
+
+        <TextView
+            android:id="@+id/S_text_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_f2"
+            app:layout_constraintTop_toBottomOf="@+id/Female2" />
+
+        <TextView
+            android:id="@+id/L_text_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_f2"
+            app:layout_constraintTop_toBottomOf="@+id/Female2" />
+
+        <TextView
+            android:id="@+id/XL_text_f2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_f2"
+            app:layout_constraintTop_toBottomOf="@+id/Female2" />
+
+        <EditText
+            android:id="@+id/female_s2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_f2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_f2" />
+
+        <EditText
+            android:id="@+id/female_l2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/female_s2"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_f2" />
+
+        <EditText
+            android:id="@+id/female_xl2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/female_l2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_f2" />
+
+        /* Children */
+        <TextView
+            android:id="@+id/Children2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Children"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/female_l2" />
+
+        <TextView
+            android:id="@+id/size_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:width="80dp"
+            android:text="Size"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Children2" />
+
+        <TextView
+            android:id="@+id/quantity_text_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/size_c2" />
+
+        <TextView
+            android:id="@+id/S_text_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="35dp"
+            android:text="S"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/size_c2"
+            app:layout_constraintTop_toBottomOf="@+id/Children2" />
+
+        <TextView
+            android:id="@+id/L_text_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="L"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/S_text_c2"
+            app:layout_constraintTop_toBottomOf="@+id/Children2" />
+
+        <TextView
+            android:id="@+id/XL_text_c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="35dp"
+            android:text="XL"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/L_text_c2"
+            app:layout_constraintTop_toBottomOf="@+id/Children2" />
+
+        <EditText
+            android:id="@+id/child_s2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_c2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_c2" />
+
+        <EditText
+            android:id="@+id/child_l2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/child_s2"
+            app:layout_constraintTop_toBottomOf="@+id/L_text_c2" />
+
+        <EditText
+            android:id="@+id/child_xl2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/child_l2"
+            app:layout_constraintTop_toBottomOf="@+id/XL_text_c2" />
+
+        /*Infants*/
+        <TextView
+            android:id="@+id/Infants2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:paddingLeft="20dp"
+            android:text="Infants"
+            android:textSize="25dp"
+            app:layout_constraintTop_toBottomOf="@+id/child_l2" />
+
+        <TextView
+            android:id="@+id/quantity_text_i2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:width="80dp"
+            android:text="Quantity"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Infants2" />
+
+        <EditText
+            android:id="@+id/infant2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toEndOf="@+id/quantity_text_i2"
+            app:layout_constraintTop_toBottomOf="@+id/Infants2" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="40dp"
+            android:text="Submit"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/infant2" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

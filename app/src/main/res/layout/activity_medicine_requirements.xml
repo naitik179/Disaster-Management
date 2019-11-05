@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MedicineRequirements">
+        <LinearLayout
+
+            android:id="@+id/donateMedicines"
+
+            android:layout_width="184dp"
+
+            android:layout_height="269dp"
+
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="38dp"
+
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="37dp"
+            android:inputType="numberDecimal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/medicineDonate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mcb1"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity3">
+
+            <EditText
+                android:id="@+id/mt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/mt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/mt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/mt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="textPersonName"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/mt5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Quantity"
+                android:textColorHint="#000"
+                android:fontFamily="@font/rg"
+                android:inputType="number"
+                android:visibility="invisible"
+                tools:visibility="invisible" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textMedicines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:clickable="false"
+            android:text="Donate items in Medicines"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#fefefe"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/requiredFirstAid"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="First Aid Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMedicines" />
+
+        <TextView
+            android:id="@+id/requiredFirstAidQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredFirstAid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMedicines" />
+
+        <TextView
+            android:id="@+id/requiredViral"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Viral Fever Medicines Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredFirstAid" />
+
+        <TextView
+            android:id="@+id/requiredViralQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredViral"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredFirstAidQuantity" />
+
+        <TextView
+            android:id="@+id/requiredJaundice"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Medicine for Jaundice Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredViral" />
+
+        <TextView
+            android:id="@+id/requiredJaundiceQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredJaundice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredViralQuantity" />
+        <TextView
+            android:id="@+id/requiredGlucose"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Glucose Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredJaundice" />
+
+        <TextView
+            android:id="@+id/requiredGlucoseQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredGlucose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredJaundiceQuantity" />
+        <TextView
+            android:id="@+id/requiredCold"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Medicine for Cold and Cough required Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredGlucose" />
+
+        <TextView
+            android:id="@+id/requiredColdQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredCold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredGlucoseQuantity" />
+
+        <TextView
+            android:id="@+id/negativeQuantity3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:text="(Negative Quantity Signifies The Extra Amount Of Requested Items At Present)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredCold" />
+
+
+        <CheckBox
+            android:id="@+id/mcb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="First Aid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity3" />
+
+        <CheckBox
+            android:id="@+id/mcb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Viral Fever"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcb1" />
+
+        <CheckBox
+            android:id="@+id/mcb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Jaundice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcb2" />
+
+        <CheckBox
+            android:id="@+id/mcb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Glucose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcb3" />
+
+        <CheckBox
+            android:id="@+id/mcb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Cold and Cough"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcb4" />
+
+
+        <Button
+            android:id="@+id/medicineDonate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Donate"
+            android:textColor="#fefefe"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mcb5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

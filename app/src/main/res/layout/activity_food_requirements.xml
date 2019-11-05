@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FoodRequirements">
+
+        <TextView
+            android:id="@+id/textFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:clickable="false"
+            android:text="Donate Items in Food"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#fefefe"
+            android:textAlignment="center"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/requiredRice"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Rice Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFood" />
+
+        <TextView
+            android:id="@+id/requiredRiceQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredRice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textFood" />
+
+        <TextView
+            android:id="@+id/requiredWheat"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Wheat Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredRice" />
+
+        <TextView
+            android:id="@+id/requiredWheatQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredWheat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredRiceQuantity" />
+
+        <TextView
+            android:id="@+id/requiredDal"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Dal Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredWheat" />
+
+        <TextView
+            android:id="@+id/requiredDalQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredDal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredWheatQuantity" />
+        <TextView
+            android:id="@+id/requiredTea"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Tea Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDal" />
+
+        <TextView
+            android:id="@+id/requiredTeaQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredTea"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredDalQuantity" />
+        <TextView
+            android:id="@+id/requiredMilk"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginBottom="59dp"
+            android:text="Milk Required"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredTea" />
+
+
+        <TextView
+            android:id="@+id/requiredMilkQuantity"
+            android:layout_width="138dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="520dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="36dp"
+            android:text=""
+            app:layout_constraintEnd_toStartOf="@+id/requiredMilk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredTeaQuantity" />
+
+        <TextView
+            android:id="@+id/negativeQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="29dp"
+            android:text="(Negative Quantity Signifies The Extra Amount Of Requested Items At Present)"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/requiredMilk" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/riceInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/negativeQuantity">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/rice1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter quntity of rice required (kg)"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/wheatInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/riceInput1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/wheat1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the amount of wheat required (kg)"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dalInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wheatInput1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dal1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the amount of dal required (kg)"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/teaInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dalInput1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tea1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the amount of tea required (kg)"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/milkInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teaInput1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/milk1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the amount of milk required (ltr)"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/others1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textSize="20dp"
+            android:text="Specify any other requirements below"
+            android:textAlignment="center"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/milkInput"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otherInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/others1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otherName1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the name of the requested food item"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otherQuantityInput1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="12dp"
+            android:elevation="20dp"
+            android:textColorHint="#F81B0303"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otherInput1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/otherQuantity1"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:hint="Enter the amount of the requested food item"
+
+                android:inputType="textEmailSubject" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/donateFood"
+            android:layout_width="205dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="50dp"
+            android:text="Apply"
+            android:background="@drawable/cardlayout"
+            android:elevation="40dp"
+            android:textColor="#fff"
+            android:fontFamily="@font/sb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/otherQuantityInput1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

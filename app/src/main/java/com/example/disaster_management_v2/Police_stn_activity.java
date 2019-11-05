@@ -295,7 +295,7 @@ public class Police_stn_activity extends AppCompatActivity implements SearchView
                     Map<Object, String> data = (Map<Object, String>) ds.getValue();
 
 
-                    contactsArrayList.add(new Contacts(data.get("Name"),data.get("Contact")));
+                   contactsArrayList.add(new Contacts(data.get("Name"),data.get("Contact")));
 
                 }
                 policelist.setAdapter(contactAdapter);

@@ -88,6 +88,10 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_food_requirements.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_food_requirements.xml"
+    },
+    {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -190,6 +194,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\xml_path.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\xml\\path.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_icon_color_selector.xml.flat",
@@ -302,6 +310,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_searchable1.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\searchable1.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_menu.xml.flat",
@@ -684,6 +696,10 @@
         "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_toiletries_requirements.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_toiletries_requirements.xml"
+    },
+    {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\raw_zxing_beep.ogg.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\3ca378d91c045272cc22d2644e4a9277\\jetified-zxing-android-embedded-3.2.0\\res\\raw\\zxing_beep.ogg"
     },
@@ -726,6 +742,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\4b4ac7288bce1164b926243522245acc\\core-1.1.0-rc01\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_pdfgeneration.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_pdfgeneration.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_dark.xml.flat",
@@ -822,6 +842,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_required_items.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_required_items.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -1078,6 +1102,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_water_requirement.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_water_requirement.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -1936,6 +1964,10 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\0a7adbb17e21e0f33c4ee2db652f9070\\play-services-base-17.1.0\\res\\drawable\\common_google_signin_btn_icon_light_normal.xml"
     },
     {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_pdf_creation_view.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\pdf_creation_view.xml"
+    },
+    {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color-v23\\abc_color_highlight_material.xml"
     },
@@ -2292,6 +2324,10 @@
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\color\\switch_thumb_material_light.xml"
     },
     {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_clothes_requirements.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_clothes_requirements.xml"
+    },
+    {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
@@ -2366,6 +2402,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_phone_black_24dp.png.flat",
         "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\drawable-xhdpi\\ic_phone_black_24dp.png"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_medicine_requirements.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_medicine_requirements.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
@@ -2446,6 +2486,10 @@
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\ratho\\.gradle\\caches\\transforms-2\\files-2.1\\07b47e65ab2b3f8f366aa762b10b0137\\appcompat-1.0.0\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_relief__centre__list_.xml.flat",
+        "source": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\src\\main\\res\\layout\\activity_relief__centre__list_.xml"
     },
     {
         "merged": "C:\\Naitik\\Phase 4\\Disaster_Management_v2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_lock_outline_black_24dp.png.flat",
